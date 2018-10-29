@@ -1,0 +1,17 @@
+{
+  "name": "jrNote",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/5201314999/jrNote.git",
+  "author": "5201314999 <1446418561@qq.com>",
+  "license": "MIT",
+  "scripts": {
+    "docs:dev": "vuepress dev docs",
+    "docs:build": "vuepress build docs"
+  },
+  "devDependencies": {
+    "node-sass": "^4.9.4",
+    "sass-loader": "^7.1.0",
+    "vuepress": "^0.14.4"
+  }
+}
