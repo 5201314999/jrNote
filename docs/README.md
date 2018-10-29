@@ -2,7 +2,7 @@
 home: true
 heroImage: /dream.jpg
 actionText: 进入观看 →
-actionLink: /zh/main/
+actionLink: /main/1startKoa
 features:
 - title: 简洁至上
   details: 以 Markdown 为中心的项目结构，取材简练，不拘一格
