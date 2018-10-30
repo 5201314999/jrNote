@@ -1,8 +1,10 @@
 module.exports = {
   title: 'jrNote',
   description: 'Just play around',
+
   themeConfig: {
-    // lastUpdated: 'Last Updated',
+    lastUpdated: 'Last Updated',
+    sidebarDepth: 3,
     nav: [
       { text: '首页', link: '/' },
       {
