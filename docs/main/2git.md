@@ -7,7 +7,19 @@
 ### 1 git 的基本命令
 
 
-### 2 添加跟踪新远程仓库
+
+### 2 git 拉取一个远程仓库非默认分支
+```
+    1. 找一个干净目录，假设是git_work
+    2. cd git_work
+    3. git clone http://myrepo.xxx.com/project/.git ,这样在git_work目录下得到一个project子目录
+    4. cd project
+    5. git branch -a，列出所有分支名称如下：
+    remotes/origin/dev
+    remotes/origin/release
+    6. git checkout -b dev origin/dev，作用是checkout远程的dev分支，在本地起名为dev分支，并切换到本地的dev分支
+```
+### 3 添加跟踪新远程仓库
 
 - fork 远程A仓库到自己远程B仓库，编写本地代码提交到自己仓库B，再请求合并到远程A，如果远程A 仓库有新分支或者更新代码，如何处理
 

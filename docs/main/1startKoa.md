@@ -17,7 +17,7 @@ Koa2 是一个基于 nodejs 的一个小框架 ,github 地址 https://github.com
 ```
 ├── lib ----------------------------- 核心目录
 │   ├── application.js -------------- 是整个koa2 的入口文件
-│   ├── context.js ------------------ context.js 处理应用上下文
+│   ├── context.js ------------------ 处理应用上下文
 │   ├── request.js ------------------ 处理http 请求
 │   ├── response.js ----------------- 处理http 响应
 ├── package.json  
