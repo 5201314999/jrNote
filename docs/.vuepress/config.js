@@ -11,7 +11,7 @@ module.exports = {
         text: '更多',
         items: [
           { text: 'koa', link: '/main/koa/' },
-          { text: 'Japanese', link: '/main/' }
+          { text: '目标清单', link: '/goal/goalList' }
         ]
       },
       { text: '关于', link: '/about/' },
