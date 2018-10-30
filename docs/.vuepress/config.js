@@ -3,7 +3,7 @@ module.exports = {
   description: 'Just play around',
 
   themeConfig: {
-    lastUpdated: 'Last Updated',
+    lastUpdated: '上次更新',
     sidebarDepth: 3,
     nav: [
       { text: '首页', link: '/' },
@@ -19,7 +19,8 @@ module.exports = {
     ],
     sidebar: {
       '/main/': [
-       '1startKoa'
+       '1startKoa',
+       '2git'
       ],
 
     }
