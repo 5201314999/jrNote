@@ -20,7 +20,8 @@ module.exports = {
     sidebar: {
       '/main/': [
        '1startKoa',
-       '2git'
+       '2git',
+       '3question'
       ],
 
     }
