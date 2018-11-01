@@ -73,3 +73,21 @@ export default {
     },
 ```
  使用computed 不能再内部更新visible,所以使用watch
+
+
+ ## vue 组件prop 对象watch 使用过程
+
+options 设置default 为{} 无法监听options
+```
+       props:{
+         options: {
+                type: Object,
+            }
+        },
+        watch:{
+            options(val){
+            }
+        },
+```
+
+
