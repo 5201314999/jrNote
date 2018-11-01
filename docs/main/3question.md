@@ -56,3 +56,20 @@ export default {
 4.  解决思路 
    -  1 不使用路由懒加载
    -  2 不再使用通过路由来展开菜单的方案，（最终采用）
+
+## vue v-model 组件使用过程
+
+```
+    props: {
+      value: {
+        type: Boolean,
+        default: false
+      }
+    },
+    watch: {
+      value(val) {
+        this.visible = val;
+      }
+    },
+```
+ 使用computed 不能再内部更新visible,所以使用watch
