@@ -90,4 +90,24 @@ options 设置default 为{} 无法监听options
         },
 ```
 
+##  写代码方便复制的一些小技巧
+ 
+ 代码归类，字段名不使用业务名。
+```
+ //common
+      showCoverImg: false,
+      imgShow: "",
+      errorImg:`this.src="${G.errorImg}"`,
+      
+      activePoster:'',
+      //table
+      keyword:'',
+      loading:false,
+      sortMark: "",
+      pagination: {
+        pageNum: 1,
+        pageSize: 10
+      },
+```
+
 
