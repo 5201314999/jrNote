@@ -109,5 +109,18 @@ options 设置default 为{} 无法监听options
         pageSize: 10
       },
 ```
+### vue 的数组更新监听问题
 
+```
+  data:{
+    appList:[]
+  },
+  mounted(){
+    this.appList=[{id:1,name:'cc'}];
+    //dom 无法监听
+    this.appList[0].age=18;
+  }
+```
+
+暂时的解决方案是：在数组里一开始就定义一个age.
 
