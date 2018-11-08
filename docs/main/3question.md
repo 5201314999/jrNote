@@ -119,7 +119,19 @@ options 设置default 为{} 无法监听options
     this.appList=[{id:1,name:'cc'}];
     //dom 无法监听
     this.appList[0].age=18;
+	
+	
+	this.appList=[];
+	this.appList=[{
+	name:'1'
+	}];
+	//界面更新
+
+	this.appList[0].name='2'
+	//界面不更新
   }
+  
+  
 ```
 
 暂时的解决方案是：在数组里一开始就定义一个age.
