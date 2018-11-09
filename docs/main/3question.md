@@ -129,6 +129,13 @@ options 设置default 为{} 无法监听options
 
 	this.appList[0].name='2'
 	//界面不更新
+	
+	
+	appCollection: {
+          apps: []
+    },
+	appCollection.apps=[{age:1}], 这样才有更新
+	
   }
   
   
