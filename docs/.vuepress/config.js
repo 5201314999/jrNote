@@ -21,7 +21,9 @@ module.exports = {
       '/main/': [
        '1startKoa',
        '2git',
-       '3question'
+       '3question',
+       '4amazing',
+        '5wepy'
       ],
 
     }

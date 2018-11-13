@@ -109,7 +109,7 @@ options 设置default 为{} 无法监听options
         pageSize: 10
       },
 ```
-### vue 的数组更新监听问题
+### vue 的数组更新监听问题,实践中结合v-model 经常出问题
 
 ```
   data:{
