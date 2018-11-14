@@ -23,7 +23,8 @@ module.exports = {
        '2git',
        '3question',
        '4amazing',
-        '5wepy'
+       '5wepy',
+       '6business'
       ],
 
     }
