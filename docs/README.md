@@ -4,7 +4,7 @@ heroImage: /dream.jpg
 actionText: 进入观看 →
 actionLink: /main/1startKoa
 features:
-- title: 简洁至上
+- title: 简洁至上，个人备忘录
   details: 以 Markdown 为中心的项目结构，取材简练，不拘一格
 - title: 记录范围
   details: js,css,html,node.js,es6,es7,typescript 等,喜欢即可。

@@ -9,6 +9,12 @@
 - 模块化方法
     - 参考文章 [https://zhuanlan.zhihu.com/p/26477995](https://zhuanlan.zhihu.com/p/26477995)
 
+- node.js 调试方法
+
+    可以用vscode 自身的调试，选择node.js 类型启动,选择js 配置启动。然后点击启动即可。
+
+    ![Image text](/main/1startKoa/nodeDebugger.png)
+     
 ## 介绍
 
 Koa2 是一个基于 nodejs 的一个小框架 ,github 地址 [https://github.com/koajs/koa](https://github.com/koajs/koa)
