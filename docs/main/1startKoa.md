@@ -10,11 +10,49 @@
     - 参考文章 [https://zhuanlan.zhihu.com/p/26477995](https://zhuanlan.zhihu.com/p/26477995)
 
 - node.js 调试方法
-
+    - 使用vscode 
     可以用vscode 自身的调试，选择node.js 类型启动,选择js 配置启动。然后点击启动即可。
 
     ![Image text](/main/1startKoa/nodeDebugger.png)
-     
+
+    - 最新的调试办法,node.js 内置
+        - 1 环境
+          - node环境 8.x +
+          - chrome 60+
+        - 2 准备一段代码
+            ```
+                /**
+                * 测试resolve.js path 模块
+                */
+                const Koa=require('koa');
+                const path = require('path');
+
+                const app=new Koa();
+                const p=path.resolve('/src','../','view');
+                console.log(`p:${p}`);
+                const dir=path.resolve();
+                debugger
+                console.log(dir);
+                app.use(async(ctx) =>{
+                    ctx.body= p;
+                })
+
+                app.listen(3000);
+
+                console.log('[测试resolve.js] start-quick is starting at port 3000')
+
+            ```
+       - 3 步骤：
+            - (1) 命令行node --inspect resolve.js
+        ![Image text](/main/1startKoa/node_1.png)
+
+            - (2) 打开chrome 输入http://localhost:3000
+        ![Image text](/main/1startKoa/node_2.png)
+
+              说明：绿色的按钮会打开一个新的debugger窗口，在那个窗口可以进行node.js 的调试
+        ![Image text](/main/1startKoa/node_3.png)
+        - 4 结束
+
 ## 介绍
 
 Koa2 是一个基于 nodejs 的一个小框架 ,github 地址 [https://github.com/koajs/koa](https://github.com/koajs/koa)
