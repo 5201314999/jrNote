@@ -7,14 +7,14 @@ module.exports = {
     sidebarDepth: 3,
     nav: [
       { text: '首页', link: '/' },
+      { text: '操作文档',link:'/docs/'},
       {
         text: '更多',
         items: [
-          { text: 'koa', link: '/main/koa/' },
-          { text: '目标清单', link: '/goal/goalList' },
+          { text: 'koa', link: '/more/koa/' },
+          { text: '目标清单', link: '/goal/goalList' }
         ]
       },
-      { text: '操作文档',link:'/docs/'},
       { text: '关于', link: '/about/' },
       { text: 'github', link: 'https://github.com/5201314999/jrNote' }
     ],
@@ -33,7 +33,10 @@ module.exports = {
         '',
         '1mdOperate',
         '2linux.md'
+      ],
+      '/more/koa/':[
+        '1'
       ]
-    }
+      }
   }
 };
