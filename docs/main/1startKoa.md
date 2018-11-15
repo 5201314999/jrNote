@@ -121,5 +121,5 @@ console.log('[demo] file-render is starting at port 3000')
 
 3. 启动方式 node index.js   
 
-
+4. 最后,这里有个简单易懂的文档，[github Koa2 学习资料](https://chenshenhai.github.io/koa2-note/)
 
