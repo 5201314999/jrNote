@@ -143,3 +143,19 @@ options 设置default 为{} 无法监听options
 
 暂时的解决方案是：在数组里一开始就定义一个age.
 
+
+### iview @change 中文输入法时拼音也会触发请求
+
+一开始想用compositionStart 和 compositionEnd 解决，奈何Input native 监听不到 这2个事件
+
+后面采用了另一种方案，使用定时器限制500ms 没输入才查询，跟防抖动原理一致，代码如下
+
+```
+      	this.serachTimeout&&clearTimeout(this.serachTimeout);
+				this.serachTimeout=setTimeout(()=>{
+					this.$set(this.pagination, 'pageNum', 1);
+					this.getData();
+				},500);
+```
+
+
