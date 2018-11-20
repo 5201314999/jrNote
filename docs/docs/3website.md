@@ -2,4 +2,4 @@
 
 ## iview 社区
 
-干货较多：[iview 社区](https://dev.iviewui.com/articles)
+干货较多，内容量不大：[iview 社区](https://dev.iviewui.com/articles)

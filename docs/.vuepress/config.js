@@ -7,7 +7,7 @@ module.exports = {
     sidebarDepth: 3,
     nav: [
       { text: '首页', link: '/' },
-      { text: '操作文档',link:'/docs/'},
+      { text: '储物柜',link:'/docs/'},
       {
         text: '更多',
         items: [
@@ -32,9 +32,11 @@ module.exports = {
       ],
       '/docs/':[
         '',
-        '3website.md',
+        '3website',
         '1mdOperate',
-        '2linux.md'
+        '4reg',
+        '5flow',
+        '2linux'
         
       ],
       '/more/koa/':[
