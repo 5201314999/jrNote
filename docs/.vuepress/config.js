@@ -12,7 +12,8 @@ module.exports = {
         text: '更多',
         items: [
           { text: 'koa', link: '/more/koa/' },
-          { text: '目标清单', link: '/goal/goalList' }
+          { text: '目标清单', link: '/goal/goalList' },
+          { text: 'js知识',link:'/more/js/'}
         ]
       },
       { text: '关于', link: '/about/' },
@@ -36,12 +37,16 @@ module.exports = {
         '1mdOperate',
         '4reg',
         '5flow',
+        '6build',
         '2linux'
-        
       ],
       '/more/koa/':[
         '1'
-      ]
+      ],
+      '/more/js/':[
+        '',
+        '1jsTime'
+      ],
       }
   }
 };

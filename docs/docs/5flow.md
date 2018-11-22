@@ -1,7 +1,10 @@
 # flow 简单介绍
 
 ## 1 介绍
-flow 是 facebook 出品的 JavaScript 静态类型检查工具,类似java 函数中传参声明类，函数返回时亦声明返回类型。
+
+flow 是 facebook 出品的 JavaScript 静态类型检查工具,类似java 函数中传参声明类，函数返回时亦声明返回类型，当然也可用于变量，对象等地方。
+
+与 typescript 相比，类似 commonjs 与 es 的关系。typescript 功能更加强大
 
 ```
 // @flow
