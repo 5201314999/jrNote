@@ -38,6 +38,7 @@ module.exports = {
         '4reg',
         '5flow',
         '6build',
+        '7nginx',
         '2linux'
       ],
       '/more/koa/':[

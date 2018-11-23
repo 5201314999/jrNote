@@ -66,11 +66,77 @@ console.log(event.toUTCString());
 // expected output: Wed, 14 Jun 2017 07:00:00 GMT
 ```
 
+* Date.prototype.toLocaleString()
+> 结合使用的语言返回字符串
+
+```
+var event = new Date(Date.UTC(2012, 11, 20, 3, 0, 0));
+
+// British English uses day-month-year order and 24-hour time without AM/PM
+console.log(event.toLocaleString('en-GB', { timeZone: 'UTC' }));
+// expected output: 20/12/2012, 03:00:00
+
+// Korean uses year-month-day order and 12-hour time with AM/PM
+console.log(event.toLocaleString('ko-KR', { timeZone: 'UTC' }));
+// expected output: 2012. 12. 20. 오전 3:00:00
+```
+* Date.prototype.setDate()
+
+设置当月第几天
+**如果 dayValue 超出了月份的合理范围，setDate 将会相应地更新 Date 对象**。例如，如果为 dayValue 指定0，那么日期就会被设置为上个月的最后一天。
+
+* Date.prototype.getDate()
+
+获取当月的第几天
+
+* Date.getDay()
+
+返回周几 ，数字
+
+* Date.getMonth()
+
+`0 起始，所以要加1`
 
 ## Date 格式化
 
-1 日期格式化 
+1 日期格式化,ge
 
 ```
+//不支持12小时制，不过用了正则表达式
+function dateFtt(fmt,date)   
+{ //author: meizz   
+  var o = {   
+    "M+" : date.getMonth()+1,                 //月份   
+    "d+" : date.getDate(),                    //日   
+    "h+" : date.getHours(),                   //小时   
+    "m+" : date.getMinutes(),                 //分   
+    "s+" : date.getSeconds(),                 //秒   
+    "q+" : Math.floor((date.getMonth()+3)/3), //季度   
+    "S"  : date.getMilliseconds()             //毫秒   
+  };   
+  if(/(y+)/.test(fmt))   
+    fmt=fmt.replace(RegExp.$1, (date.getFullYear()+"").substr(4 - RegExp.$1.length));   
+  for(var k in o)   
+    if(new RegExp("("+ k +")").test(fmt))   
+  fmt = fmt.replace(RegExp.$1, (RegExp.$1.length==1) ? (o[k]) : (("00"+ o[k]).substr((""+ o[k]).length)));   
+  return fmt;   
+}
+
+```
+
+2 获取周一的日期
+
+```
+// 获取今天之前最近星期一的日期,字符串
+const getMondayDate = () => {
+  const date = new Date()
+  date.setDate(date.getDate() - (date.getDay() - 1))
+  const y = date.getFullYear()
+  let m = date.getMonth() + 1
+  let d = date.getDate()
+  m < 10 && (m = '0' + m)
+  d < 10 && (d = '0' + d)
+  return y + '-' + m + '-' + d
+}
 
 ```
