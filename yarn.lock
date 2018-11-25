@@ -7459,7 +7459,7 @@ vuepress-html-webpack-plugin@^3.2.0:
     toposort "^1.0.0"
     util.promisify "1.0.0"
 
-vuepress@^0.14.4:
+vuepress@0.14.4:
   version "0.14.4"
   resolved "https://registry.yarnpkg.com/vuepress/-/vuepress-0.14.4.tgz#fea77daa840b11429564bdddde3653bbbec4affb"
   integrity sha512-AUZ+6wL1uXapX+I7h4EeXQ2Gcxaars7Ys5K8EUVuCgyDB0v36eoQWnoAVpNpMXL7kPCkVSq8DUtJQtOtHluSXQ==

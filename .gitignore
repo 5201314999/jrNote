@@ -62,5 +62,6 @@ yarn-error.log*
 *.ntvs*
 *.njsproj
 *.sln
+.history/
 
 /package-lock.json
