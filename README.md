@@ -5,6 +5,6 @@
 ### 代码启动步骤
 
 - 1 首先需要安装node.js 和 yarn
-- 2 安装vuepress yarn add -D vuepress 
+- 2 yarn install
 - 3 直接运行 yarn docs:dev
 - 4 打包成静态文件  yarn docs:build
