@@ -166,6 +166,18 @@ ES模块是官方标准，也是JavaScript语言明确的发展方向，而Commo
 
 使用动画，或者图片懒加载时都遇到过。把样式改好就没问题了。
 
-### iframe 的高度自适应问题
+### 跨域 iframe 的高度自适应问题
 
-业务场景： 所有系统日志页面使用外链方式
+业务场景： 所有系统日志页面使用**外链**方式
+
+**好处： 修改日志页面时修改一处地方,所有项目都会得到更新**
+
+>问题：在一级域名一致的情况下，强制将里外的domain 都设为一致， 这样就可以访问到外部的iframe,iframe 使用存在的问题是fixed 不会相对浏览器，内外通信会有问题。
+
+```
+                let host = window.location.hostname,
+                    hosts = host.split('.');
+                hosts.shift();
+                document.domain = hosts.join('.');
+                this.parentVueObj = window.parent.vueObj;
+```

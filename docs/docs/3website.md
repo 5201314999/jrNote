@@ -14,3 +14,7 @@ rollup 一种构建工具，配置比webpack 简单，vue 源码构建使用的�
 ## 3 react 基础教程
 
 [http://huziketang.mangojuice.top/books/react/](http://huziketang.mangojuice.top/books/react/)
+
+## 4 富文本编辑器 simditor
+
+[https://simditor.tower.im/docs/doc-usage.html](https://simditor.tower.im/docs/doc-usage.html)
