@@ -1,5 +1,5 @@
 # 问题集
-## 1 vue-router 异步加载导致菜单卡顿问题
+## 1. vue-router 异步加载导致菜单卡顿问题
 
 使用vue 懒加载，发现路由加载时才会加载相应js， 但是等js 加载完路由才会改变，导致监听路由的菜单出现了上一次active 先展开再收缩的问题。
 ```
@@ -57,7 +57,7 @@ export default {
    -  1 不使用路由懒加载
    -  2 不再使用通过路由来展开菜单的方案，（最终采用）
 
-## vue v-model 组件使用过程
+## 2. vue v-model 组件使用过程
 
 ```
     props: {
@@ -75,7 +75,7 @@ export default {
  使用computed 不能再内部更新visible,所以使用watch
 
 
- ## vue 组件prop 对象watch 使用过程
+ ## 3. vue 组件prop 对象watch 使用过程
 
 options 设置default 为{} 无法监听options
 ```
@@ -90,7 +90,7 @@ options 设置default 为{} 无法监听options
         },
 ```
 
-##  写代码方便复制的一些小技巧
+##  4. 写代码方便复制的一些小技巧
  
  代码归类，字段名不使用业务名。
 ```
@@ -109,7 +109,8 @@ options 设置default 为{} 无法监听options
         pageSize: 10
       },
 ```
-### vue 的数组更新监听问题,实践中结合v-model 经常出问题
+
+## 5. vue 的数组更新监听问题,实践中结合v-model 经常出问题
 
 ```
   data:{
@@ -144,7 +145,7 @@ options 设置default 为{} 无法监听options
 暂时的解决方案是：在数组里一开始就定义一个age.
 
 
-### iview @change 中文输入法时拼音也会触发请求
+## 6. iview @change 中文输入法时拼音也会触发请求
 
 一开始想用compositionStart 和 compositionEnd 解决，奈何Input native 监听不到 这2个事件
 
@@ -158,15 +159,15 @@ options 设置default 为{} 无法监听options
 				},500);
 ```
 
-### 关于cjs 与 es 的一点比较
+## 7. 关于cjs 与 es 的一点比较
 
 ES模块是官方标准，也是JavaScript语言明确的发展方向，而CommonJS模块是一种特殊的传统格式，在ES模块被提出之前做为暂时的解决方案。 ES模块允许进行静态分析，从而实现像 tree-shaking 的优化，并提供诸如循环引用和动态绑定等高级功能。
 
-### css 有时会造成显示卡顿
+## 8. css 有时会造成显示卡顿
 
 使用动画，或者图片懒加载时都遇到过。把样式改好就没问题了。
 
-### 跨域 iframe 的高度自适应问题
+## 9. 跨域 iframe 的高度自适应问题
 
 业务场景： 所有系统日志页面使用**外链**方式
 
