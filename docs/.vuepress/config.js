@@ -29,7 +29,9 @@ module.exports = {
        '3question',
        '4amazing',
        '5wepy',
-       '6business'
+       '6business',
+       '11idea.md'
+
       ],
       '/docs/':[
         '',
@@ -39,7 +41,8 @@ module.exports = {
         '5flow',
         '6build',
         '7nginx',
-        '2linux'
+        '2linux',
+        '8toolProblem'
       ],
       '/more/koa/':[
         '1'
