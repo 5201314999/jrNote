@@ -30,8 +30,8 @@ module.exports = {
        '4amazing',
        '5wepy',
        '6business',
-       '11idea.md'
-
+       '11idea.md',
+        '12basicCss.md'
       ],
       '/docs/':[
         '',
