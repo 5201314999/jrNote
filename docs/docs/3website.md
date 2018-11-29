@@ -18,3 +18,9 @@ rollup 一种构建工具，配置比webpack 简单，vue 源码构建使用的�
 ## 4 富文本编辑器 simditor
 
 [https://simditor.tower.im/docs/doc-usage.html](https://simditor.tower.im/docs/doc-usage.html)
+
+## 5 v-viewer 图片浏览器
+
+基于viewer ,指令使用, 能力足够的话想参与这个开源项目
+
+[https://github.com/mirari/v-viewer/blob/master/package.json](https://github.com/mirari/v-viewer/blob/master/package.json)
