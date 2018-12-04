@@ -182,3 +182,17 @@ ES模块是官方标准，也是JavaScript语言明确的发展方向，而Commo
                 document.domain = hosts.join('.');
                 this.parentVueObj = window.parent.vueObj;
 ```
+
+## 10. form 表单最后一行有2列，最后一行不用下边界线
+
+> 问题 form 表单最后一行有2列，最后一行不用下边界线，主要自适应时处理
+
+一开始想用栅格布局写一种，后面发现2种方法，
+
+1. 用了媒体查询
+
+2. js 监听body 变化然后添加class 设置样式。
+
+解决过程中发现debounce 和 throttle 防抖节流插件， 都是基于定时器实现。
+
+

@@ -24,3 +24,6 @@ rollup 一种构建工具，配置比webpack 简单，vue 源码构建使用的�
 基于viewer ,指令使用, 能力足够的话想参与这个开源项目
 
 [https://github.com/mirari/v-viewer/blob/master/package.json](https://github.com/mirari/v-viewer/blob/master/package.json)
+
+## 6 深度学习基础
+[https://zh.diveintodeeplearning.org/](https://zh.diveintodeeplearning.org/)
