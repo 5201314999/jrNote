@@ -37,4 +37,26 @@
 
 
 
-## 5 activated 的时候不用mounted 了
+## 5 activated 的时候不用mounted/created 了
+
+
+
+## 6 上传图片/视频
+
+1. 考虑上传前格式过滤的问题
+
+最后解决了mkv,mp4， 搞不定ts ，一开始狂找ts 的accept ,最后input 原生accept 估计不支持，改成上传之前手动校验。
+
+2. 业务上传时大多数数据都在前端计算，大小，时长，后缀
+
+难得用了promise，非常开心。 
+
+3. jquery 普通js 库 修改成 es6 模块化引用
+
+一开始不知道怎么改。。 
+
+## 7 iview3.0  filterable 前后出现空格
+
+1 一开始以为没出来，原来跑去后面了，跑去后面之后一直以为是样式的问题。完全没注意到时空格
+
+最终发现是 <option>{{label}} 有折行，就会出现空格，属于iview 的bug.
