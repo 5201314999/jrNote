@@ -46,5 +46,8 @@ max-height:64px;
 
 ```
 
+## 布局
+布局的传统解决方案，基于盒状模型，依赖 display属性 + position属性 + float属性
+
 
 
