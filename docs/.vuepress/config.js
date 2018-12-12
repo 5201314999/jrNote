@@ -7,13 +7,13 @@ module.exports = {
     sidebarDepth: 3,
     nav: [
       { text: '首页', link: '/' },
-      { text: '储物柜',link:'/docs/'},
+      { text: '储物柜', link: '/docs/' },
       {
         text: '更多',
         items: [
           { text: 'koa', link: '/more/koa/' },
           { text: '目标清单', link: '/goal/goalList' },
-          { text: 'js知识',link:'/more/js/'}
+          { text: 'js知识', link: '/more/js/' }
         ]
       },
       { text: '关于', link: '/about/' },
@@ -21,19 +21,20 @@ module.exports = {
     ],
     sidebar: {
       '/main/': [
-       '1startKoa',
-       '7koaRouter',
-       '8koaQuery',
-       '9koaCookiesAndSession',
-       '2git',
-       '3question',
-       '4amazing',
-       '5wepy',
-       '6business',
-       '11idea.md',
-        '12basicCss.md'
+        '1startKoa',
+        '7koaRouter',
+        '8koaQuery',
+        '9koaCookiesAndSession',
+        '2git',
+        '3question',
+        '4amazing',
+        '5wepy',
+        '6business',
+        '11idea.md',
+        '12basicCss.md',
+        '13feeling.md'
       ],
-      '/docs/':[
+      '/docs/': [
         '',
         '3website',
         '1mdOperate',
@@ -44,13 +45,13 @@ module.exports = {
         '2linux',
         '8toolProblem'
       ],
-      '/more/koa/':[
+      '/more/koa/': [
         '1'
       ],
-      '/more/js/':[
+      '/more/js/': [
         '',
         '1jsTime'
       ],
-      }
+    }
   }
 };
