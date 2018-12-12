@@ -59,4 +59,20 @@
 
 1 一开始以为没出来，原来跑去后面了，跑去后面之后一直以为是样式的问题。完全没注意到时空格
 
-最终发现是 <option>{{label}} 有折行，就会出现空格，属于iview 的bug.
+最终发现是 <option>{{label}} 有折行，就会出现空格，属于iview 的bug. 
+
+## 8 ts,mp4,mkv 视频 html5 播放
+
+mp4, mkv 原生html5支持,ts 很麻烦，借助了vue-video-play
+
+目前可靠的是转码的方案。
+
+```
+// this.playerOptions.sources.push({
+//     withCredentials: false,
+//     type: "application/x-mpegURL",
+//     // src: "https://logos-channel.scaleengine.net/logos-channel/live/biblescreen-ad-free/playlist.m3u8"
+//     src: params.row.url ? (params.row.url.indexOf('http') === -1 ? this.G.files.server.download + params.row.url : params.row.url) : '',
+// })
+
+```

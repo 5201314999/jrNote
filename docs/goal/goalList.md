@@ -1,8 +1,11 @@
 # 技能列表
 
 -   node.js
--   typescript
--   flow
--   vue 原理
+-   typescript （简单上手）
+-   flow （已结束）
+-   vue 原理 （进行中）
 -   剑指offer的算法
 -   吉他
+-   webpack （进行中）
+-   vue ssr 
+-   flnet 基本框架的封装 

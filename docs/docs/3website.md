@@ -27,3 +27,9 @@ rollup 一种构建工具，配置比webpack 简单，vue 源码构建使用的�
 
 ## 6 深度学习基础
 [https://zh.diveintodeeplearning.org/](https://zh.diveintodeeplearning.org/)
+
+## 7 前端视频播放插件
+[https://github.com/surmon-china/vue-video-player](https://github.com/surmon-china/vue-video-player)
+
+## 8 前端裁剪插件
+[https://github.com/xyxiao001/vue-cropper](https://github.com/xyxiao001/vue-cropper)
