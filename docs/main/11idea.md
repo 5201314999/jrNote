@@ -31,6 +31,8 @@
 
 2 类比2个项目的webpack 配置，发现基本配置不一样， 出问题的代码配置改动比较大，主要是对文件路径做了较大改动
 
+3 dataset 和 viewer 发生了冲突。
+
 2018/12/5 暂时还没解决。晚上再看下
 
 ## 4 last child 与 nth-of-type 
@@ -63,9 +65,7 @@
 
 ## 8 ts,mp4,mkv 视频 html5 播放
 
-mp4, mkv 原生html5支持,ts 很麻烦，借助了vue-video-play
-
-目前可靠的是转码的方案。
+mp4, mkv 原生html5支持,ts 很麻烦，借助了vue-video-play,目前可靠的是转码的方案。
 
 ```
 // this.playerOptions.sources.push({
