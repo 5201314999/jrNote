@@ -13,6 +13,8 @@ webpack 如今已成为最流行的模块化打包工具，据我使用体验来
 本文的目的是学习webpack 的并能用于项目实战中。
 
 3. 类似的构建工具
+###  npm Script    
+    npm 自身可以配置命令
 
 ###  Rollup
 Rollup 是一个和 Webpack 很类似但专注于 ES6 的模块打包工具。 Rollup 的亮点在于能针对 ES6 源码进行 Tree Shaking 以去除那些已被定义但没被使用的代码，以及 Scope Hoisting 以减小输出文件大小提升运行性能。 然而 Rollup 的这些亮点随后就被 Webpack 模仿和实现。 由于 Rollup 的使用和 Webpack 差不多，这里就不详细介绍如何使用了，而是详细说明它们的差别：
@@ -26,3 +28,6 @@ Rollup 在用于打包 JavaScript 库时比 Webpack 更加有优势，因为其�
 
 
 ## 正文
+
+1.  从 Webpack2 开始，已经内置了对 ES6、CommonJS、AMD 模块化语句的支持。
+
