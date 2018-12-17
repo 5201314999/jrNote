@@ -50,4 +50,23 @@ max-height:64px;
 布局的传统解决方案，基于盒状模型，依赖 display属性 + position属性 + float属性
 
 
+## css3字体的引入
+
+```
+@font-face{
+    font-family: 'iconfont';
+    src:url('./font/iconfont.eot') format('eot');
+    font-weight:600;
+    font-style:normal;
+}
+
+body{
+    font-family: 'iconfont';
+    font-size:20px;
+
+    /* background:url('../images/loading.png'); */
+}
+```
+
+
 
