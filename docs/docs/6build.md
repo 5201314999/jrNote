@@ -26,8 +26,28 @@ Rollup 是一个和 Webpack 很类似但专注于 ES6 的模块打包工具。 R
 
 Rollup 在用于打包 JavaScript 库时比 Webpack 更加有优势，因为其打包出来的代码更小更快。 但功能不够完善，很多场景都找不到现成的解决方案。
 
+4. 生产环境配置和开发环境配置
+
+在开发环境中，我们需要具有强大的、具有实时重新加载(live reloading)或热模块替换(hot module replacement)能力的 source map 和 localhost server。而在生产环境中，我们的目标则转向于关注更小的 bundle，更轻量的 source map，以及更优化的资源，以改善加载时间。由于要遵循逻辑分离，我们通常建议为每个环境编写彼此独立的 webpack 配置。
+
 
 ## 正文
 
-1.  从 Webpack2 开始，已经内置了对 ES6、CommonJS、AMD 模块化语句的支持。
+### 一、webpack 网上有很多很好的学习资料[https://www.webpackjs.com/guides/code-splitting/#%E5%85%A5%E5%8F%A3%E8%B5%B7%E7%82%B9-entry-points-](https://www.webpackjs.com/guides/code-splitting/#%E5%85%A5%E5%8F%A3%E8%B5%B7%E7%82%B9-entry-points-)。
+
+1. 从 Webpack2 开始，已经内置了对 ES6、CommonJS、AMD 模块化语句的支持。
+
+2. webpack 的实时热更新（HMR) 配置,source-map 方便线上调试
+
+3. 不同环境使用不同的配置文件，使用 merge 来合并 common.js 通用部分和特殊部分。
+
+4. webpack4 开始支持 tree shaking 这个功能，该功能有rollup 提出，用于删除未被使用代码。webpack4 必须要多安装 cli ,才可以开始
+
+很方便调试
+
+### 二、webpack 代码分离
+
+* 入口起点：使用 entry 配置手动地分离代码。
+* 防止重复：使用 CommonsChunkPlugin 去重和分离 chunk。
+* 动态导入：通过模块的内联函数调用来分离代码。
 

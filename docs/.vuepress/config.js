@@ -50,7 +50,8 @@ module.exports = {
       ],
       '/more/js/': [
         '',
-        '1jsTime'
+        '1jsTime',
+        '2es6js'
       ],
     }
   }
