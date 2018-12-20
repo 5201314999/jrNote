@@ -45,9 +45,26 @@ Rollup 在用于打包 JavaScript 库时比 Webpack 更加有优势，因为其�
 
 很方便调试
 
-### 二、webpack 代码分离
+### 二、使用懒加载 import/vuex
 
+(1) 代码分离
 * 入口起点：使用 entry 配置手动地分离代码。
 * 防止重复：使用 CommonsChunkPlugin 去重和分离 chunk。
 * 动态导入：通过模块的内联函数调用来分离代码。
+
+(2) 懒加载
+
+    await, import 
+
+### 三、 缓存
+
+使用 content hash ,将项目分离打包成 Venter/runtime, app， manifest， app 和 manifest 每次都有可能变化，但是 ventur 用来打包一些库 ，实现可长期有效缓存。
+
+
+###  四、 创建库
+
+用来生成一些npm 的包。重点配置是将一些依赖外部化，交给外部用户来控制。另外是实现指定模块打包，其他模块不打包。
+
+渐进式网络应用程序(Progressive Web Application - PWA)
+
 
