@@ -140,3 +140,8 @@ const getMondayDate = () => {
 }
 
 ```
+
+时间撮：
+
+# 获取时间撮
++new Date()

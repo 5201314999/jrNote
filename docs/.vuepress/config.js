@@ -43,7 +43,8 @@ module.exports = {
         '6build',
         '7nginx',
         '2linux',
-        '8toolProblem'
+        '8toolProblem',
+        '10interview'
       ],
       '/more/koa/': [
         '1'
@@ -51,7 +52,8 @@ module.exports = {
       '/more/js/': [
         '',
         '1jsTime',
-        '2es6js'
+        '2es6js',
+        '3debounce_throttle'
       ],
     }
   }
