@@ -80,7 +80,7 @@ Markdown 的理念是，能让文档更容易读、写和随意改。HTML 是一
 
     写法：
     ```
-        [Image text](/docs/star.png)
+        ![Image text](/docs/star.png)
     ```
 
 - 图片 带链接

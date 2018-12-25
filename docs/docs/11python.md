@@ -2,8 +2,11 @@
 
 ## 个人吐槽
 
-   最近比较闲,打算学习python 爬虫方面的知识，生活中认识了一个沙雕网友，搞得我也很喜欢装逼。
+   最近比较闲,打算学习python 爬虫方面的知识，生活中认识了几个沙雕网友，搞得我也很想分（装）享（逼）。
+   
+   ![Image text](https://github.com/5201314999/jrNote/blob/master/docs/.vuepress/public/docs/9555112-300x212.jpg?raw=true)
 
+   如果遇到不清楚可以跳到最后看参考教程，2个结合看应该就很简单易懂了
 
 ## 前言
 
@@ -24,9 +27,14 @@
 
 ## 基本上手 
 
+   我是在windows 上操作的，其他系统的会有些不一样，不懂百度即可解决，问题不大,稳稳的。。。
+
 * 1 **安装python**
 
-    直接到官网下载64位exe安装(类比java 要装jdk,node.js 要安装node)，python3.5以上
+    - （1）直接到官网下载64位exe安装(类比java 要装jdk,node.js 要安装node)，python3.5以上
+    - （2）安装时勾选注册到环境变量，不然就要手动配置 [参考地址](https://www.cnblogs.com/huangbiquan/p/7784533.html)
+
+    安装完 （win+R 输入 cmd ）打开命令行 输入python 回车即可看到版本号。证明安装没问题。
 
 * 2 **开发工具**
 
@@ -97,8 +105,18 @@ for index in range(len(imgs)):
     save_img(realSrc,str(index));
 
 ```
+## 成果
+ ![py_1](https://github.com/5201314999/jrNote/blob/master/docs/.vuepress/public/docs/py_1.png?raw=true)
 
-说明：
+ <br>
+
+ **恭喜你能看到这里，喜提图片一份**
+ ![py_2](https://github.com/5201314999/jrNote/blob/master/docs/.vuepress/public/docs/py_2.jpg?raw=true)
+
+
+## 说明
 
 [参考教程](https://www.cnblogs.com/Albert-Lee/p/6232745.html)  实际解析内容自己参考网页元素爬，教程里的元素已经过时, 没有安装Anaconda3-5.3.1-Windows-x86_64（ps: 还没下好，就做完了)
+
+
 
