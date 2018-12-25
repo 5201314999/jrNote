@@ -6,8 +6,9 @@
 -   vue 原理 （进行中）
 -   剑指offer的算法
 -   吉他
--   webpack （进行中）
+-   webpack （进行中） 基础已结束
 -   vue ssr 
 -   flnet 基本框架的封装 
 -   history 模式
 -   webapack 打包优化
+-   phython ，mongodb 技术栈 学习
