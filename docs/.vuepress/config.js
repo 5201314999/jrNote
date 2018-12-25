@@ -44,7 +44,8 @@ module.exports = {
         '7nginx',
         '2linux',
         '8toolProblem',
-        '10interview'
+        '10interview',
+        '11python'
       ],
       '/more/koa/': [
         '1'
