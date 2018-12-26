@@ -45,7 +45,8 @@ module.exports = {
         '2linux',
         '8toolProblem',
         '10interview',
-        '11python'
+        '11python',
+        '12python'
       ],
       '/more/koa/': [
         '1'
