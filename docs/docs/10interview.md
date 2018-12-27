@@ -2,11 +2,16 @@
 
 对技术保持热情，无论是否当程序员，一点都不矛盾。
 
+### 基础技术
+ * [前端安全系列之二：如何防止CSRF攻击？](https://juejin.im/post/5bc009996fb9a05d0a055192)
+
 ### 面试经验帖
 
  * [https://zhuanlan.zhihu.com/p/51607206](https://zhuanlan.zhihu.com/p/51607206)
  * [https://github.com/jawil/blog/issues/22](https://github.com/jawil/blog/issues/22)
  * [https://segmentfault.com/a/1190000010631325?_ea=2359607#articleHeader18](https://segmentfault.com/a/1190000010631325?_ea=2359607#articleHeader18)
+
+
 
 
 2 开发一个图片裁剪插件
