@@ -1,0 +1,30 @@
+# 数组的基本api
+
+## 写在前面
+
+写代码这么久以来一直发现自己总有些基础知识记不住，老了老了，记性不行就只能靠笔记了。本篇主要想记录自己经常性记不清的一些语法
+
+## 正文
+
+### 1 sort
+
+* 如果 compareFunction(a, b) 小于 0 ，那么 a 会被排列到 b 之前；
+* 如果 compareFunction(a, b) 等于 0 ， a 和 b 的相对位置不变。备注： ECMAScript 标准并不保证这一行为，而且也不是所有浏览器都会遵守（例如 Mozilla 在 2003 年之前的版本）；
+* 如果 compareFunction(a, b) 大于 0 ， b 会被排列到 a 之前。
+compareFunction(a, b) 必须总是对相同的输入返回相同的比较结果，否则排序的结果将是不确定的。
+
+```
+  this.regionRenderData.sort((aObj,bObj)=>{
+                    if(aObj[value+'Count']<bObj[value+'Count']){
+                        return 1;
+                    }
+                    else if(aObj[value+'Count']===bObj[value+'Count']){
+                        return 0;
+                    }
+                    else{
+                        return -1;
+                    }
+                });
+```
+
+

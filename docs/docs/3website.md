@@ -45,3 +45,7 @@ rollup 一种构建工具，配置比webpack 简单，vue 源码构建使用的�
 ## 11 mongoDB
 
 [mongoDB](https://www.cnblogs.com/clsn/p/8214194.html)
+
+## 12 canvas 网站
+
+[canvas](https://konvajs.github.io/docs/filters/Brighten.html)

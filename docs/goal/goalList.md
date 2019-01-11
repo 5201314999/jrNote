@@ -9,7 +9,7 @@
 -   webpack （进行中） 基础已结束
 -   vue ssr 
 -   flnet 基本框架的封装 
--   history 模式
+-   history 模式 
 -   webapack 打包优化
 -   phython ，mongodb 技术栈学习
 

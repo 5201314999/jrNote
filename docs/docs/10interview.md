@@ -10,9 +10,9 @@
  * [https://zhuanlan.zhihu.com/p/51607206](https://zhuanlan.zhihu.com/p/51607206)
  * [https://github.com/jawil/blog/issues/22](https://github.com/jawil/blog/issues/22)
  * [https://segmentfault.com/a/1190000010631325?_ea=2359607#articleHeader18](https://segmentfault.com/a/1190000010631325?_ea=2359607#articleHeader18)
-
-
-
+ * [https://juejin.im/post/5c356f68f265da61483bca61](https://juejin.im/post/5c356f68f265da61483bca61)
+ * [前端工程师手册](https://leohxj.gitbooks.io/front-end-database/content/javascript-basic/index.html)
+ * [合格前端系列第九弹-前端面试那些事](https://zhuanlan.zhihu.com/p/32911022)
 
 2 开发一个图片裁剪插件
 
@@ -34,6 +34,16 @@
 * 框架选型依据？
 * 所在团队工作流程的介绍、以及你在团队中的定位和技术排名
 
+
+### 2019年1月10日 ，近期开启第三次跳槽准备
+
+1 原因
+    当前公司不符合个人发展需要。
+
+2 怎么准备
+    （1）简历 （怎么包装）
+    （2）知识 (确定范围，了解到什么程度，再去面试)
+    （3）周期设定
 
 
 
