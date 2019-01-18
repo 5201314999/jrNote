@@ -25,6 +25,17 @@ compareFunction(a, b) 必须总是对相同的输入返回相同的比较结果�
                         return -1;
                     }
                 });
+
+     //只是比较简单值的话，简写方法
+     this.regionRenderData.sort((aObj,bObj)=>{
+                    return aObj[value+'Count']-bObj[value+'Count']
+                });
 ```
 
+### 2. 伪数组
 
+伪数组对象（拥有一个 length 属性和若干索引属性的任意对象）
+
+可迭代对象（可以获取对象中的元素,如 Map和 Set 等）
+
+Array.from() 可以将伪数组转成真数组。
