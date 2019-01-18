@@ -56,7 +56,8 @@ module.exports = {
         '1jsTime',
         '2es6js',
         '3debounce_throttle',
-        '4Array'
+        '4Array',
+        '5tree'
       ],
     }
   }

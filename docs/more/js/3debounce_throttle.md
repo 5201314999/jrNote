@@ -46,7 +46,7 @@ function debounce(fn,delay){
                 }
                 clearTimeout(timeout);
                 timeout = setTimeout(() => {
-                    fn.appl(context,args);
+                    fn.apply(context,args);
                 }, delay);
             }
         }
