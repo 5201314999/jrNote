@@ -1,9 +1,19 @@
-# 前端面试基础性问题
-
+# 前端面试
 对技术保持热情，无论是否当程序员，一点都不矛盾。
 
-### 基础技术
+### 基础资料
  * [前端安全系列之二：如何防止CSRF攻击？](https://juejin.im/post/5bc009996fb9a05d0a055192)
+ * [前端工程师手册](https://leohxj.gitbooks.io/front-end-database/content/javascript-basic/index.html)
+ * [合格前端系列第九弹-前端面试那些事](https://zhuanlan.zhihu.com/p/32911022)
+ * [饥人谷2018前端面试押题（讲义）](https://zhuanlan.zhihu.com/p/34536462)
+ * [Interview-Book](https://juejin.im/post/5c356f68f265da61483bca61)
+
+### 常用算法
+  排序，搜索
+  
+### 框架，工具原理
+
+### 架构，前端工程化思维
 
 ### 面试经验帖
 
@@ -11,8 +21,7 @@
  * [https://github.com/jawil/blog/issues/22](https://github.com/jawil/blog/issues/22)
  * [https://segmentfault.com/a/1190000010631325?_ea=2359607#articleHeader18](https://segmentfault.com/a/1190000010631325?_ea=2359607#articleHeader18)
  * [https://juejin.im/post/5c356f68f265da61483bca61](https://juejin.im/post/5c356f68f265da61483bca61)
- * [前端工程师手册](https://leohxj.gitbooks.io/front-end-database/content/javascript-basic/index.html)
- * [合格前端系列第九弹-前端面试那些事](https://zhuanlan.zhihu.com/p/32911022)
+
 
 2 开发一个图片裁剪插件
 
@@ -43,7 +52,17 @@
 2 怎么准备
     （1）简历 （怎么包装）
     （2）知识 (确定范围，了解到什么程度，再去面试)
-    （3）周期设定
+    （3）周期设定(3月份之前)
+
+
+
+
+# 知识查漏补缺
+
+1. 防抖，节流的定义 和 封装
+2. this
+
+
 
 
 
