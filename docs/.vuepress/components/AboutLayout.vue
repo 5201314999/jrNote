@@ -11,6 +11,8 @@
         <p><span>小名：</span>jr</p>
         <p><span>职业：</span>富士康前端小工</p>
         <p><a href="https://github.com/5201314999">Github</a></p>
+         <p><a href="https://5201314999.github.io/">hexo</a></p>
+        
       </div>
     </div>
   </div>

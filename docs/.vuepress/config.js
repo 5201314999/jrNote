@@ -53,11 +53,12 @@ module.exports = {
       ],
       '/more/js/': [
         '',
+        '5tree',
         '1jsTime',
         '2es6js',
         '3debounce_throttle',
         '4Array',
-        '5tree'
+        '6prototype'
       ],
     }
   }
