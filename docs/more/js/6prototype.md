@@ -58,6 +58,7 @@ function Parent() {
     
 ```
 
+疑惑点：new Parent 存在什么问题呢。
 
 ### 理解测试题
 
