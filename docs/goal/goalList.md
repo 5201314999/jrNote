@@ -15,7 +15,7 @@
 # 重点编排过的文章
 
 -   docs/docs/11python.md
-
+-   docs/docs/12python.md
 
 # 书籍
 
