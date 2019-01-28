@@ -30,6 +30,7 @@ module.exports = {
         '4amazing',
         '5wepy',
         '6business',
+        '10architecture',
         '11idea.md',
         '12basicCss.md',
         '13feeling.md'

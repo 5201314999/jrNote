@@ -1,9 +1,9 @@
 # 前端架构，开发协作问题
 
-# 前端模型
+## 前端模型
 ![Image text](https://github.com/5201314999/jrNote/blob/master/docs/.vuepress/public/main/10architecture/mode.png?raw=true)
 
-# 前端工程
+## 前端工程
 
 代码review 只有真正在生产流程中设立节点才有意义或者效果。
 
