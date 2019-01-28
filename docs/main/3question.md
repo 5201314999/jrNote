@@ -222,3 +222,8 @@ ES模块是官方标准，也是JavaScript语言明确的发展方向，而Commo
 如果后台用post 接口 ，返回之后取到对应的编码 然后同上，放进a 标签里。
 
 有一个问题。1 万条数据大概要下载多久。
+
+
+## 14. 直接在浏览器中运行 import， export
+
+<script type="module"> ,前提需要origin ,直接打开不可以

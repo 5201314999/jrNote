@@ -1,5 +1,10 @@
 # 前端架构，开发协作问题
 
+# 前端模型
+![Image text](https://github.com/5201314999/jrNote/blob/master/docs/.vuepress/public/main/10architecture/mode.png?raw=true)
+
+# 前端工程
+
 代码review 只有真正在生产流程中设立节点才有意义或者效果。
 
 git 可以保持版本一致，至今只会使用，没有深刻的理解。 
@@ -34,3 +39,4 @@ git 可以保持版本一致，至今只会使用，没有深刻的理解。
 关于redirect / 的用法。
 
 值得纪念的日子 2018/12/26日
+
