@@ -1,6 +1,6 @@
 # 独立思考
 
-## 1. simidtor 上传图片出不来
+## 1 simidtor 上传图片出不来
 
 可能原因：
 1. api 写错 (不肯能) 
@@ -12,7 +12,7 @@
 
 降低插件版本，解决了这个问题
 
-## 2. iview table 提示问题
+## 2 iview table 提示问题
 
 旧项目为了兼容自己写的title 没有tooltip. 每一行要用2行代码，已经优化过了的
 
@@ -61,19 +61,19 @@
 
 1 一开始以为没出来，原来跑去后面了，跑去后面之后一直以为是样式的问题。完全没注意到时空格
 
-最终发现是 <option>{{label}} 有折行，就会出现空格，属于iview 的bug. 
+最终发现是 `<option>{{label}}` 有折行，就会出现空格，属于iview 的bug. 
 
 ## 8 ts,mp4,mkv 视频 html5 播放
 
 mp4, mkv 原生html5支持,ts 很麻烦，借助了vue-video-play,目前可靠的是转码的方案。
 
 ```
-// this.playerOptions.sources.push({
-//     withCredentials: false,
-//     type: "application/x-mpegURL",
-//     // src: "https://logos-channel.scaleengine.net/logos-channel/live/biblescreen-ad-free/playlist.m3u8"
-//     src: params.row.url ? (params.row.url.indexOf('http') === -1 ? this.G.files.server.download + params.row.url : params.row.url) : '',
-// })
+  // this.playerOptions.sources.push({
+  //     withCredentials: false,
+  //     type: "application/x-mpegURL",
+  //     // src: "https://logos-channel.scaleengine.net/logos-channel/live/biblescreen-ad-free/playlist.m3u8"
+  //     src: params.row.url ? (params.row.url.indexOf('http') === -1 ? this.G.files.server.download + params.row.url : params.row.url) : '',
+  // })
 
 ```
 
@@ -84,20 +84,20 @@ mp4, mkv 原生html5支持,ts 很麻烦，借助了vue-video-play,目前可靠�
 
 ## 10 :last-child 理解
 
-el:last-child 的匹配规则是：第一步，查找 el 选择器匹配元素的所有同级元素（siblings）；第二步，在同级元素中查找最后一个元素；第三步，检验最后一个元素是否与选择器 el 匹配。
+ el:last-child 的匹配规则是：第一步，查找 el 选择器匹配元素的所有同级元素（siblings）；第二步，在同级元素中查找最后一个元素；第三步，检验最后一个元素是否与选择器 el 匹配。
 
 
 ## 11 echarts 遇到的坑
 
-1. 数据难以整合，很难复用配置
+   数据难以整合，很难复用配置
 
-目前用得最多得是折线图，饼图，柱状图，地图。
+    目前用得最多得是折线图，饼图，柱状图，地图。
 
-需要做的细节，图标的loading 过渡效果，暂无数据的提示。
+    需要做的细节，图标的loading 过渡效果，暂无数据的提示。
 
-暂无数据目前使用title 设置。
+    暂无数据目前使用title 设置。
 
-如果用图片的需要修改dom 结构，总感觉比较麻烦，暂时还没有处理。
+    如果用图片的需要修改dom 结构，总感觉比较麻烦，暂时还没有处理。
 
-做的过程比较慢，调试花了比较多时间。
+    做的过程比较慢，调试花了比较多时间。
 

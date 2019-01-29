@@ -30,7 +30,13 @@ Rollup 在用于打包 JavaScript 库时比 Webpack 更加有优势，因为其�
 
 在开发环境中，我们需要具有强大的、具有实时重新加载(live reloading)或热模块替换(hot module replacement)能力的 source map 和 localhost server。而在生产环境中，我们的目标则转向于关注更小的 bundle，更轻量的 source map，以及更优化的资源，以改善加载时间。由于要遵循逻辑分离，我们通常建议为每个环境编写彼此独立的 webpack 配置。
 
-
+### 其他概念
+1. 白屏时间 = firstPaint - performance.timing.navigationStart; 
+2. 首屏时间
+    * 首屏模块标签标记法
+    * 统计首屏内加载最慢的图片的时间
+    * 自定义首屏内容计算法
+    * [参考文档](http://www.bubuko.com/infodetail-2265464.html)
 ## 正文
 
 ### 一、webpack 网上有很多很好的学习资料
