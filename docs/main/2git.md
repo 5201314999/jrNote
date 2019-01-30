@@ -51,3 +51,18 @@
 ### 4 组织分支从旧分支拉出了新分支的时候
 
 - 直接检出远程新分支即可，本地的分支不用改变，这样本地新增的代码还在。
+
+
+### 5 直接把本地项目上传到github
+
+```
+    git init 
+    git add .
+    git commit -m 'message'
+    git remote add origin 'https://...'
+    git push -u origin master
+```
+
+### 6 出现 can not merge unrelated-histories 处理
+
+ git pull origin master --allow-unrelated-histories
