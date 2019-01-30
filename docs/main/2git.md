@@ -6,7 +6,7 @@
 
 ### 1 git 的基本命令
 
-    ![Image text](https://github.com/5201314999/jrNote/blob/master/docs/.vuepress/public/docs/gitCommand.png?raw=true)
+![Image text](https://github.com/5201314999/jrNote/blob/master/docs/.vuepress/public/docs/gitCommand.png?raw=true)
 
 ### 2 git 拉取一个远程仓库非默认分支
 ```
