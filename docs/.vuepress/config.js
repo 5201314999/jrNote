@@ -1,7 +1,8 @@
 module.exports = {
   title: 'jrNote',
   description: 'Just play around',
-
+  //发布使用
+  base:'/jrNoteWebsite/',
   themeConfig: {
     lastUpdated: '上次更新',
     sidebarDepth: 3,
@@ -13,7 +14,8 @@ module.exports = {
         items: [
           { text: 'koa', link: '/more/koa/' },
           { text: '目标清单', link: '/goal/goalList' },
-          { text: 'js知识', link: '/more/js/' }
+          { text: 'js知识', link: '/more/js/' },
+          { text: 'todoList', link: '/goal/todoList' }
         ]
       },
       { text: '关于', link: '/about/' },

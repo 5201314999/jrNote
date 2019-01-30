@@ -9,7 +9,7 @@
 -   vue ssr 
 -   flnet 基本框架的封装 
 -   history 模式 
--   webapack 打包优化
+-   webapack 打包优化（进行中）
 -   phython ，mongodb 技术栈学习(进行中)
 
 # 重点编排过的文章
