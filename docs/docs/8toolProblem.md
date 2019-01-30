@@ -16,3 +16,6 @@ git config --global http.postBuffer 524288000
 
 * npm i -D http-server
 * 执行命令 http-server dist
+
+## 3. vscode 插件库
+    ![Image text](https://github.com/5201314999/jrNote/blob/master/docs/.vuepress/public/docs/vscodePlugin.png?raw=true)
