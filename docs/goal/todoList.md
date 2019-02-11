@@ -7,10 +7,21 @@
 :::
 
 ## list
+::: tip
+备忘清单，不一定要做
+:::
 1. vue 的原理
 
-2. 普通日历组件
+2. 普通日历组件 
 
-2. webpack 的深层次知识 
+3. webpack 的深层次知识  (必须掌握)
 
-3. node.js 
+4. node.js （必须掌握）
+
+5. git page 发布jrNote 玩法  :100:
+
+6. 持续集成工具 jenkins 的部署  :100: （理解了原理，但是没有外网ip,实施中断）
+
+7. 巩固基本算法 （leetcode)
+
+ [参考教程](https://www.cnblogs.com/c9999/p/6399367.html)   

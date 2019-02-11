@@ -15,7 +15,8 @@ module.exports = {
           { text: 'koa', link: '/more/koa/' },
           { text: '目标清单', link: '/goal/goalList' },
           { text: 'js知识', link: '/more/js/' },
-          { text: 'todoList', link: '/goal/todoList' }
+          { text: 'todoList', link: '/goal/todoList' },
+          { text: '2019', link: '/goal/2019flag' }
         ]
       },
       { text: '关于', link: '/about/' },
