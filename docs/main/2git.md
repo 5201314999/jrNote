@@ -76,7 +76,7 @@ git规则
 
 解决办法
 
-:::tip
+:::tip  命令
 git rm -r --cached .
 
 git add .

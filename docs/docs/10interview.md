@@ -59,8 +59,45 @@
 
 # 知识查漏补缺
 
-1. 防抖，节流的定义 和 封装
+1. 防抖，节流的定义 和 封装 ::100::
 2. this
+
+
+
+# 计算机基础知识
+
+## 网络知识
+
+1. TCP/IP 协议
+
+TCP/IP 协议是一个协议族，主要是定义网络中2台计算机的通信规则。分为四层
+
+* 应用层 （ftp,http)
+* 传输层 (tcp,udp)
+* 网络层 (数据包，ip 协议)
+* 数据链路层 (硬件部分，网卡)
+
+2. 专业术语
+   ARP 协议 Address Resolution Protocol
+   MAC Media Access Control Address
+
+3. TCP 3次握手 ,TCP 4 次挥手
+
+发生时间点：
+3次握手：其中2个标志位 SYN 和 ACK；
+http 请求和响应。
+4次挥手：其中2个标志位 FIN 和 ACK；
+   
+4. URI 和 URL
+ 
+5. 网络安全
+
+  xss  https://www.cnblogs.com/unclekeith/p/7750681.html
+  crsf
+  
+
+
+
 
 
 
