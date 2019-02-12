@@ -101,3 +101,8 @@ mp4, mkv 原生html5支持,ts 很麻烦，借助了vue-video-play,目前可靠�
 
     做的过程比较慢，调试花了比较多时间。
 
+## 12 live 2D 编码
+[https://www.cnblogs.com/dxdblog/p/10255503.html](https://www.cnblogs.com/dxdblog/p/10255503.html)
+[https://www.cnblogs.com/zhangmingzhao/p/8604012.html](https://www.cnblogs.com/zhangmingzhao/p/8604012.html) 右下角动画妹子。
+
+

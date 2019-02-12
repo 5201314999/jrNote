@@ -24,4 +24,4 @@
 
 7. 巩固基本算法 （leetcode)
 
- [参考教程](https://www.cnblogs.com/c9999/p/6399367.html)   
+ [参考教程](https://www.cnblogs.com/c9999/p/6399367.html)
