@@ -83,3 +83,7 @@ git add .
 
 git commit -m 'update .gitignore'
 :::
+
+### 8. 查看提交历史
+
+git log --oneline

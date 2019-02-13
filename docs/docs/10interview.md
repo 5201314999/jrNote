@@ -94,6 +94,12 @@ http 请求和响应。
 
   xss  https://www.cnblogs.com/unclekeith/p/7750681.html
   crsf
+
+6. 请求报文和响应报文的结构
+
+首部
+空行
+实体
   
 
 
