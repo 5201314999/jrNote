@@ -49,3 +49,11 @@ rollup 一种构建工具，配置比webpack 简单，vue 源码构建使用的�
 ## 12 canvas 网站
 
 [canvas](https://konvajs.github.io/docs/filters/Brighten.html)
+
+## 13 live2d 看板娘
+
+[live2d](https://l2dwidget.js.org/docs/class/src/index.js~L2Dwidget.html)
+
+
+## 14 rellax 视差滚动插件
+[rellax](https://github.com/dixonandmoe/rellax)

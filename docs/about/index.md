@@ -2,4 +2,4 @@
 layout: AboutLayout
 ---
 
-<about-layout />>
+<about-layout />

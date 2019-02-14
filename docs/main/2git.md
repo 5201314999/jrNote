@@ -8,6 +8,8 @@
 
 ![Image text](https://github.com/5201314999/jrNote/blob/master/docs/.vuepress/public/docs/gitCommand.png?raw=true)
 
+![菜鸟教程](http://www.runoob.com/git/git-basic-operations.html)
+
 ### 2 git 拉取一个远程仓库非默认分支
 ```
     1. 找一个干净目录，假设是git_work
