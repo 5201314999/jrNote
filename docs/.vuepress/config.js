@@ -50,7 +50,8 @@ module.exports = {
         '8toolProblem',
         '10interview',
         '11python',
-        '12python'
+        '12python',
+        '13unitTest'
       ],
       '/more/koa/': [
         '1'
