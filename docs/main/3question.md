@@ -231,8 +231,10 @@ ES模块是官方标准，也是JavaScript语言明确的发展方向，而Commo
 
 ## 14 vue-router 的 redirect 
 ::: tip 需进一步确认。测试完毕正确
- 采用redirect，但设置的组件是可以起作用的，有空判断是否跳到子元素的时候，组件起作用，跳到非子路由时不起作用
+ 采用redirect，但设置的组件是可以起作用的，跳到子元素的时候，组件起作用，跳到非子路由时不起作用
  。
+:::
+
  ```
    path: 'appActiveDatas',
   meta: {
@@ -247,3 +249,13 @@ ES模块是官方标准，也是JavaScript语言明确的发展方向，而Commo
       component: GeneralSituation
     },
  ```
+
+ ## 15. 路由用了keep-alive
+
+::: warn 问题
+ 刷新子页面keep-alive 也重新进入mounted, 技能问题：对生命周期的理解不够深刻
+:::
+
+
+
+

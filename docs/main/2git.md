@@ -89,3 +89,9 @@ git commit -m 'update .gitignore'
 ### 8. 查看提交历史
 
 git log --oneline
+
+
+### 9. git 新建仓库 ，远处有readme, 本地有一个有部分代码的项目
+
+无法用5的方法直接解决。
+

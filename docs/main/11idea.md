@@ -105,3 +105,11 @@ mp4, mkv 原生html5支持,ts 很麻烦，借助了vue-video-play,目前可靠�
 [https://www.cnblogs.com/dxdblog/p/10255503.html](https://www.cnblogs.com/dxdblog/p/10255503.html)
 [https://www.cnblogs.com/zhangmingzhao/p/8604012.html](https://www.cnblogs.com/zhangmingzhao/p/8604012.html) 右下角动画妹子。
 
+
+## 13 实现一个合并行的单元格的思路
+
+使用最基本的思路，直接操作dom  进行添加。
+
+发现动态添加的dom ，组件css 作用不上，最终初始化数据好，之后使用vue 双向绑定
+
+
