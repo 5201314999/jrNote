@@ -226,13 +226,11 @@ ES模块是官方标准，也是JavaScript语言明确的发展方向，而Commo
 
 ## 14. 直接在浏览器中运行 import， export
 
-<script type="module"> ,前提需要origin ,直接打开不可以
+`<script type="module">` ,前提需要origin ,直接打开不可以
 
-
-## 14 vue-router 的 redirect 
-::: tip 需进一步确认。测试完毕正确
- 采用redirect，但设置的组件是可以起作用的，跳到子元素的时候，组件起作用，跳到非子路由时不起作用
- 。
+## 15. vue-router 的 redirect 疑惑
+:::tip 结论
+ 采用redirect，但设置的组件是可以起作用的，跳到子元素的时候，组件起作用，跳到非子路由时不起作用。
 :::
 
  ```
@@ -250,11 +248,17 @@ ES模块是官方标准，也是JavaScript语言明确的发展方向，而Commo
     },
  ```
 
- ## 15. 路由用了keep-alive
+ ## 16. 路由用了keep-alive，生命周期执行异常
 
-::: warn 问题
+::: warning 问题
  刷新子页面keep-alive 也重新进入mounted, 技能问题：对生命周期的理解不够深刻
 :::
+
+
+## 17. 在写一个动态校验页的时候不知所措
+
+表单校验问题其实复杂的写过一个，时间太久又不会写了，
+
 
 
 
