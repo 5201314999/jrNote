@@ -65,7 +65,7 @@ git 可以保持版本一致，至今只会使用，没有深刻的理解。
 新项目中使用情况难度。
 :::
 
-[参考资料](https://github.com/5201314999/javascript)
+[airbnb 代码规范参考资料中文版](https://github.com/5201314999/javascript)
 
 
 
