@@ -251,13 +251,50 @@ ES模块是官方标准，也是JavaScript语言明确的发展方向，而Commo
  ## 16. 路由用了keep-alive，生命周期执行异常
 
 ::: warning 问题
- 刷新子页面keep-alive 也重新进入mounted, 技能问题：对生命周期的理解不够深刻
+ 刷新子页面keep-alive 也重新进入mounted, 技能问题：对生命周期的理解不够深刻,最后以怪事结尾
 :::
 
 
 ## 17. 在写一个动态校验页的时候不知所措
 
-表单校验问题其实复杂的写过一个，时间太久又不会写了，
+表单校验问题其实复杂的写过一个，时间太久又不会写了,复习后基本表单没什么问题。复杂表单等遇到在处理
+
+
+## 18. this 遇到的一个问题
+
+::: warning 问题
+  暂时知道现象，原理还无法解释
+:::
+
+```
+  vue data
+        generalData: {
+          taskTotal: '',
+          pushCount: '',
+          finishCount: ''
+        },
+        dddd:this,
+        a:this.dateOption,
+        dateArrange: [startTime, endTime],
+        dateOption: {
+          disabledDate(date) {
+            return date && date.valueOf() > Date.now();
+          },
+           shortcuts: [
+            {
+                text: '今天',
+                value:this.test
+            }
+           ]
+        },
+
+           value:this.test   这种解决方法以后有用
+
+```
+
+
+## 19. tbody 不可设置border
+
 
 
 
