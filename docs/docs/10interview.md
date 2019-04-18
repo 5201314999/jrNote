@@ -71,8 +71,12 @@
 2. this
 3. hash模式和history模式
    （1）hash模式,url 上带着一个# 字号，可以通过window.location.hash 设置访问,通过hashchange事件监听，修改hash不会发送请求到服务器。
-   （2）history 通过pushState,popState,,replaceState 操作路由，刷新浏览器时会发送请求带有state 的请求，所以需要后台处理解析404 问题。
+   （2）history 通过pushState,popState,,replaceState 操作路由，刷新浏览器时会发送请求带有state 的请求，所以需要后台处理解析404 问题。用ng 配置一个linux 服务器跑起来之后,首页空白
+:::warning 说明
 
+用ng 配置一个linux 服务器跑起来一个vue history之后,首页空白
+
+:::
 
 # 计算机基础知识
 

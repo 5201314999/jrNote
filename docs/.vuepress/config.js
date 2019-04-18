@@ -51,7 +51,8 @@ module.exports = {
         '10interview',
         '11python',
         '12python',
-        '13unitTest'
+        '13unitTest',
+        '14gongwuyuan',
       ],
       '/more/koa/': [
         '1'
