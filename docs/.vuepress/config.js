@@ -52,6 +52,7 @@ module.exports = {
         '11python',
         '12python',
         '13unitTest',
+        '15mysql',
         '14gongwuyuan',
       ],
       '/more/koa/': [
