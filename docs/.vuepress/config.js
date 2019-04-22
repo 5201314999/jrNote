@@ -28,6 +28,7 @@ module.exports = {
         '7koaRouter',
         '8koaQuery',
         '9koaCookiesAndSession',
+        '14koaMysql',
         '2git',
         '3question',
         '4amazing',
