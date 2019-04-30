@@ -32,3 +32,11 @@
 
 
  [参考教程](https://www.cnblogs.com/c9999/p/6399367.html)
+
+2019 找工作之前：
+
+ 11. 一个react项目
+
+ 12. 一个移动端项目
+
+ 13. css modules :100:
