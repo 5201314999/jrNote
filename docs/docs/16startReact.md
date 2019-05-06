@@ -27,21 +27,22 @@ npx create-react-app demo --scripts-version=react-scripts-ts
     react中typescript 的验证包
 
 * npm install -D awesome-typescript-loader 
-    把ts 代码变异成js 代码
+    把ts 代码编译成js 代码
 
 * webpack css 处理 
     安装sass 或者 less  style-loader css-loader
 
 
-* css 模块化 技术引入 （解决css 作用域问题，不知道跟scoped 的区别在哪）
-
+* css 模块化 技术引入 （解决css 作用域问题，跟scoped 对比各有好坏）
 
     - 存在版本问题 
-        
         typings-css-modules-loader  css-loader 2.0 存在报错。
-    - keyframes 问题
+
+    - keyframes 问题，使用local() 解决
 
 *  typescript import logo from '../../logo.png'  图片会报错
+
+   所有的import 都要 
 
 * typescript 中配置路径别名
 
@@ -51,6 +52,13 @@ npx create-react-app demo --scripts-version=react-scripts-ts
 * 构建缓存
 
 主要是tsx 的转换和scss 的转换。
+
+
+** webpack 的打包配置
+
+主要是参考vue 脚手架的配置，也参考了 create-react-app 的配置,加了 define，mode， 分离css 文件, 遇到的问题，typescript 集成之后连process 都访问不了。
+
+
 
 
 
