@@ -7,7 +7,8 @@
  * [合格前端系列第九弹-前端面试那些事](https://zhuanlan.zhihu.com/p/32911022)
  * [饥人谷2018前端面试押题（讲义）](https://zhuanlan.zhihu.com/p/34536462)
  * [Interview-Book](https://juejin.im/post/5c356f68f265da61483bca61)
-
+ * [19年面试题总结](https://mp.weixin.qq.com/s?__biz=Mzg5MDAyNjIxOQ==&mid=2247484159&idx=1&sn=a2485936b457197e38ad0202f86ebe6e&chksm=cfe3a37bf8942a6dc738bf38f7eea3386255bc9626636754725b671aff0b1b41ce21054351e3&mpshare=1&scene=23&srcid=#rd
+ )
 ### 常用算法
   排序，搜索
   
