@@ -54,12 +54,17 @@ npx create-react-app demo --scripts-version=react-scripts-ts
 主要是tsx 的转换和scss 的转换。
 
 
-** webpack 的打包配置
+## webpack 的打包配置
 
 主要是参考vue 脚手架的配置，也参考了 create-react-app 的配置,加了 define，mode， 分离css 文件, 遇到的问题，typescript 集成之后连process 都访问不了。
 
 
 
+## 打包文件记录
+
+1. 一开始的情况
+
+![Image text](https://github.com/5201314999/jrNote/blob/master/docs/.vuepress/public/docs/react_1.png?raw=true)
 
 
 
