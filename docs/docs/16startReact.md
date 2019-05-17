@@ -64,7 +64,7 @@ npx create-react-app demo --scripts-version=react-scripts-ts
 
 1. 一开始的情况
 
-![Image text](https://github.com/5201314999/jrNote/blob/master/docs/.vuepress/public/docs/react_1.png?raw=true)
+![Image text](https://github.com/5201314999/jrNoteWebsite/blob/master/docs/react_1.png)
 
 
 
