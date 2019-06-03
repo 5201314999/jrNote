@@ -113,3 +113,5 @@ mp4, mkv 原生html5支持,ts 很麻烦，借助了vue-video-play,目前可靠�
 发现动态添加的dom ，组件css 作用不上，最终初始化数据好，之后使用vue 双向绑定
 
 
+
+

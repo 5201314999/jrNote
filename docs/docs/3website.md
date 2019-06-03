@@ -56,4 +56,8 @@ rollup 一种构建工具，配置比webpack 简单，vue 源码构建使用的�
 
 
 ## 14 rellax 视差滚动插件
-[rellax](https://github.com/dixonandmoe/rellax)
+[rellax 视差滚动插件](https://github.com/dixonandmoe/rellax)
+
+## 15 react-native 调试
+
+[react-native](https://www.jianshu.com/p/30e1d7d99a9e)

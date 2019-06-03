@@ -296,6 +296,14 @@ ES模块是官方标准，也是JavaScript语言明确的发展方向，而Commo
 ## 19. tbody 不可设置border
 
 
+## 20 width 和 max-width ，min-width 对于自适应很重要
+
+写样式 要考虑的 地方， 字体大小，边框，溢出等问题，粗细 细节问题很重要。
+
+
+
+
+
 
 
 

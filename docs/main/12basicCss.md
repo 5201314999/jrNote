@@ -80,4 +80,11 @@ body{
 transform  / transilation / amination
 
 
+## 文字2端对齐
+
+text-align-last: justify;
+
+## 设flex：1 flex:2 放大幅度不一样
+
+
 
