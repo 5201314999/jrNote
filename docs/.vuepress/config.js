@@ -12,7 +12,6 @@ module.exports = {
       {
         text: '更多',
         items: [
-          { text: 'koa', link: '/more/koa/' },
           { text: '目标清单', link: '/goal/goalList' },
           { text: 'js知识', link: '/more/js/' },
           { text: 'todoList', link: '/goal/todoList' },
@@ -58,9 +57,6 @@ module.exports = {
         '17koa2',
         '14gongwuyuan',
 
-      ],
-      '/more/koa/': [
-        '1'
       ],
       '/more/js/': [
         '',
