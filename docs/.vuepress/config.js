@@ -55,7 +55,9 @@ module.exports = {
         '13unitTest',
         '15mysql',
         '16startReact',
+        '17koa2',
         '14gongwuyuan',
+
       ],
       '/more/koa/': [
         '1'
