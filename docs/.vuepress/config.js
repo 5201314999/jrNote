@@ -55,8 +55,8 @@ module.exports = {
         '15mysql',
         '16startReact',
         '17koa2',
+        '18privateNpmLib',
         '14gongwuyuan',
-
       ],
       '/more/js/': [
         '',

@@ -68,6 +68,11 @@ npx create-react-app demo --scripts-version=react-scripts-ts
 
 
 
+## react-native 笔记
+- init
+react-native init `name` --template typescript
+
+
 
 
 
