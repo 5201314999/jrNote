@@ -301,6 +301,14 @@ ES模块是官方标准，也是JavaScript语言明确的发展方向，而Commo
 写样式 要考虑的 地方， 字体大小，边框，溢出等问题，粗细 细节问题很重要。
 
 
+## 21 webview 调试js 问题
+
+ chrome://inspect/#devices + 模拟器 404  找不到页面.
+
+ weinre 失败,
+
+ chrome +真机， 真机没chrome ,尴尬。
+
 
 
 

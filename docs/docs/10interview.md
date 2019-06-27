@@ -61,8 +61,9 @@
 # 知识查漏补缺（纲要）
 
 1. 防抖，节流的定义 和 封装 ::100::
-2. this
+2. this 
 3. hash模式和history模式
+4. js 事件机制，(宏任务/微任务）
 
 
 
@@ -70,6 +71,7 @@
 
 1. 防抖，节流的定义 和 封装 ::100::
 2. this
+  dom 事件 this 执行dom 自身
 3. hash模式和history模式
    （1）hash模式,url 上带着一个# 字号，可以通过window.location.hash 设置访问,通过hashchange事件监听，修改hash不会发送请求到服务器。
    （2）history 通过pushState,popState,,replaceState 操作路由，刷新浏览器时会发送请求带有state 的请求，所以需要后台处理解析404 问题。用ng 配置一个linux 服务器跑起来之后,首页空白
@@ -78,6 +80,24 @@
 用ng 配置一个linux 服务器跑起来一个vue history之后,首页空白
 
 :::
+4. setTimeout() 是宏任务，promise 是微任务，先执行js 主线程，在执行异步队列，
+
+```
+ setTimeout(()=>{
+   console.log(0);
+ },0);
+  new Promise(resolve,reject)=>{
+    console.log(1);
+    resolve();
+    console.log(2);
+  }).then(
+    ()=>{
+      console.log(3);
+  })
+  console.log(4);
+
+  12430
+```
 
 # 计算机基础知识
 
