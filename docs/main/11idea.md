@@ -114,4 +114,22 @@ mp4, mkv 原生html5支持,ts 很麻烦，借助了vue-video-play,目前可靠�
 
 
 
+## 14 开发多点触控项目，一个人架构
+
+1 功能
+
+ 多点触控  websocket 实时共享, 线，面，铅笔，**橡皮擦**,**缩放**，移动 
+
+2 canvas 和 svg  canvas（sb 领导一意孤行）
+
+3 技术栈考虑选择 vue 项目,canvas 库（ konva 与 fabric ） 从代码风格和start 来看选择 konva.
+
+
+4 计划表
+
+ * 项目
+ * 初始化线,面
+ * 缩放()
+
+
 

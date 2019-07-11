@@ -56,7 +56,9 @@ module.exports = {
         '16startReact',
         '17koa2',
         '18privateNpmLib',
+        '19mobileAdaptation',
         '14gongwuyuan',
+        '20pic'
       ],
       '/more/js/': [
         '',

@@ -95,3 +95,5 @@ git log --oneline
 
 无法用5的方法直接解决。
 
+git pull fjr master --allow-unrelated-histories
+
