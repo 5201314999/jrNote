@@ -62,8 +62,11 @@
  参考：[developer-roadmap](https://github.com/kamranahmedse/developer-roadmap)
 
 17. react-native 项目, node.js, 移动端适配 (进行中)
-18. eslint 
-   很好用，但一如其他，和不同框架配合也有不同处理方式。typescript 出来后，eslint 又得跟着升级，很难评价好坏。
 
+18. eslint 
+   很好用，但一如其他，和不同框架配合也有不同处理方式。typescript 出来后，eslint 又得跟着升级修改，很难这种评价好坏。
+
+19. postcss
+   一款转化css 的js 工具库， 作用： 自动加前缀，css 模块化 ，polyfill 未来属性，webpack 插件使用 postcss loader
 
 

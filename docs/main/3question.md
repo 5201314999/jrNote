@@ -303,12 +303,15 @@ ES模块是官方标准，也是JavaScript语言明确的发展方向，而Commo
 
 ## 21 webview 调试js 问题
 
- chrome://inspect/#devices + 模拟器 404  找不到页面.
+ chrome://inspect/#devices + 模拟器 404  找不到页面. 
 
  weinre 失败,
 
- chrome +真机， 真机没chrome ,尴尬。
+ chrome +真机， 真机没chrome ,尴尬。  
 
+ 解决方案：没有翻墙的原因
+
+## 22 webpack 路径多用绝对路径/相对路径  ，当前目录不能用 style/  ，而是用 ./  ,不然找不到
 
 
 
