@@ -70,3 +70,6 @@ rollup 一种构建工具，配置比webpack 简单，vue 源码构建使用的�
 
 ## 17 组件库项目搭建说明参考
 [https://juejin.im/post/5bbab9de5188255c8c0cb0e3](https://juejin.im/post/5bbab9de5188255c8c0cb0e3)
+
+## 18 babel 资料
+[https://bbs.huaweicloud.com/blogs/000b11aba6ac11e89fc57ca23e93a89f](https://bbs.huaweicloud.com/blogs/000b11aba6ac11e89fc57ca23e93a89f)

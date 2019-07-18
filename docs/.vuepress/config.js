@@ -36,7 +36,8 @@ module.exports = {
         '10architecture',
         '11idea.md',
         '12basicCss.md',
-        '13feeling.md'
+        '13feeling.md',
+        '16graphicDevelop',
       ],
       '/docs/': [
         '',
