@@ -85,3 +85,7 @@ Rollup 在用于打包 JavaScript 库时比 Webpack 更加有优势，因为其�
 看了一遍教程，可以看得懂配置。但是还需要实践。
 
 
+### 其他工具
+
+1. PostCSS
+PostCSS是一个 CSS 的预处理工具，可以帮助我们：给 CSS3 的属性添加前缀，样式格式校验（stylelint），提前使用 css 的新特性比如：表格布局，更重要的是可以实现 CSS 的模块化，防止 CSS 样式冲突。

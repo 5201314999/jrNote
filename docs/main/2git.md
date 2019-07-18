@@ -97,3 +97,10 @@ git log --oneline
 
 git pull fjr master --allow-unrelated-histories
 
+
+### 10. git 创建秘钥，实现github 免密登录提交代码
+
+* ssh-keygen -t rsa -C "1446418561@qq.com"
+* cd ~/.ssh
+* cat id_rsa.pub
+* 添加到github 上ssh 

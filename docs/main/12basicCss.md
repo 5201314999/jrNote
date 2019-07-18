@@ -87,4 +87,10 @@ text-align-last: justify;
 ## 设flex：1 flex:2 放大幅度不一样
 
 
+## 设置flex 基本都是容器固定，不是内容物来撑开。
 
+## 设置背景图片
+
+background 复合写法
+
+background : background-color background-image background-repeat background-attachment background-position;
