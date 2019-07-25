@@ -94,3 +94,11 @@ text-align-last: justify;
 background 复合写法
 
 background : background-color background-image background-repeat background-attachment background-position;
+
+## not 选择器
+
+:not(:first-child)
+
+## ul,div 存在空隙
+
+ul font-size:0;
