@@ -42,6 +42,7 @@ module.exports = {
       '/docs/': [
         '',
         '3website',
+        '21pluginList',
         '1mdOperate',
         '4reg',
         '5flow',
