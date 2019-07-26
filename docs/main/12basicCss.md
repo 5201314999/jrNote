@@ -102,3 +102,15 @@ background : background-color background-image background-repeat background-atta
 ## ul,div 存在空隙
 
 ul font-size:0;
+
+## scale 不影响大小，但是 border 会影响布局，可以换成用阴影
+
+
+## 媒体查询
+
+```
+  //窄屏幕媒体查询
+  @media screen and (max-aspect-ratio:1/1) {
+      
+  }
+```
