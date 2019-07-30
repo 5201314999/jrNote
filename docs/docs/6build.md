@@ -49,9 +49,9 @@ Rollup 在用于打包 JavaScript 库时比 Webpack 更加有优势，因为其�
 
 3. 不同环境使用不同的配置文件，使用 merge 来合并 common.js 通用部分和特殊部分。
 
-4. webpack4 开始支持 tree shaking 这个功能，该功能有rollup 提出，用于删除未被使用代码。webpack4 必须要多安装 cli ,才可以开始
+4. tree shaking ，该功能有rollup 提出，用于删除未被使用代码。webpack4 必须要多安装 cli ,才可以开始
 
-很方便调试
+很方便调试, `webpack提出了tree-shaking进行无用模块的消除，主要依赖ES Module的静态结构。在webapck4之前，主要通过在.babelrc文件中设置"modules": false来开启无用的模块检测`
 
 ### 二、使用懒加载 import/vuex
 
@@ -80,7 +80,7 @@ Rollup 在用于打包 JavaScript 库时比 Webpack 更加有优势，因为其�
 ### 参考资料
 
 [史上最走心webpack4.0中级教程——配置之外你应该知道的](https://www.cnblogs.com/dashnowords/archive/2018/09/04/9572755.html)
-
+[webpack4 总览说明](https://www.cnblogs.com/wmhuang/p/8967639.html)
 
 看了一遍教程，可以看得懂配置。但是还需要实践。
 

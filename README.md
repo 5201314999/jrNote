@@ -37,7 +37,7 @@
 
     cd -
 ```
-* windows:
+* windows: ，但是我已经写成了脚本，真正执行参考下一段落
 
 打包命令不集成到批命令，会导致cd docs/.vuepress/dist 执行失败，单独提前运行打包命令
 ```
@@ -58,4 +58,10 @@ git commit -m 'deploy'
 git push -f https://github.com/5201314999/jrNoteWebsite.git master
 
 cd .
+```
+###  发布我的git page 命令
+
+```
+1. yarn docs:build
+2. deploy.bat
 ```
