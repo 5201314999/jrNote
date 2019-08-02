@@ -1,4 +1,4 @@
-# 高频css 记录
+# mycss note
 
 ## 断句换行
 
