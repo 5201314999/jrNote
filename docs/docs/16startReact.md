@@ -69,8 +69,31 @@ npx create-react-app demo --scripts-version=react-scripts-ts
 
 
 ## react-native 笔记
+
+### 前言
+
+需具备一定react 基础，参考官方文档，或者查找培训资料都行。`花在配置android开发环境会比较多，也容易出问题，最好请教android 开发朋友`。
+
 - init
 react-native init `name` --template typescript
+
+1. 使用第三方模拟器
+
+可以使用genymotion ,夜神带了大量游戏，不够简洁，先免费试用，破解看情况。
+
+专有名词：
+
+* adb 调试桥接包，软件应用需要这个工具才能连接模拟器。
+
+遇到问题：
+
+app连不上模拟器。（很多可能）
+
+`参考教程`:
+* [genymotion 和 rect-native](https://blog.csdn.net/u012369271/article/details/74002466)
+* [android工具包](https://developer.android.google.cn/studio/releases/sdk-tools?hl=en)
+* rect-native 也可以使用android studio ，查看官方教程
+ 
 
 
 

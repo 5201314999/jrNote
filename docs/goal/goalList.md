@@ -11,7 +11,7 @@
 -   history 模式 
 -   webapack 打包优化（进行中，推进较慢）
 -   phython ，mongodb 技术栈学习(皮毛)
--   canvas (做了哥画板)
+-   canvas (做了个画板)
 
 # 重点编排过的文章
 

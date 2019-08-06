@@ -34,7 +34,7 @@
 
 - 组合方式（借助调用父类函数和原型链） 
     
-    - 1. 解决原型上有引用类型的问题
+    - 1. 解决Parent 数组上的有问题，因为`注意1`,有引用类型的问题
     - 2. 可以传参调用父类参数
     - 问题：会调用2次父类
 ```
@@ -44,7 +44,7 @@
     }
     
     function Child() {
-      Parent.apply(this);
+      Parent.apply(this);  //解决books数组修改会影响所有生成对象的问题，也可解决Object.create 访问不到parent 函数的books 问题，同时可以实现传参给父函数,相当于super()
     }
     // 1
     Child.prototype=new Parent();
@@ -59,7 +59,8 @@
     
 ```
 
-疑惑点：new Parent 存在什么问题呢。
+疑惑点：new Parent 存在什么问题呢。 
+答案：books数组修改会影响所有生成对象
 
 ### 理解测试题
 

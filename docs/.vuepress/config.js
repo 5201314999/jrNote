@@ -44,7 +44,7 @@ module.exports = {
         '3website',
         '21pluginList',
         '1mdOperate',
-        '4reg',
+        '4reg',        
         '5flow',
         '6build',
         '7nginx',
@@ -60,7 +60,8 @@ module.exports = {
         '18privateNpmLib',
         '19mobileAdaptation',
         '14gongwuyuan',
-        '20pic'
+        '20pic',
+        '22frontWorkTool'
       ],
       '/more/js/': [
         '',
