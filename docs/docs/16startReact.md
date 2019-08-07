@@ -70,9 +70,16 @@ npx create-react-app demo --scripts-version=react-scripts-ts
 
 ## react-native 笔记
 
-### 前言
+需具备一定react 基础，参考官方文档，或者查找培训资料都行。
 
-需具备一定react 基础，参考官方文档，或者查找培训资料都行。`花在配置android开发环境会比较多，也容易出问题，最好请教android 开发朋友`。
+`花在配置android开发环境会比较多，也容易出问题，不懂可以请教android 开发朋友`。
+
+单独转下列完整 sdk比较麻烦，安装包难找 ，建议装个as ,通过新增虚拟机来装sdk 包。（一开始没这样做，只装了Android SDK Platform 29，缺包一直项目跑不起来）
+```
+Android SDK Build-Tools 29.0.1
+Android SDK Platform 29
+Android SDK Tools
+```
 
 - init
 react-native init `name` --template typescript
@@ -84,10 +91,6 @@ react-native init `name` --template typescript
 专有名词：
 
 * adb 调试桥接包，软件应用需要这个工具才能连接模拟器。
-
-遇到问题：
-
-app连不上模拟器。（很多可能）
 
 `参考教程`:
 * [genymotion 和 rect-native](https://blog.csdn.net/u012369271/article/details/74002466)
