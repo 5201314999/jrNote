@@ -13,6 +13,7 @@
 * 预定义字符集 \d [0-9] \D [^0-9] \w[A-Za-z0-9_] \W[^A-Za-z0-9_] \s (空白字符) \S(非空白字符) . 除换行字符之外的所有字符
 * 反向引用,需要和分组() 一起配合使用 \1 引用第一个括号 \2引用第2个括号
 * `圆括号`具有创建捕获的功能，match 时返回捕获数组 /g 返回所有捕获的， 否则只返回一个位于[1]
+* 验证reg.test()   查找 match()     替换 replace()
 
 ### 实战演练
 1. 获取get 请求参数
@@ -61,6 +62,13 @@ let val="translateY(15px)"
 val.match(/translateY\(([^\)]+)\)/)
 match[0] match[1]
 ```
+
+8.驼峰转 -
+
+``` 
+replace(/([A-Z])/g,'-$1').toLowerCase();
+```
+
 ### 参考资料
 * [MDN 正则表达式语法参考教程](https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Guide/Regular_Expressions)
 

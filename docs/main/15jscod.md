@@ -5,12 +5,20 @@
 const timer=console.timeEnd();
 consle.timer(timer);
 ```
-## dom 有意思操作
-
+## dom 有意思知识点
+创建和插入新元素，删除现有元素以及修改其属性。
 ```
 var newNode=event.target.cloneNode(true);
+
 dom.className='a';
+
 dom.classList.add()/dom.classList.remove()
+
+dom.getAttribute()  dom.setAttribute()
+
+DOMContentLoaded/onload/
+
+宽高：offsetWidth offsetHeight 必须在dom 有才行，height 、width 不直接设置无法正确获取
 
 ```
 
@@ -45,5 +53,7 @@ dom.classList.add()/dom.classList.remove()
     })
 
 ```
+
+
 
 

@@ -70,7 +70,8 @@ module.exports = {
         '2es6js',
         '3debounce_throttle',
         '4Array',
-        '6prototype'
+        '6prototype',
+        '7dom'
       ],
     }
   }
