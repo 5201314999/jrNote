@@ -16,6 +16,8 @@ dom.classList.add()/dom.classList.remove()
 
 dom.getAttribute()  dom.setAttribute()
 
+dom.style.borderWidth/['border-width']  包含px  计算后的属性用 getComputedStyle().getPropertyValue()
+
 DOMContentLoaded/onload/
 
 宽高：offsetWidth offsetHeight 必须在dom 有才行，height 、width 不直接设置无法正确获取
