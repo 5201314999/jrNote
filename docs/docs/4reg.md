@@ -68,8 +68,12 @@ match[0] match[1]
 ``` 
 replace(/([A-Z])/g,'-$1').toLowerCase();
 ```
+9.请写一个正则，去除掉html标签字符串里的所有属性，并保留src和href两种属性(难题)
+```
 
+```
 ### 参考资料
+
 * [MDN 正则表达式语法参考教程](https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Guide/Regular_Expressions)
 
 * javascript 忍者秘籍 正则表达式一章

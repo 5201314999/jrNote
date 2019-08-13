@@ -4,6 +4,7 @@
 
 **web 请求都类似，非常容易理解,不详细说明**
 
+`注意`:  ctx.request 和 node request 不等同
 ## get 请求
 
 ```

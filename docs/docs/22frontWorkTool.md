@@ -14,3 +14,7 @@
 4. notepad 笔记本
 
 5. [react-native 调试工具,可查看官网](https://github.com/jhen0409/react-native-debugger/releases)
+
+6. [nvm](https://github.com/coreybutler/nvm-windows/releases) 
+
+> 安装之后 nvm list   nvm install  nvm use
