@@ -99,6 +99,7 @@ git pull fjr master --allow-unrelated-histories
 
 
 ### 10. git 创建秘钥，实现github 免密登录提交代码
+[参考](https://blog.csdn.net/zfs1994/article/details/52682129)
 
 * ssh-keygen -t rsa -C "1446418561@qq.com"
 * cd ~/.ssh
