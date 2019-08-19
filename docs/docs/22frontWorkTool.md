@@ -18,3 +18,5 @@
 6. [nvm](https://github.com/coreybutler/nvm-windows/releases) 
 
 > 安装之后 nvm list   nvm install  nvm use
+
+7. [百度网盘不限速](https://www.lanzous.com/b628274/)
