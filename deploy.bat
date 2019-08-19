@@ -19,6 +19,5 @@ git commit -m 'deploy'
 ::git push -f git@github.com:<USERNAME>/<USERNAME>.github.io.git master 
 
 ::如果发布到 https://<USERNAME>.github.io/<REPO>
-git push -f https://github.com/5201314999/jrNoteWebsite.git master
 
-cd .
+git push -f git@github.com:5201314999/jrNoteWebsite.git master
