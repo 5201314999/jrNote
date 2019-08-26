@@ -114,3 +114,18 @@ background : background-color background-image background-repeat background-atta
       
   }
 ```
+
+## 修改样式
+
+style={
+  left:
+  top:
+}
+无效
+
+setAttribute:
+
+style.left 可以
+
+
+
