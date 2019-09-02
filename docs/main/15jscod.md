@@ -57,6 +57,13 @@ dom.outerHTML()
 
 ```
 
+## 移动端touch事件监听
+
+touchstart,touchmove,touchend ,有个注意事项，从一个box 滑入另一个box 是，target 是不会改变的，始终是touchstart 元素，解决方案是通过elmentFromPoint
 
 
+## 如何 访问dom 中的data
 
+```
+TMLElement.dataset["arr"] ) 
+```

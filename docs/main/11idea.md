@@ -153,3 +153,9 @@ vue 特殊变量，用于传递事件，`注意: 原生dom 才有效，组件加
 
 一直只考虑路由，没想过这个方案
 
+
+### vue @事件 鼠标到子元素上了导致触发父元素mouseout 
+
+1. 使用native 不会
+2. 使用mouseenter, 和mouseleave 不会
+
