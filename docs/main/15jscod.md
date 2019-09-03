@@ -67,3 +67,21 @@ touchstart,touchmove,touchend ,有个注意事项，从一个box 滑入另一个
 ```
 TMLElement.dataset["arr"] ) 
 ```
+
+## new 模拟实现
+
+```
+  Con = [].shift.call(arguments); arguments 删除第一个同时赋给Con
+
+  var args = Array.prototype.slice.apply(arguments);　
+
+    function create(){
+        const  obj=new Object();
+        const Constructor=[].shift.call(arguments);
+        obj.__proto__=Constructor
+        const ret=Constructor.apply(obj,arguments);
+        return ret instanceof Object?ret:obj;
+    }
+
+```
+
