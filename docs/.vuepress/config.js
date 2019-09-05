@@ -38,6 +38,7 @@ module.exports = {
         '12basicCss.md',
         '13feeling.md',
         '16graphicDevelop',
+        '17面试题',
       ],
       '/docs/': [
         '',

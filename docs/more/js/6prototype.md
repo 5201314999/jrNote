@@ -66,3 +66,7 @@
 
 1. 原型链的顶端？ Object.prototype 
 2. Array.prototye 和 Array.__proto__ 有什么区别？
+3. 
+    var a={name:11};
+    Object.setPrototypeOf(a,null)
+    console.log(a.toString())
