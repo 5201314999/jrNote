@@ -159,3 +159,4 @@ vue 特殊变量，用于传递事件，`注意: 原生dom 才有效，组件加
 1. 使用native 不会
 2. 使用mouseenter, 和mouseleave 不会
 
+### 移动端offsetX 是没有的
