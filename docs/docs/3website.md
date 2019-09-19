@@ -85,3 +85,8 @@ rollup 一种构建工具，配置比webpack 简单，vue 源码构建使用的�
 
 ## 21 echarts 地图JSON数据
 [https://gallery.echartsjs.com/editor.html?c=xr1IEt3r4Q](https://gallery.echartsjs.com/editor.html?c=xr1IEt3r4Q)
+
+
+## 22 强缓存与协商缓存
+
+[https://www.jianshu.com/p/9c95db596df5](https://www.jianshu.com/p/9c95db596df5)
