@@ -160,3 +160,16 @@ vue 特殊变量，用于传递事件，`注意: 原生dom 才有效，组件加
 2. 使用mouseenter, 和mouseleave 不会
 
 ### 移动端offsetX 是没有的
+
+
+
+### 写法疑问(特地这样写是否为了修复某种问题吗？)
+
+```
+
+const hasOwnProperty = Object.prototype.hasOwnProperty
+export function hasOwn (obj: Object | Array<*>, key: string): boolean {
+  return hasOwnProperty.call(obj, key)
+}
+
+```
