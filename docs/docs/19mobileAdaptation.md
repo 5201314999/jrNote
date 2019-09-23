@@ -67,7 +67,6 @@ document.documentElement.style.fontSize=document.documentElement.clientWidth/7.5
 3. 加强版rem 方案（flexible 方案）
 >[flexible 方案](https://github.com/amfe/article/issues/17)
 
-
 ```
 vue 配置操作流程：
 
