@@ -9,7 +9,7 @@
 * dpr  设备像素比 devicePixelRatio 
 * 布局视口：移动端一般大于实际的浏览器宽度，例如980px `注意`：缩放不影响大小,只是影响视觉视口 window.documentElement.clientWidth
 * 视觉视口：对于视觉视口来说，这个东西是呈现给用户的，它是用户看到网页区域内CSS像素的数量。 window.innerWidth
-* 理想视口：缩放系数 = 理想视口宽度 / 视觉视口宽度
+* 理想视口：缩放系数 = 理想视口宽度(window.screen.width) / 视觉视口宽度
 
 
 ## 不懂问题（以后再说）
@@ -58,10 +58,28 @@
     ```
 
 ## 业界方案
+1. viewport 方案（理论，不可用于生产，直接缩放让视觉视口为布局视口）
+2. 简单 rem 方案
 
-1. rem 方案
-
-设计稿750px , 假设html font-size 为100px， 设置布局视口为理想视口， 把所有单位转成rem 
+>设计稿750px , 假设html font-size 为100px， 设置布局视口为理想视口， 把所有单位转成rem 
 document.documentElement.style.fontSize=document.documentElement.clientWidth/7.5
 
-2. 加强版rem 方案
+3. 加强版rem 方案（flexible 方案）
+>[flexible 方案](https://github.com/amfe/article/issues/17)
+
+
+```
+vue 配置操作流程：
+
+ yarn add lib-flexible
+ yarn add -D  px2rem-loader
+
+  {
+    loader: 'px2rem-loader',
+    options: {
+      remUnit: 75 // 设计稿的宽度/10
+    }
+  },
+```
+
+4. vw,vh 未来标准，兼容性存在问题
