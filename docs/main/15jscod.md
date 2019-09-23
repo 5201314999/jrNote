@@ -89,4 +89,44 @@ TMLElement.dataset["arr"] )
 
 ```
 ```
+## Object.defineProperty
+
+Object.defineProperty writable 和 set 不能一起用,可以实现只读属性，configurable，value
+
+```
+   Object.defineProperty(obj,'name',{
+          // writable:true,
+          get:()=>{
+            return 'jr'
+          }
+        })
+        console.log(obj.name)
+        obj.name=122
+        console.log(obj.name)
+```
+
+## obj 的工具函数
+
+```
+//严格检查
+ const _toString=Object.prototype.toString
+isPureObject(obj){
+    return _toString.call(obj)==='[Object Object]'
+}
+
+isTrue(obj){
+    return obj===true
+}
+
+isObject(obj){
+    return obj!==null&&typeof obj==='Object'
+}
+
+isRegExp(v){
+    return _toString.call(v)==='[Object RegExp]'
+}
+
+```
+
+
 
