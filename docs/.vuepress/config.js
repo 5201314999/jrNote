@@ -37,6 +37,7 @@ module.exports = {
         '11idea.md',
         '12basicCss.md',
         '13feeling.md',
+        '15jscod.md',
         '16graphicDevelop',
         '17面试题',
       ],
