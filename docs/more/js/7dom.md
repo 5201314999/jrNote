@@ -14,3 +14,4 @@
 | MouseEvent | layerX, layerY, offsetX, offsetY |
 | Window | getComputedStyle, scrollBy, scrollTo, scroll, scrollY |
 |Frame, Document, Image | height, width |
+
