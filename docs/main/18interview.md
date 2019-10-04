@@ -1,4 +1,4 @@
-# 前端面试
+# 面试系列2
 对技术保持热情，无论是否当程序员，一点都不矛盾。
 
 ### 基础资料
@@ -92,7 +92,7 @@
 用ng 配置一个linux 服务器跑起来一个vue history之后,首页空白
 
 :::
-4. setTimeout() 是宏任务，promise 是微任务，先执行js 主线程，在执行异步队列，
+4. setTimeout() 是宏任务，promise 是微任务，先执行js 主线线程执行栈，在执行异步队列
 
 ```
  setTimeout(()=>{
@@ -110,7 +110,7 @@
 
   12430
 ```
-5. 注意:`浏览器查看源代码是服务端渲染好的，客户端渲染的看不到`
+5. 注意:`浏览器右键查看源代码是服务端渲染好的，客户端渲染的看不到`
 
 # 计算机基础知识
 
@@ -129,7 +129,7 @@ TCP/IP 协议是一个协议族，主要是定义网络中2台计算机的通信
    ARP 协议 Address Resolution Protocol
    MAC Media Access Control Address
 
-3. TCP 3次握手（确保双方可以正常通信） ,TCP 4 次挥手（断开连接）
+3. TCP 3次握手（确保双方可以正常通信） ,TCP 4 次挥手（断开连接） http 是基于tcp 之上的应用层传输协议
 
 具体步骤内容
 
@@ -171,7 +171,7 @@ http 请求和响应。
 
   # 面试题
 
-  1 兼容性 (css 浏览器前缀，opacity ie9 filter=alpha(opacity=100))
+  1 兼容性 (css 浏览器前缀，opacity ie9 filter=alpha(opacity=100)) ,使用postcss 的autofix
   2 性能优化
   3 html,js,css 基础
 

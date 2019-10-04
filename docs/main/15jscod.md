@@ -1,4 +1,4 @@
-# js 常用代码基本笔记(面试，平时都可以用):rocket:
+# js 基础代码(面试，平时都可以用):rocket:
 
 ## 输出时间差
 ```
@@ -82,13 +82,20 @@ TMLElement.dataset["arr"] )
   Con = [].shift.call(arguments); arguments 删除第一个同时赋给Con
 
   var args = Array.prototype.slice.apply(arguments);　
-
+    //方案1
     function create(){
         const  obj=new Object();
         const Constructor=[].shift.call(arguments);
         obj.__proto__=Constructor
         const ret=Constructor.apply(obj,arguments);
         return ret instanceof Object?ret:obj;
+    }
+
+    //方案2
+    function create(fn,...args){
+        const obj=Object.create(fn.prototype)
+        const ret=fn.call(obj,...args)
+        return ret instancceof Object?ret:obj 
     }
 
 ```
@@ -183,7 +190,7 @@ const c=Object.create(null)
     }
 ```
 
-## 数组语法 this 的使用 
+## 数组语法 this 的指向
 [http://es6.ruanyifeng.com/#docs/array#%E6%95%B0%E7%BB%84%E5%AE%9E%E4%BE%8B%E7%9A%84-includes](http://es6.ruanyifeng.com/#docs/array#%E6%95%B0%E7%BB%84%E5%AE%9E%E4%BE%8B%E7%9A%84-includes)
 
 ```
