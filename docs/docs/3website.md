@@ -90,3 +90,7 @@ rollup 一种构建工具，配置比webpack 简单，vue 源码构建使用的�
 ## 22 强缓存与协商缓存
 
 [https://www.jianshu.com/p/9c95db596df5](https://www.jianshu.com/p/9c95db596df5)
+
+## 23 emogi 参考
+
+[https://github.com/carloscuesta/gitmoji/](https://github.com/carloscuesta/gitmoji/)

@@ -1,4 +1,4 @@
-# My js note
+# js 常用代码基本笔记(面试，平时都可以用):rocket:
 
 ## 输出时间差
 ```
@@ -28,6 +28,8 @@ document.createTextNode   document.createComment
 
 console.group('测试1')
 cosnole.groupEnd()
+
+dom.children  dom.childNodes 
 
 ```
 
@@ -181,5 +183,20 @@ const c=Object.create(null)
     }
 ```
 
+## 数组语法 this 的使用 
+[http://es6.ruanyifeng.com/#docs/array#%E6%95%B0%E7%BB%84%E5%AE%9E%E4%BE%8B%E7%9A%84-includes](http://es6.ruanyifeng.com/#docs/array#%E6%95%B0%E7%BB%84%E5%AE%9E%E4%BE%8B%E7%9A%84-includes)
+
+```
+//容易影响全局，可以拷贝一份出来用
+Array.prototype.unique=function(){
+    return [...new Set(this)]
+}
+```
+
+衍生问题： 将一个嵌套数组扁平化，去重，递增顺序 arr.toString() 也能去扁平化
+
+```
+    [...new Set(arr.flat(Infinity))].sort((a,b)=>return a-b)
+```
 
 
