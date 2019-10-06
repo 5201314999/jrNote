@@ -4,14 +4,14 @@
     <div class="desc-box">
       <div class="desc-name">
         <img src="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1540812849561&di=627f2a1d6a287b9f86838c82bcdfb639&imgtype=0&src=http%3A%2F%2Fi1.hdslb.com%2Fbfs%2Farchive%2Fcb1125c32f53917c8b2f81bca33180e8426cfbdb.jpg">
-        <p>作者</p>
+        <p>在下</p>
       </div>
       <div class="desc-text">
-        <p><span>大名：</span>Mr.Fan</p>
-        <p><span>小名：</span>jr</p>
-        <p><span>职业：</span>富士康前端小工</p>
+        <p><span>姓名：</span><span class="name">Mr.jr</span></p>
+        <p><span>职业：</span><span class="job">富士康前端小工</span></p>
+        <p><span>介绍：</span><span class="moto">不会写笔记却非要写笔记的读书人</span></p>
         <p><a href="https://github.com/5201314999">Github</a></p>
-         <p><a href="https://5201314999.github.io/">hexo</a></p>
+        <p><a href="https://5201314999.github.io/">hexo</a></p>
         
       </div>
     </div>
@@ -52,6 +52,15 @@
         p {
           margin: 0;
           text-align: left;
+          .name{
+            font-weight: 600;
+            font-size:20px;
+            font-style: italic;
+          }
+          .job,.moto{
+             font-weight: 600;
+            font-size:16px;
+          }
         }
       }
     }

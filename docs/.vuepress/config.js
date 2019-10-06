@@ -37,8 +37,10 @@ module.exports = {
         '11idea.md',
         '12basicCss.md',
         '13feeling.md',
+        '15jscod.md',
         '16graphicDevelop',
         '17面试题',
+        '18interview',
       ],
       '/docs/': [
         '',
@@ -51,7 +53,6 @@ module.exports = {
         '7nginx',
         '2linux',
         '8toolProblem',
-        '10interview',
         '11python',
         '12python',
         '13unitTest',

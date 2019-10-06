@@ -1,4 +1,4 @@
-# My js note
+# js 基础代码(面试，平时都可以用):rocket:
 
 ## 输出时间差
 ```
@@ -23,6 +23,14 @@ DOMContentLoaded/onload/
 宽高：offsetWidth offsetHeight 必须在dom 有才行，height 、width 不直接设置无法正确获取
 
 dom.outerHTML()
+
+document.createTextNode   document.createComment
+
+console.group('测试1')
+cosnole.groupEnd()
+
+dom.children  dom.childNodes 
+
 ```
 
 ## ajax XMLHttpRequest 
@@ -74,7 +82,7 @@ TMLElement.dataset["arr"] )
   Con = [].shift.call(arguments); arguments 删除第一个同时赋给Con
 
   var args = Array.prototype.slice.apply(arguments);　
-
+    //方案1
     function create(){
         const  obj=new Object();
         const Constructor=[].shift.call(arguments);
@@ -83,8 +91,19 @@ TMLElement.dataset["arr"] )
         return ret instanceof Object?ret:obj;
     }
 
+    //方案2
+    function create(fn,...args){
+        const obj=Object.create(fn.prototype)
+        const ret=fn.call(obj,...args)
+        return ret instancceof Object?ret:obj 
+    }
+
 ```
 
+## 前端读取图片（todo）
+
+```
+```
 ## Object.defineProperty
 
 Object.defineProperty writable 和 set 不能一起用,可以实现只读属性，configurable，value
@@ -101,30 +120,92 @@ Object.defineProperty writable 和 set 不能一起用,可以实现只读属性�
         console.log(obj.name)
 ```
 
-## obj 的工具函数
+## 学习vue 源码， 总结的一些东西 obj 的工具函数
 
 ```
 //严格检查
  const _toString=Object.prototype.toString
 isPureObject(obj){
-    return _toString.call(obj)==='[Object Object]'
+    return _toString.call(obj)==='[object Object]'
 }
 
 isTrue(obj){
     return obj===true
 }
 
-isObject(obj){
-    return obj!==null&&typeof obj==='Object'
+isRegExp(v){
+    return _toString.call(v)==='[object RegExp]'
 }
 
-isRegExp(v){
-    return _toString.call(v)==='[Object RegExp]'
+isFunction(func){
+    return typeof func==='function'
 }
 
 
 !!a   a 为undefined 返回false
+isFunction(func){
+    return Object.prototype.call(func)==='[object Function]'
+}
+
+//对某些数组原型方法做改造，不污染全部数组的原型。
+const arrayPro=Array.prototype
+var arrMethods=Object.create(arrayPro)
+
+['push'].forEach(method=>{
+    arrMethods[method]=function(){
+        //避免闭包泄漏
+        let i=arguments.length;
+        const args=new Array(i)
+        while(i--){
+            args[i]=arguments[i]
+        }
+        arrayPro.call(this,args)
+        //做些额外的操作
+    }
+})
+
+// 创建一个{}，原型上没东西的
+
+const c=Object.create(null)
+
 ```
 
+## 构造函数是否使用new 来建立的检验，2种方法
+
+```
+    Vue(){
+        
+        if(this instanceof Vue){
+
+        }
+        else{
+            throw new Error('必须使用new 创建')
+        }
+        
+        //方法2：
+        if(new.target===Vue){
+
+        }
+        else{
+            throw new Error('必须使用new 创建')
+        }
+    }
+```
+
+## 数组语法 this 的指向
+[http://es6.ruanyifeng.com/#docs/array#%E6%95%B0%E7%BB%84%E5%AE%9E%E4%BE%8B%E7%9A%84-includes](http://es6.ruanyifeng.com/#docs/array#%E6%95%B0%E7%BB%84%E5%AE%9E%E4%BE%8B%E7%9A%84-includes)
+
+```
+//容易影响全局，可以拷贝一份出来用
+Array.prototype.unique=function(){
+    return [...new Set(this)]
+}
+```
+
+衍生问题： 将一个嵌套数组扁平化，去重，递增顺序 arr.toString() 也能去扁平化
+
+```
+    [...new Set(arr.flat(Infinity))].sort((a,b)=>return a-b)
+```
 
 
