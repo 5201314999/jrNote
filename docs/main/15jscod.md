@@ -122,6 +122,8 @@ isRegExp(v){
     return _toString.call(v)==='[Object RegExp]'
 }
 
+
+!!a   a 为undefined 返回false
 ```
 
 
