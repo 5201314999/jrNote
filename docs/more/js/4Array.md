@@ -6,7 +6,7 @@
 
 ## 正文
 
-### 1 sort
+### 1 sort includes flat
 
 * 如果 compareFunction(a, b) 小于 0 ，那么 a 会被排列到 b 之前；
 * 如果 compareFunction(a, b) 等于 0 ， a 和 b 的相对位置不变。备注： ECMAScript 标准并不保证这一行为，而且也不是所有浏览器都会遵守（例如 Mozilla 在 2003 年之前的版本）；
@@ -46,3 +46,18 @@ Array.from() 可以将伪数组转成真数组。
 ### 3. 怎么判断是一个是数组
 
      Array.isArray(arr)
+     Object.prototype.toString.call(arr)==='[object Array]'
+     arr instanceof Array
+
+
+### 4. 数组扁平化
+
+```
+  function flatten(arr){
+            while(arr.some(item=>Array.isArray(item))){
+                console.log(...arr)
+                arr=[].concat(...arr)    //[].concat(1,2,[3,4])  [1,2,3,4]
+            }
+            return arr
+        }       
+```
