@@ -141,6 +141,8 @@ isFunction(func){
     return typeof func==='function'
 }
 
+
+!!a   a 为undefined 返回false
 isFunction(func){
     return Object.prototype.call(func)==='[object Function]'
 }
