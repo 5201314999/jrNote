@@ -10,8 +10,10 @@
  * [19年面试题总结](https://mp.weixin.qq.com/s?__biz=Mzg5MDAyNjIxOQ==&mid=2247484159&idx=1&sn=a2485936b457197e38ad0202f86ebe6e&chksm=cfe3a37bf8942a6dc738bf38f7eea3386255bc9626636754725b671aff0b1b41ce21054351e3&mpshare=1&scene=23&srcid=#rd
  )
  * [vue 原理面试题](https://segmentfault.com/a/1190000016344599?utm_source=tag-newest#articleHeader2)
+ * [简书面试题整理](https://www.jianshu.com/p/769266edbd38)
 ### 常用算法
-  排序，搜索
+
+  排序,搜索,常用数据结构
 
 ### 框架，工具原理，语言
 
@@ -24,11 +26,9 @@
  * [https://segmentfault.com/a/1190000010631325?_ea=2359607#articleHeader18](https://segmentfault.com/a/1190000010631325?_ea=2359607#articleHeader18)
  * [https://juejin.im/post/5c356f68f265da61483bca61](https://juejin.im/post/5c356f68f265da61483bca61)
 
-
 2 开发一个图片裁剪插件
 
 3 PWA 渐进式网络应用程序
-
 
 * 你的优点
 * 你的缺点

@@ -95,7 +95,7 @@ TMLElement.dataset["arr"] )
     function create(fn,...args){
         const obj=Object.create(fn.prototype)
         const ret=fn.call(obj,...args)
-        return ret instancceof Object?ret:obj 
+        return ret instanceof Object?ret:obj 
     }
 
 ```
