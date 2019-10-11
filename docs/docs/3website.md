@@ -94,3 +94,11 @@ rollup 一种构建工具，配置比webpack 简单，vue 源码构建使用的�
 ## 23 emogi 参考
 
 [https://github.com/carloscuesta/gitmoji/](https://github.com/carloscuesta/gitmoji/)
+
+
+## 24 md 在线编辑
+
+[http://mahua.jser.me/](http://mahua.jser.me/)
+
+## 25 js 运行时间测试
+[https://jsperf.com/](https://jsperf.com/)
