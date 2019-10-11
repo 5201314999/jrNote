@@ -208,4 +208,24 @@ Array.prototype.unique=function(){
     [...new Set(arr.flat(Infinity))].sort((a,b)=>return a-b)
 ```
 
-### 
+### 判断一个url 是否合法
+
+```
+isUrl(url){
+    try{
+        const item=new URL(url)
+        console.log(item)
+        return true
+    }catch(e){
+        return false
+    }
+}
+```
+
+### 基础递归
+
+第 88 题：实现 convert 方法，把原始 list 转换成树形结构，要求尽可能降低时间复杂度
+
+```
+
+```
