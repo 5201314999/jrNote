@@ -3,6 +3,7 @@
 
 ### 基础资料
  * [前端安全系列之二：如何防止CSRF攻击？](https://juejin.im/post/5bc009996fb9a05d0a055192)
+ * [如何防止XSS攻击](https://www.freebuf.com/articles/web/185654.html)
  * [前端工程师手册](https://leohxj.gitbooks.io/front-end-database/content/javascript-basic/index.html)
  * [合格前端系列第九弹-前端面试那些事](https://zhuanlan.zhihu.com/p/32911022)
  * [饥人谷2018前端面试押题（讲义）](https://zhuanlan.zhihu.com/p/34536462)
@@ -66,7 +67,8 @@
 2 怎么准备
     （1）简历 （怎么包装）
     （2）知识 (确定范围，了解到什么程度，再去面试) 
-    （3）周期设定(9月份之前)
+    （3）周期设定(1月份之前)
+    （4）自我介绍
 
 
 

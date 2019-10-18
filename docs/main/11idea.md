@@ -35,9 +35,12 @@
 
 2018/12/5 暂时还没解决。晚上再看下
 
-## 4 last child 与 nth-of-type 
+## 4 last child 与 p:nth-of-type(n) 与 p:nth-child(n) 的区别 
 
-
+```
+ p:nth-of-type(n) 第n 个p  p:nth-child(n)  第n 个子元素， 且刚好是p
+ 
+```
 
 ## 5 activated 的时候不用mounted/created 了
 
