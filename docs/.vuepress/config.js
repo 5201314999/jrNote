@@ -15,7 +15,7 @@ module.exports = {
           { text: '目标清单', link: '/goal/goalList' },
           { text: 'js知识', link: '/more/js/' },
           { text: 'todoList', link: '/goal/todoList' },
-          { text: '2019', link: '/goal/2019flag' }
+          // { text: '2019', link: '/goal/2019flag' }
         ]
       },
       { text: '关于', link: '/about/' },
@@ -36,7 +36,7 @@ module.exports = {
         '10architecture',
         '11idea.md',
         '12basicCss.md',
-        '13feeling.md',
+        // '13feeling.md',
         '15jscod.md',
         '16graphicDevelop',
         '17面试题',
