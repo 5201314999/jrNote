@@ -2,8 +2,17 @@
 
 ## 输出时间差
 ```
-console.log('测试');
+console.time('测试');
 console.timeEnd('测试);
+
+//2
+performance.mark('start')
+setTimeout(()=>{
+    performance.mark('end')
+    performance.measure('performance cost','start','end')
+    console.log(performance.getEntriesByName('performance cost')[0].duration)
+},2000)
+
 ```
 ## dom 有意思知识点
 创建和插入新元素，删除现有元素以及修改其属性。
