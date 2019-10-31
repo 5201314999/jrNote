@@ -39,6 +39,12 @@ step2：点击【系统管理】--【管理插件】--【高级】--【上传插
 
    shift+esc
 
+## 7. ubuntu 安装npm 失败
+
+sudo apt-get remove nodejs npm ## remove existing nodejs and npm packages
+sudo apt-get install curl  
+curl -sL https://deb.nodesource.com/setup | sudo bash -  
+sudo apt-get install -y nodejs  
 
 
 

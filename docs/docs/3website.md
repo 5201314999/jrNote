@@ -102,3 +102,8 @@ rollup 一种构建工具，配置比webpack 简单，vue 源码构建使用的�
 
 ## 25 js 运行时间测试
 [https://jsperf.com/](https://jsperf.com/)
+
+
+## 26 开源视频会议系统（代码复杂度高）
+jitsi-meet 
+[https://meet.jit.si/12](https://meet.jit.si/12)
