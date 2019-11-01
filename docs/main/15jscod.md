@@ -42,7 +42,7 @@ dom.children  dom.childNodes
 
 ```
 
-## ajax XMLHttpRequest 
+## ajax XMLHttpRequest 和 fetch 
 
 ```
     //XMLHttpRequest 原生实现ajax
@@ -72,6 +72,7 @@ dom.children  dom.childNodes
         console.log(e);
     })
 
+    fetch(url,param).then(response=>response.json())
 ```
 
 ## 移动端touch事件监听

@@ -176,3 +176,9 @@ export function hasOwn (obj: Object | Array<*>, key: string): boolean {
 }
 
 ```
+
+### import,export
+
+* import x.js 可以运行一遍非export 的东西
+* export * from x.js  可以直接把模块做一次转发，一般用在index.js 里
+
