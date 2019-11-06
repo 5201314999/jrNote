@@ -46,5 +46,8 @@ sudo apt-get install curl
 curl -sL https://deb.nodesource.com/setup | sudo bash -  
 sudo apt-get install -y nodejs  
 
+## 8. virtualBox 共享文件夹，挂载失败
+https://www.cnblogs.com/xuange306/p/11226292.html
+
 
 

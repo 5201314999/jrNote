@@ -9,3 +9,15 @@
 5. 在SDP信息的offer/answer流程中，ClientA和ClientB已经根据SDP信息创建好相应的音频Channel和视频Channel并开启Candidate数据的收集，Candidate数据可以简单地理解成Client端的IP地址信息（本地IP地址、公网IP地址、Relay服务端分配的地址）。
 6. 当ClientA收集到Candidate信息后，PeerConnection会通过OnIceCandidate接口给ClientA发送通知，ClientA将收到的Candidate信息通过Signal服务器发送给ClientB，ClientB通过PeerConnection的AddIceCandidate方法保存起来。同样的操作ClientB对ClientA再来一次。
 7. 这样ClientA和ClientB就已经建立了音视频传输的P2P通道，ClientB接收到ClientA传送过来的音视频流，会通过PeerConnection的OnAddStream回调接口返回一个标识ClientA端音视频流的MediaStream对象，在ClientB端渲染出来即可。同样操作也适应ClientB到ClientA的音视频流的传输。
+
+
+### 几种架构的对比
+
+1. Mesh p2p 不需要服务器，浏览器直连
+
+2. MCU 中央服务器负责转发，视频编码解码处理，服务器压力大
+
+3. SFC 依然采用中央服务器作为中转站的架构，减少服务器工作量，只负责转发视频和信令，不做编码解码工作，cpu 较少，每个浏览器都有一个输出通道和n-1 个输入通道，对带宽要求较高，服务器cpu 要求较低。
+
+[架构描述](https://www.cnblogs.com/yjmyzz/p/webrtc-multiparty-call-architecture.html)
+[参考教程](http://blog.chinaunix.net/uid-26000296-id-4841496.html)

@@ -128,7 +128,9 @@ style.left 可以
 
 ## 实际开发动画效果积累，可以让页面美观的那种
 
-1. 
+## line-height：2  line-height:200% 区别
+
+2 是相对与自身高度   200% 是相对自身 font-size
 
 
 
