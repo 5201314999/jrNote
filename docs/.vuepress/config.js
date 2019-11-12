@@ -64,7 +64,8 @@ module.exports = {
         '19mobileAdaptation',
         '14gongwuyuan',
         '20pic',
-        '22frontWorkTool'
+        '22frontWorkTool',
+        '23gitFlow'
       ],
       '/more/js/': [
         '',

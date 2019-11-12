@@ -1,13 +1,18 @@
 # 前端架构，开发协作问题
+[https://juejin.im/post/5d3a7134f265da1b5d57f1ed#1-%E5%B7%A5%E4%BD%9C%E6%B5%81%E8%A7%84%E8%8C%83](https://juejin.im/post/5d3a7134f265da1b5d57f1ed#1-%E5%B7%A5%E4%BD%9C%E6%B5%81%E8%A7%84%E8%8C%83)
+
+了解规范，除了编码，也要懂得站在更高处看待整个开发的流程。
 
 ## 前端模型
 ![Image text](https://github.com/5201314999/jrNote/blob/master/docs/.vuepress/public/main/10architecture/mode.png?raw=true)
 
 ## 前端工程
 
-代码review 只有真正在生产流程中设立节点才有意义或者效果。
+1. 代码review 只有真正在生产流程中设立节点才有意义或者效果。
 
-git 可以保持版本一致，至今只会使用，没有深刻的理解。 
+2. git 可以保持版本一致， git 工作流 跟项目规模，团队成员和开发模式有关，流行的是git flow 工作流：master 分支基础====》功能分支====》增加了 开发，bug，发布
+
+3. 
 
 ## 前端整个工程化的问题
 
@@ -29,15 +34,17 @@ git 可以保持版本一致，至今只会使用，没有深刻的理解。
 
 项目中遇到的 最好没人负责一个模块，下下策 ：用不同的子前缀。
 
-
 ## 语义化
 
 ### 版本语义化
 [Semantic Versioning 2.0.0 语义化版本规范](https://semver.org/lang/zh-CN/)
 
+### git 版本管理
+
+
 
 ## 技术leader 的工作内容
-
+###
 ### 项目技术选型
 ### 开发规范
 
