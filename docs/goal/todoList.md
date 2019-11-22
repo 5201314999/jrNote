@@ -79,4 +79,36 @@
 24. 开发一套完整的前后端后台系统，旨在对目前的项目整体把控设计上做一个衡量
 
 
+## step-by-step
+
+1. 单点登录sso 理论体系（single sign on）
+
+g 公司
+借助tomcat 服务器认证机制，每次请求都通过tomcat 拦截判断是否需要跳到登录页
+
+f 公司
+子系统顶域相同，所以只要登录过一次，cookie jessionid 能作用到所有子系统，jessionid 带到子系统，后台向权限系统认证，或者跟redis 比较。
+
+
+
+[https://blog.csdn.net/zy_27_ok/article/details/90033215](https://blog.csdn.net/zy_27_ok/article/details/90033215)
+
+觉得不在子系统建立session， 可以直接jwt 把每个子系统的token（st 作为token） 给回前端cookie，每次解析cookie 成功加上判断sessionid 是否仍然存在作为认证手段），退出时销毁cas session 即可
+
+
+跨域 cas 系统
+
+app1看有没有cookies - sso 登录页(登录)  - sso 后台 写入 登录页cookie，写入session，给app1 st(30s) -  子系统app1带 st 访问 sso 验证是否登录，写入app1 cookie jessionID
+app2 没cookie -sso 有cookie- 给app2 st(jwt 返回）
+
+具体方案根据需求做修改
+
+2. 
+
+
+
+
+
+
+
 

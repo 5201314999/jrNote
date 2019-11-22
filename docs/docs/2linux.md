@@ -15,4 +15,28 @@ sudo find / -name .npmrc -print
 
 3. ls -l
 
+
 查看文件目录
+
+
+4. netstat -anp|grep 8080   查询端口的使用
+
+
+5. kill -s 9 8080 杀死进程
+
+
+6. ubuntu an装指定版本node 的其中一种方法
+
+```
+$ wget https://nodejs.org/dist/v6.9.5/node-v6.9.5-linux-x64.tar.gz
+$ tar -xvf node-v6.9.5-linux-x64.tar.gz
+//增加软连接，否则命令不是全局的
+$ ln -s /home/node-v6.9.5-linux-x64/bin/node /usr/bin/node
+$ ln -s /home/node-v6.9.5-linux-x64/bin/npm /usr/bin/npm
+
+```
+
+7. chmod +x *.sh
+
+
+
