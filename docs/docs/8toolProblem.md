@@ -16,6 +16,11 @@ git config --global http.postBuffer 524288000
 
 * npm i -D http-server
 * 执行命令 http-server dist
+* 开启https 服务器，需要创建证书
+```
+openssl req -newkey rsa:2048 -new -nodes -x509 -days 3650 -keyout key.pem -out cert.pem
+http-server -S -p 8090
+```
 
 ## 3. vscode 插件库
 ![Image text](https://github.com/5201314999/jrNote/blob/master/docs/.vuepress/public/docs/vscodePlugin.png?raw=true)

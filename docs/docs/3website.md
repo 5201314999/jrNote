@@ -111,3 +111,7 @@ jitsi-meet
 
 ## 27 前端运维文章
 [https://juejin.im/post/5dc4ae67f265da4cfa7bbb9a](https://juejin.im/post/5dc4ae67f265da4cfa7bbb9a)
+
+## 28 babel 配置说明
+
+[https://www.jianshu.com/p/000c2670672b](https://www.jianshu.com/p/000c2670672b)

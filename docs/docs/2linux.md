@@ -19,7 +19,8 @@ sudo find / -name .npmrc -print
 查看文件目录
 
 
-4. netstat -anp|grep 8080   查询端口的使用
+
+4. ss -lp |grep 8090  查询端口的使用
 
 
 5. kill -s 9 8080 杀死进程
@@ -37,6 +38,9 @@ $ ln -s /home/node-v6.9.5-linux-x64/bin/npm /usr/bin/npm
 ```
 
 7. chmod +x *.sh
+
+
+
 
 
 
