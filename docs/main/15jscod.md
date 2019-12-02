@@ -239,3 +239,19 @@ isUrl(url){
 ```
     
 ```
+
+### 模块重定向
+
+[https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Statements/export](https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Statements/export)
+
+```
+import App from App.vue
+export default App 
+
+
+export * from App.vue （导出所有模块）
+export {moduleA as default} from '.../' (重命名为默认模块)
+export {default} from App.vue （导出默认模块）
+```
+
+### substr 官方建议使用substring（1，n） 替代
