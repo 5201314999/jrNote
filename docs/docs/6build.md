@@ -107,6 +107,8 @@ Rollup 在用于打包 JavaScript 库时比 Webpack 更加有优势，因为其�
 
 [史上最走心webpack4.0中级教程——配置之外你应该知道的](https://www.cnblogs.com/dashnowords/archive/2018/09/04/9572755.html)
 [webpack4 总览说明](https://www.cnblogs.com/wmhuang/p/8967639.html)
+[webpack 深入资料](https://survivejs.com/webpack/optimizing/separating-manifest/)
+[webpack demo 学习笔记](https://github.com/5201314999/draftCode/tree/master/webpack4)
 
 看了一遍教程，可以看得懂配置。但是还需要实践。
 

@@ -15,5 +15,25 @@
     查看windows任务管理器下Nginx的进程命令：tasklist /fi "imagename eq nginx.exe"
 
 * linux
-    
+    centos 安装nginx：
+    1. yum -y install gcc pcre-devel zlib-devel openssl openssl-devel
+    2. cd usr/local wget  http://nginx.org/download/nginx-1.16.1.tar.gz
+    3. tar -zxvf nginx-1.16.1.tar.gz
+    4. 进入解压后文件夹 ./configure --prefix=/usr/local/
+    nginx
+    5. make
+    6. make install
+    7. 启动nginx cd /usr/local/nginx/sbin  ./nginx
+
+    * 重启  /usr/local/nginx/sbin/nginx -s reload   （路径用实际路径）
+    * 查看配置 /usr/local/nginx/sbin/nginx -t
+    * 启动 /usr/local/nginx/sbin/nginx
+    * 杀死进程  kill  -9 进程号
+
+    [https 模块](https://blog.csdn.net/weixin_37264997/article/details/84525444)
+
+
+
+
+
     

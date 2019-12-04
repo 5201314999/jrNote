@@ -54,5 +54,9 @@ sudo apt-get install -y nodejs
 ## 8. virtualBox 共享文件夹，挂载失败
 https://www.cnblogs.com/xuange306/p/11226292.html
 
+## 9. 远程连接linux 工具
+
+    xshell, secureCRT
+
 
 
