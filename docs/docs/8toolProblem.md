@@ -58,5 +58,8 @@ https://www.cnblogs.com/xuange306/p/11226292.html
 
     xshell, secureCRT
 
+## 10. markdown 编辑器
+
+typora, 我一般手写比较多，表格手写比较麻烦
 
 
