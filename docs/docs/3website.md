@@ -115,3 +115,7 @@ jitsi-meet
 ## 28 babel 配置说明
 
 [https://www.jianshu.com/p/000c2670672b](https://www.jianshu.com/p/000c2670672b)
+
+
+## 29 pdfjs 查看文件，使用cavas 渲染pdf
+[http://mozilla.github.io/pdf.js/getting_started/#download](http://mozilla.github.io/pdf.js/getting_started/#download)

@@ -75,7 +75,8 @@ module.exports = {
         '3debounce_throttle',
         '4Array',
         '6prototype',
-        '7dom'
+        '7dom',
+        '8eventanddom'
       ],
     }
   }

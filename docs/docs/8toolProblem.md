@@ -62,4 +62,9 @@ https://www.cnblogs.com/xuange306/p/11226292.html
 
 typora, 我一般手写比较多，表格手写比较麻烦
 
+## 11. 安卓虚拟机
+
+```
+Genymotion 
+```
 
