@@ -102,3 +102,20 @@ rollup 一种构建工具，配置比webpack 简单，vue 源码构建使用的�
 
 ## 25 js 运行时间测试
 [https://jsperf.com/](https://jsperf.com/)
+
+
+## 26 开源视频会议系统（代码复杂度高）
+jitsi-meet 
+[https://meet.jit.si/12](https://meet.jit.si/12)
+
+
+## 27 前端运维文章
+[https://juejin.im/post/5dc4ae67f265da4cfa7bbb9a](https://juejin.im/post/5dc4ae67f265da4cfa7bbb9a)
+
+## 28 babel 配置说明
+
+[https://www.jianshu.com/p/000c2670672b](https://www.jianshu.com/p/000c2670672b)
+
+
+## 29 pdfjs 查看文件，使用cavas 渲染pdf
+[http://mozilla.github.io/pdf.js/getting_started/#download](http://mozilla.github.io/pdf.js/getting_started/#download)

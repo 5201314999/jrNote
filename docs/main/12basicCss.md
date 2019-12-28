@@ -27,7 +27,7 @@
 
 ## flex 语法
 
-出了高新兴大门后使用频率超高，一般使用基础即可,目前已基本掌握  //记忆性内容
+出了高新兴大门后使用频率超高，一般使用基础即可,目前掌握  //记忆性内容
 
 ```
 display:flex;
@@ -128,11 +128,28 @@ style.left 可以
 
 ## 实际开发动画效果积累，可以让页面美观的那种
 
-1.  
-```
-```
+暂无
 
+## line-height：2  line-height:200% 区别
 
+2 是相对与自身高度 height*2   200% 是相对自身 font-size*2
+
+## grid 基本用法
+
+```
+.wrapper {
+    display: grid;
+    grid-template-columns: 100px 400px 100px;
+    grid-template-rows: 100px 500px 100px;
+    grid-template-columns:repeat(3,33.3%); 
+    grid-column-gap:30px;
+    grid-row-gap:30px;
+    grid-auto-flow: column;
+}
+.wrapper>div{
+    border:1px solid#8bc34a;
+}
+```
 
 
 

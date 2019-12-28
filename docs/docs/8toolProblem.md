@@ -16,6 +16,11 @@ git config --global http.postBuffer 524288000
 
 * npm i -D http-server
 * 执行命令 http-server dist
+* 开启https 服务器，需要创建证书
+```
+openssl req -newkey rsa:2048 -new -nodes -x509 -days 3650 -keyout key.pem -out cert.pem
+http-server -S -p 8090
+```
 
 ## 3. vscode 插件库
 ![Image text](https://github.com/5201314999/jrNote/blob/master/docs/.vuepress/public/docs/vscodePlugin.png?raw=true)
@@ -39,6 +44,27 @@ step2：点击【系统管理】--【管理插件】--【高级】--【上传插
 
    shift+esc
 
+## 7. ubuntu 安装npm 失败
 
+sudo apt-get remove nodejs npm ## remove existing nodejs and npm packages
+sudo apt-get install curl  
+curl -sL https://deb.nodesource.com/setup | sudo bash -  
+sudo apt-get install -y nodejs  
 
+## 8. virtualBox 共享文件夹，挂载失败
+https://www.cnblogs.com/xuange306/p/11226292.html
+
+## 9. 远程连接linux 工具
+
+    xshell, secureCRT
+
+## 10. markdown 编辑器
+
+typora, 我一般手写比较多，表格手写比较麻烦
+
+## 11. 安卓虚拟机
+
+```
+Genymotion 
+```
 

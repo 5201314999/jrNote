@@ -2,8 +2,17 @@
 
 ## 输出时间差
 ```
-console.log('测试');
+console.time('测试');
 console.timeEnd('测试);
+
+//2
+performance.mark('start')
+setTimeout(()=>{
+    performance.mark('end')
+    performance.measure('performance cost','start','end')
+    console.log(performance.getEntriesByName('performance cost')[0].duration)
+},2000)
+
 ```
 ## dom 有意思知识点
 创建和插入新元素，删除现有元素以及修改其属性。
@@ -33,7 +42,7 @@ dom.children  dom.childNodes
 
 ```
 
-## ajax XMLHttpRequest 
+## ajax XMLHttpRequest 和 fetch 
 
 ```
     //XMLHttpRequest 原生实现ajax
@@ -63,6 +72,7 @@ dom.children  dom.childNodes
         console.log(e);
     })
 
+    fetch(url,param).then(response=>response.json())
 ```
 
 ## 移动端touch事件监听
@@ -228,4 +238,45 @@ isUrl(url){
 
 ```
     
+```
+
+### 模块重定向
+
+[https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Statements/export](https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Statements/export)
+
+```
+import App from App.vue
+export default App 
+
+
+export * from App.vue （导出所有模块）
+export {moduleA as default} from '.../' (重命名为默认模块)
+export {default} from App.vue （导出默认模块）
+```
+
+### substr 官方建议使用substring（1，n） 替代
+
+### performance 里的数据
+ 可以获取到DNS 解析时间，TCP 连接时间，首屏渲染时间，dom 完成时间，页面load 完时间
+```
+    let timing = performance.timing,
+    start = timing.navigationStart,
+    dnsTime = 0,
+    tcpTime = 0,
+    firstPaintTime = 0,
+    domRenderTime = 0,
+    loadTime = 0;
+
+dnsTime = timing.domainLookupEnd - timing.domainLookupStart;
+tcpTime = timing.connectEnd - timing.connectStart;
+firstPaintTime = timing.responseStart - start;
+domRenderTime = timing.domContentLoadedEventEnd - start;
+loadTime = timing.loadEventEnd - start;
+
+console.log('DNS解析时间:', dnsTime, 
+            '\nTCP建立时间:', tcpTime, 
+            '\n首屏时间:', firstPaintTime,
+            '\ndom渲染完成时间:', domRenderTime, 
+            '\n页面onload时间:', loadTime);
+
 ```

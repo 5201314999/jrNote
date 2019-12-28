@@ -35,7 +35,6 @@
 
  [参考教程](https://www.cnblogs.com/c9999/p/6399367.html)
 
-2019 找工作之前：
 
  11. 一个react项目基础  :100:   
 
@@ -69,9 +68,39 @@
 19. postcss :100:
    一款转化css 的js 工具库， 作用： 自动加前缀，css 模块化 ，polyfill 未来属性，webpack 插件使用 postcss loader
 
-20. 考虑开发一个自己的博客网站（前台+后台(/是否需要?)+移动端） 工作量巨大
+20. 考虑开发一个自己的博客网站（前台+后台(/是否需要?)+移动端） 工作量巨大（作用不大，放弃）
 
-21. redis+mongodb 使用了解（进行中）
+21. redis+mongodb 使用了解 :100:
+
+22. 如何制作自己的eslint 规则库（未启动）
+
+23. 常规静态页面的编码（短板加强）
+
+24. 开发一套完整的前后端后台系统，旨在对目前的项目整体把控设计上做一个衡量
+
+
+## step-by-step
+
+1. 单点登录sso 理论体系（single sign on）
+
+g 公司
+借助tomcat 服务器认证机制，每次请求都通过tomcat 拦截判断是否需要跳到登录页
+
+f 公司
+子系统顶域相同，所以只要登录过一次，cookie jessionid 能作用到所有子系统，jessionid 带到子系统，后台向权限系统认证，或者跟redis 比较。
+
+
+[https://blog.csdn.net/zy_27_ok/article/details/90033215](https://blog.csdn.net/zy_27_ok/article/details/90033215)
+
+A 系统访问-A没cookie--------------cas 登录页 ---------------认证，cas 创建sessionid，写回cookie ，签发jwt ，url 带回A  --------A 后台跟 cas 比较 jwt ，有效则 写回 A cookie -------登录成功,后续则直接使用cookie jwt。
+
+同理B 进入，经历以上流程
+
+
+
+
+
+
 
 
 

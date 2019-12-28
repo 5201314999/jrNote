@@ -147,7 +147,9 @@ options 设置default 为{} 无法监听options
 
 ## 6. iview @change 中文输入法时拼音也会触发请求
 
-一开始想用compositionStart 和 compositionEnd 解决，奈何Input native 监听不到 这2个事件
+一开始想用compositionStart 和 compositionEnd 解决，奈何Input native 监
+
+听不到 这2个事件
 
 后面采用了另一种方案，使用定时器限制500ms 没输入才查询，跟防抖动原理一致，代码如下
 

@@ -15,7 +15,7 @@ module.exports = {
           { text: '目标清单', link: '/goal/goalList' },
           { text: 'js知识', link: '/more/js/' },
           { text: 'todoList', link: '/goal/todoList' },
-          { text: '2019', link: '/goal/2019flag' }
+          // { text: '2019', link: '/goal/2019flag' }
         ]
       },
       { text: '关于', link: '/about/' },
@@ -36,11 +36,12 @@ module.exports = {
         '10architecture',
         '11idea.md',
         '12basicCss.md',
-        '13feeling.md',
+        // '13feeling.md',
         '15jscod.md',
         '16graphicDevelop',
-        '17面试题',
+        '172019i',
         '18interview',
+        '19webrtc',
       ],
       '/docs/': [
         '',
@@ -63,7 +64,8 @@ module.exports = {
         '19mobileAdaptation',
         '14gongwuyuan',
         '20pic',
-        '22frontWorkTool'
+        '22frontWorkTool',
+        '23gitFlow'
       ],
       '/more/js/': [
         '',
@@ -73,7 +75,8 @@ module.exports = {
         '3debounce_throttle',
         '4Array',
         '6prototype',
-        '7dom'
+        '7dom',
+        '8eventanddom'
       ],
     }
   }

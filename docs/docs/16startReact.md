@@ -67,6 +67,11 @@ npx create-react-app demo --scripts-version=react-scripts-ts
 ![Image text](https://github.com/5201314999/jrNoteWebsite/blob/master/docs/react_1.png)
 
 
+## redux学习
+
+在学习这个之前，我已经是vue 技术栈熟练者，掌握了 vuex ，然而看 redux 看懂却花了不少时间，思路跟vuex 类似，写法不太一样，难道是脑子生锈了。。。 
+
+action, reducer， store  store.dispatch(marry('jr','why'))
 
 ## react-native 笔记
 
