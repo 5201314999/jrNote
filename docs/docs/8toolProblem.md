@@ -68,3 +68,7 @@ typora, 我一般手写比较多，表格手写比较麻烦
 Genymotion 
 ```
 
+
+## 12. eslint 
+
+vscode 安装eslint 配置  autofix-on-save  ,有 eslint 文件或者package.josn eslint 配置就可以生效。主要针对空格之类的确定答案给出修复，不过不清楚== 不能自动修复的原因

@@ -57,7 +57,10 @@
     方案1：使用原生canvas 去绘制，然后使用shape 装载，发现顺滑度不一样。
     方案2：修改konva 框架线的内部实现，增加自己的绘制方案，然后重新打包
     方案3：发现原生api 提供了一种画线demo ，创建一个新的canvas 然后转图片，基于这种方案我们需要结合实际做改动，创建多个image。 同时canvas 需要裁剪，不然选中时绘制区域是全屏。
-
+    
+ 关于铅笔卡顿，锯齿严重问题：
+    
+    1. 发现存在性能问题,对线条进行缓存，同时对计算点也做了个缓存，避免每次都重新计算，效果好了很多，锯齿问题是因为代码有问题同时画了太多遍。
 
 #### 学到的东西
 
@@ -81,6 +84,18 @@
 
     tool.init()
 ```
+
+6. 使用一个mousedown 设置isPainting，mousemove 利用isPainting判断是否在绘制中 比直接mouseup 直接销毁mousemove事件要好，不用反复创建事件订阅。减少开销
+
+7. 对缩放，scale,offset，width，height,x,y 的理解，实际移动时是怎么做
+
+8. 移动端click 有问题，所以别人会封装konva 事件或者fast-click 事件
+
+9. 我把所有的工具都用统一的create,destroy 来写 ，destroy 的stage，layer 一开始由外部传入，考虑了传参的不一致性，使用...params,后面发现destroy 无需传参，只需要用create 保存的stage 和 layer 就可以了。。。这种方法更加清晰
+
+
+
+
 
 
 
