@@ -9,6 +9,7 @@ module.exports = {
     nav: [
       { text: '首页', link: '/' },
       { text: '储物柜', link: '/docs/' },
+      { text: '复习', link: '/frontend/' },
       {
         text: '更多',
         items: [
@@ -66,6 +67,10 @@ module.exports = {
         '20pic',
         '22frontWorkTool',
         '23gitFlow'
+      ],
+      '/frontend/':[
+        '',
+        ''
       ],
       '/more/js/': [
         '',
