@@ -1,0 +1,59 @@
+## 浏览器面试系列
+
+### 1. 浏览器有几种进程
+1. 浏览器主进程
+2. 网络进程
+3. gpu 进程
+4. 渲染进程
+5. 插件进程
+
+### 2. 浏览器怎么确保传输数据的完整性
+
+浏览器使用IP 协议发送数据，ip 协议只能知道发送到哪台主机，交付给哪个应用需要传输层协议TCP 或者用户数据包协议UDP,这2种协议各自的特点是
+
+``` 速度，可靠性，传输数据大小``` 。TCP 使用了3次握手和4次挥手建立，关闭连接。传输报文带有队列号，可以做完整性校验，丢包重传等。
+
+* TCP三次握手
+
+1. 主机1发送报文给主机2，设置SYN=1 和sequenceNumber, 发送之后主机1进入SYNC_SEND 状态
+2. 主机2此时给主机1 应答信号（Acknowledgement）同时把主机2自身的连接报文发送过去，设置SYNC和sequenceNumber。(挥手要4次，而这里只要3次的关键原因),此时主机2进入了SYN_RECV 状态
+3. 主机1收到主机2的连接报文之后，设置应答信号，acknowledgement number信号，发送给主机2，2台主机进入established 状态（连接）。
+
+* TCP四次挥手
+1. 主机1 没有数据要发送给主机2时，发送一个断开的报文，报文内容设置FIN字段和 sequenceNumber，发送之后进入 FIN_WAIT_1 状态
+2. 主机2 收到主机1断开报文之后，发送一个应答信号，设置acknowledgement Number ，主机1 收到主机2应答之后，进入FIN_WAIT_2 状态
+3. 主机2 没有数据发送给主机1之后,也会给主机1一个断开信号，报文内容设置FIN 状态和sequecence number. 然后主机2进入LAST_ACK 状态
+4. 主机1 收到主机2请求关闭状态报文后，会发送一个应答Fin 报文段，主机1 进入TIME_WAIT 状态，主机2 收到后关闭连接，2MSL 时间后主机1 没收到消息也关闭连接。
+
+### 3. url 输入之后发生了什么
+
+1. url 合成，例如只输入关键词的话，浏览器会带上默认的搜索引擎顶尖域名，带上对应的协议字段http。
+2. DNS 解析
+3. 建立TCP连接
+4. 发送数据给服务端，服务端进行相应处理，如果if-modified-since 携带的时间仍就有效，返回304， 否则返回状态200， 资源重定向302 等。
+5. 关闭TCP连接
+6. 获取到对应的html 资源后进行渲染处理
+
+### 4. DNS 解析
+   把域名解析成ip，具体解析过程有好几个步骤
+1. 
+
+
+### 5. http 缓存
+
+1. 强缓存
+expires 是一个时间戳，可能存在客户端和服务器端时间不一致的问题。
+考虑到 expires 的局限性，HTTP1.1 新增了cache-control字段来完成 expires 的任务。expires 能做的事情，Cache-Control 都能做；expires 完成不了的事情，Cache-Control 也能做。因此，Cache-Control 可以视作是 expires 的完全替代方案。在当下的前端实践里，我们继续使用 expires 的唯一目的就是向下兼容。cache-control 优先级更高。
+
+2. 协商缓存
+last-modified etag ,etag 是 last-modified 的补充，解决last-modified 只能精确到秒，无法监听毫秒级文件变化；内容做了编辑，但实际内容并无改变，请求时无法有效利用缓存的2大问题。
+
+3. 整体图谱
+
+![image](https://mmbiz.qpic.cn/mmbiz_jpg/2wV7LicL762Yiaw2R76AlG93kEADDlb7liaW9XXFkicFQKUbViclh1X1XYgSOtpzBCyOXXTQficE8rUQmznxEWu6UgHA/640?wx_fmt=jpeg&tp=webp&wxfrom=5&wx_lazy=1&wx_co=1)
+
+
+
+
+
+
