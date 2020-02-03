@@ -53,6 +53,11 @@ last-modified etag ,etag 是 last-modified 的补充，解决last-modified 只�
 ![image](https://mmbiz.qpic.cn/mmbiz_jpg/2wV7LicL762Yiaw2R76AlG93kEADDlb7liaW9XXFkicFQKUbViclh1X1XYgSOtpzBCyOXXTQficE8rUQmznxEWu6UgHA/640?wx_fmt=jpeg&tp=webp&wxfrom=5&wx_lazy=1&wx_co=1)
 
 
+### 6 浏览器渲染
+
+`构建dom 树`，`样式计算`，`布局树`，`分层`,`栅格化`,`显示`
+
+
 
 
 
