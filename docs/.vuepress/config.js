@@ -71,7 +71,9 @@ module.exports = {
       '/frontend/':[
         '',
         'vue-base',
-        'browser'
+        'browser',
+        'es6-10',
+        'gc'
       ],
       '/more/js/': [
         '',
