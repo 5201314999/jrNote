@@ -66,7 +66,8 @@ module.exports = {
         '14gongwuyuan',
         '20pic',
         '22frontWorkTool',
-        '23gitFlow'
+        '23gitFlow',
+        '24flutter'
       ],
       '/frontend/':[
         '',
