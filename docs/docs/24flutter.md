@@ -16,6 +16,8 @@
 
 ### 二、安装教程
 
+`注意`: `一定要能科学上网`，不科学上网容易掉沟里，我第一个项目没有翻墙，创建完启动各种报错，（可能创建时拉包失败导致）
+
 * jdk 安装（安卓开发需要）
 
 * Flutter SDK
@@ -37,20 +39,38 @@ VScode 或者 Android Studio IDE
 * 执行 flutter docutor
  
  检查是否有问题，vscode （crtl+shift+p) 输入 flutter doctor 
+
+总结以上，我觉得flutter vscode 开发调试环境要比rn 体验更好。。
  
 ### 三、 遇到问题
 1. flutter doctor 缺少证书
 
   执行 flutter doctor --android-licenses
 
-2. 启动时gradle卡住（翻墙或者使用阿里云国内镜像，gradle 版本换成3.1.2,android 开发常见问题）
+2. 启动时gradle卡住（使用阿里云国内镜像）
 
-  [VScode+Flutter 开发继续踩坑](https://www.cnblogs.com/dfsxh/p/10453801.html)
+  [VScode+Flutter 开发继续踩坑](https://www.cnblogs.com/dfsxh/p/10453801.html)，`注意：不需要修改gradle 版本。。。`
 
 3. What went wrong:Execution failed for task ':app:compileDebugKotlin' 
 
-  网上说把gradle clean build 一遍在执行[stackoverflow](https://stackoverflow.com/questions/33357507/execution-failed-for-task-appcompiledebugkotlin)
+  把项目删掉，科学上网之后再创建新项目没有这个问题了。
 
-### flutter 参考教程
+### 四、编写demo 
+
+* 从头开始创建一个Flutter应用程序,利用vscode 插件创建的空项目框架.
+* 编写 Dart 代码,体验了Dart 强类型的语法.
+* 利用外部的第三方库.
+* 使用热重载加快开发周期.
+* 实现一个有状态的widget，为你的应用增加交互.
+* 用ListView和ListTiles创建一个延迟加载的无限滚动列表.
+* 创建了一个路由并添加了在主路由和新路由之间跳转逻辑
+* 了解如何使用主题更改应用UI的外观
+
+### 五、开发一个简单项目
+
+经过以上几个步骤，对flutter 开发会有个印象，有过rn 和 原生开发的同学 基本就可以入门开发比较完整的项目了。
+
+### 参考教程
 
 [flutter 中文网](https://flutterchina.club/get-started/editor/#vscode)
+[科学上网工具](https://mymonocloud.com/)
