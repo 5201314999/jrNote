@@ -112,6 +112,18 @@ git pull fjr master --allow-unrelated-histories
     // 查看某次提交变化的文件
     //这里 -no-commit-id 将禁止提交哈希值出现在输出中，而 -name-only 只会打印文件名而不是它们的路径。
     git diff-tree –no-commit-id –name-only -r {hash}
+
+    将N个提交压缩到单个提交中有两种方式：
+    如果要从头开始编写新的提交消息，请使用以下命令：
+
+    git reset --soft HEAD~N && git commit
+
+    如果你想在新的提交消息中串联现有的提交消息，那么需要提取这些消息并将它们传给 git commit，可以这样：
+    git reset --soft HEAD~N &&
+    git commit –edit -m"$(git log –format=%B –reverse .HEAD@{N})"
+
+    它列出了已合并到当前分支的分支。
+    git branch –merged 
 ```
 
 
