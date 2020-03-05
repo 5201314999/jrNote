@@ -1,6 +1,6 @@
 module.exports = {
   title: 'jrNote',
-  description: 'Just play around',
+  description: 'jr 笔记',
   //发布使用
   base:'/jrNoteWebsite/',
   themeConfig: {
@@ -24,12 +24,12 @@ module.exports = {
     ],
     sidebar: {
       '/main/': [
+        '2git',
         '1startKoa',
         '7koaRouter',
         '8koaQuery',
         '9koaCookiesAndSession',
         '14koaMysql',
-        '2git',
         '3question',
         '4amazing',
         '5wepy',
