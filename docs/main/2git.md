@@ -6,7 +6,7 @@
 
 ### 1 git 的基本命令
 
-![Image text](https://github.com/5201314999/jrNote/blob/master/docs/.vuepress/public/docs/gitCommand.png?raw=true)
+![Image text](/jrNoteWebsite/main/git/gitCommand.png)
 
  [菜鸟教程](http://www.runoob.com/git/git-basic-operations.html)
 
