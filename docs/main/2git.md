@@ -123,7 +123,7 @@ git pull fjr master --allow-unrelated-histories
     git commit –edit -m"$(git log –format=%B –reverse .HEAD@{N})"
 
     它列出了已合并到当前分支的分支。
-    git branch –merged 
+    git branch --merged 
 ```
 
 
