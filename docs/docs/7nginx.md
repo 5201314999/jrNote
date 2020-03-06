@@ -29,7 +29,9 @@
     * 查看配置 /usr/local/nginx/sbin/nginx -t
     * 启动 /usr/local/nginx/sbin/nginx
     * 杀死进程  kill  -9 进程号
+    * 查找nginx 目录 ps-ef|grep nginx
 
+    **注意**：在vim 中，Ctrl + S 是锁屏快捷键，  Ctrl+ q 解锁
     [https 模块](https://blog.csdn.net/weixin_37264997/article/details/84525444)
 
 

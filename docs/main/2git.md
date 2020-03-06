@@ -13,7 +13,7 @@
 ### 2 git 核心命令运行图
 ![git 核心命令运行图](/jrNoteWebsite/main/git/git.png)
 
-### 3 git 拉取一个远程仓库非默认分支
+### 3 git 拉取一个远程仓库非默认分支(从git 上拉取项目)
 ```
     1. 找一个干净目录，假设是git_work
 
@@ -27,13 +27,13 @@
     remotes/origin/dev
     remotes/origin/release
 
-    6. git checkout -b dev origin/dev
+    6. git checkout -b dev origin/dev 等价于 git branch dev  git checkout origin/dev
     作用是checkout远程的dev分支，在本地起名为dev分支，并切换到本地的dev分支
 ```
 ### 4 添加跟踪新远程仓库
 
 ```
-    先查看当前已有的远程仓库
+    先查看当前已有的远程版本库
     git remote -v
 
     添加新的需要跟踪的远程仓库
@@ -55,11 +55,11 @@
 - 直接检出远程新分支即可，本地的分支不用改变，这样本地新增的代码还在。
 
 
-### 6 直接把本地项目上传到github
+### 6 把本地项目上传到git
 
 ```
     git init 
-    git add .
+    git add . 
     git commit -m 'message'
     git remote add origin 'https://...'
     git push -u origin master
@@ -88,17 +88,9 @@ git commit -m 'update .gitignore'
 
 ### 9 查看提交历史
 
-git log --oneline
+git log --oneline --graph
 
-
-### 10 git 新建仓库 ，远处有readme, 本地有一个有部分代码的项目
-
-无法用5的方法直接解决。
-
-git pull fjr master --allow-unrelated-histories
-
-
-### 11 git 创建秘钥，实现github 免密登录提交代码
+### 10 git 创建秘钥，实现github 免密登录提交代码
 [参考](https://blog.csdn.net/zfs1994/article/details/52682129)
 
 * ssh-keygen -t rsa -C "1446418561@qq.com"
@@ -106,7 +98,7 @@ git pull fjr master --allow-unrelated-histories
 * cat id_rsa.pub
 * 添加到github 上ssh 
 
-### 其他命令
+### 11 其他命令
 
 ```
     // 查看某次提交变化的文件
@@ -124,9 +116,20 @@ git pull fjr master --allow-unrelated-histories
 
     它列出了已合并到当前分支的分支。
     git branch --merged 
+
+    标记文件冲突已解决
+    git add 
 ```
 
-
-### 11 小试牛刀
+### 小试牛刀
 
 [关于git 的20个问题](https://segmentfault.com/a/1190000019315509?utm_source=tag-newest)，快来试试你掌握得怎么样了吧
+
+### 出师任务
+
+如何搭建公司的版本控制系统
+
+### 参考
+
+[分支与合并](https://git-scm.com/book/zh/v2/Git-%E5%88%86%E6%94%AF-%E5%88%86%E6%94%AF%E7%9A%84%E6%96%B0%E5%BB%BA%E4%B8%8E%E5%90%88%E5%B9%B6#r_basic_merging)
+[变基,实现快进合并](https://git-scm.com/book/zh/v2/Git-%E5%88%86%E6%94%AF-%E5%8F%98%E5%9F%BA)
