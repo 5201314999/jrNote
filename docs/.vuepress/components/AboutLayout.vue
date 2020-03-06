@@ -11,7 +11,7 @@
         <p><span>介绍：</span><span class="moto">不会写笔记却非要写笔记的读书人</span></p>
         <p><a href="https://github.com/5201314999">Github</a></p>
         <!-- <a><a href="https://5201314999.github.io/">hexo</a></p> -->
-        <p><a href="https://moontea.top/hexo">hexo</a></p>
+        <p><a href="http://www.moontea.top/hexoblog">博客</a></p>
         
       </div>
     </div>
