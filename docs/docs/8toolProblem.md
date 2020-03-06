@@ -56,7 +56,7 @@ https://www.cnblogs.com/xuange306/p/11226292.html
 
 ## 9. 远程连接linux 工具
 
-    xshell, secureCRT
+    xshell（不建议了）, secureCRT
 
 ## 10. markdown 编辑器
 

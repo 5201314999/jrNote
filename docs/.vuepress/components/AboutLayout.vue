@@ -1,23 +1,33 @@
 <template>
   <div class="container">
-    <p class="protocol">本套文章采用 <a href="https://creativecommons.org/licenses/by-nc-nd/4.0/deed.zh">署名-非商业性使用-禁止演绎 4.0 国际</a> 许可协议。</p>
+    <p class="protocol">本网站采用 <a href="https://creativecommons.org/licenses/by-nc-nd/4.0/deed.zh">署名-非商业性使用-禁止演绎 4.0 国际</a> 许可协议。</p>
     <div class="desc-box">
       <div class="desc-name">
-        <img src="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1540812849561&di=627f2a1d6a287b9f86838c82bcdfb639&imgtype=0&src=http%3A%2F%2Fi1.hdslb.com%2Fbfs%2Farchive%2Fcb1125c32f53917c8b2f81bca33180e8426cfbdb.jpg">
-        <p>在下</p>
+        <img :src="`${base}/about/logo.jpg`">
       </div>
       <div class="desc-text">
         <p><span>姓名：</span><span class="name">Mr.jr</span></p>
         <p><span>职业：</span><span class="job">富士康前端小工</span></p>
         <p><span>介绍：</span><span class="moto">不会写笔记却非要写笔记的读书人</span></p>
         <p><a href="https://github.com/5201314999">Github</a></p>
-        <p><a href="https://5201314999.github.io/">hexo</a></p>
+        <!-- <a><a href="https://5201314999.github.io/">hexo</a></p> -->
+        <p><a href="https://moontea.top/hexo">hexo</a></p>
         
       </div>
     </div>
   </div>
   </div>
 </template>
+<script>
+  const config=require('@/config.js')
+  export default{
+    data(){
+      return {
+        base:config.base
+      }
+    }
+  }
+</script>
 <style lang="scss" scoped>
   .container {
     text-align: center;
@@ -32,15 +42,14 @@
       align-items: cneter;
       box-shadow: 2px 2px 8px 4px #e9e9e9;
       .desc-name {
-        display: block;
-        width: 120px;
+        display: flex;
         padding: 20px;
         margin-right: 20px;
         border-right: 1px solid #dddddd;
         img {
-          width: 60px;
-          height: 60px;
-          border-radius: 50%;
+          width: 120px;
+          border-radius: 10px;
+          vertical-align: middle;
         }
         p {
           margin: 0;
