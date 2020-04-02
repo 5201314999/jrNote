@@ -1,6 +1,6 @@
 module.exports = {
   //发布使用
-  base:'/jrNoteWebsite/',
+  base:'/',
   head: [
     ['link', { rel: 'icon', href: '/favicon.ico' }]
   ],

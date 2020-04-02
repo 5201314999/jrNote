@@ -13,7 +13,7 @@ sudo find / -name .npmrc -print
 
 获取资源并且执行， 如需管理员权限 加 sudo
 
-3. ll ls 
+3. ll ls  ls -l
 
 
 查看文件目录
@@ -51,6 +51,9 @@ $ ln -s /home/node-v6.9.5-linux-x64/bin/npm /usr/bin/npm
 10.  重命名文件夹、文件   mv a b
 
 11. rm -f -rf    删除命令
+
+12. ls -al 查看隐藏文件
+
 
 
 
