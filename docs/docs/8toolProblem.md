@@ -76,3 +76,8 @@ vscode 安装eslint 配置  autofix-on-save  ,有 eslint 文件或者package.jos
 eslint --fix --ext .js,.vue src
 
 ## 13. 抓包工具
+
+
+## 14. gif 生成录屏gif
+
+LICECAP（界面丑，功能还行）， win10 自带的多个应用会单独成多个视频（不好用）
