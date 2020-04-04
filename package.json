@@ -8,11 +8,12 @@
   "scripts": {
     "docs:dev": "vuepress dev docs",
     "docs:build": "vuepress build docs",
-    "docs:deploy":"deploy.bat"
+    "eject": "vuepress eject",
+    "docs:deploy": "deploy.bat"
   },
   "devDependencies": {
     "node-sass": "^4.9.4",
     "sass-loader": "^7.1.0",
-    "vuepress": "0.14.4"
+    "vuepress": "^1.4.0"
   }
 }

@@ -56,7 +56,7 @@ https://www.cnblogs.com/xuange306/p/11226292.html
 
 ## 9. 远程连接linux 工具
 
-    xshell, secureCRT
+    xshell（不建议了）, secureCRT
 
 ## 10. markdown 编辑器
 
@@ -77,4 +77,11 @@ vscode 安装eslint 配置  autofix-on-save,新版本改了，  ,有 eslint,esli
 
 dev 启动时则只需要做检查，可以提高热更新速度
 
+eslint --fix --ext .js,.vue src
+
 ## 13. 抓包工具
+
+
+## 14. gif 生成录屏gif
+
+LICECAP（界面丑，功能还行）， win10 自带的多个应用会单独成多个视频（不好用）

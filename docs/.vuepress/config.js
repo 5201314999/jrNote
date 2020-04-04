@@ -1,8 +1,23 @@
 module.exports = {
-  title: 'jrNote',
-  description: 'Just play around',
   //发布使用
-  base:'/jrNoteWebsite/',
+  base:'/',
+  head: [
+    ['link', { rel: 'icon', href: '/favicon.ico' }]
+  ],
+  locales: {
+    // 键名是该语言所属的子路径
+    // 作为特例，默认语言可以使用 '/' 作为其路径。
+    '/': {
+      lang: 'zh-CN', // 将会被设置为 <html> 的 lang 属性
+      title: 'jrNote',
+      description: 'jr 笔记',
+    }
+  },
+  //webpack
+  chainWebpack (config) {
+    config.resolve.alias.set('@', __dirname)
+  },
+  //主题
   themeConfig: {
     lastUpdated: '上次更新',
     sidebarDepth: 3,
@@ -24,12 +39,12 @@ module.exports = {
     ],
     sidebar: {
       '/main/': [
+        '2git',
         '1startKoa',
         '7koaRouter',
         '8koaQuery',
         '9koaCookiesAndSession',
         '14koaMysql',
-        '2git',
         '3question',
         '4amazing',
         '5wepy',

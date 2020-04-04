@@ -13,7 +13,7 @@
     - 使用vscode 
     可以用vscode 自身的调试，选择node.js 类型启动,选择js 配置启动。然后点击启动即可。
 
-    ![Image text](/main/1startKoa/nodeDebugger.png)
+    <img :src="$withBase('/main/1startKoa/nodeDebugger.png')" alt="foo">
 
     - 最新的调试办法,node.js 内置
         - 1 环境
@@ -42,15 +42,16 @@
                 console.log('[测试resolve.js] start-quick is starting at port 3000')
 
             ```
+
        - 3 步骤：
             - (1) 命令行node --inspect resolve.js
-        ![Image text](/main/1startKoa/node_1.png)
+                <img :src="$withBase('/main/1startKoa/node_1.png')" alt="foo">
 
             - (2) 打开chrome 输入http://localhost:3000
-        ![Image text](/main/1startKoa/node_2.png)
+                <img :src="$withBase('/main/1startKoa/node_2.png')" alt="foo">
 
               说明：绿色的按钮会打开一个新的debugger窗口，在那个窗口可以进行node.js 的调试
-        ![Image text](/main/1startKoa/node_3.png)
+                <img :src="$withBase('/main/1startKoa/node_3.png')" alt="foo">
         - 4 结束
 
 ## 介绍

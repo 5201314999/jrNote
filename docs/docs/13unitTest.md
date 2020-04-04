@@ -8,7 +8,7 @@
 
 ### 单元测试意义
 单元测试是软件工程中的其中一个环节，具有十分重要的意义。
-从代码开发者的角度来看，编写测试用例，利用测试框架创造环境执行，可以做到1次编写，多次测试的效果，在业务代码或许使用较少,对于高度模块化可复用的组件来说，单元测试可以提高。
+从代码开发者的角度来看，编写测试用例，利用测试框架创造环境执行，可以做到1次编写，多次测试的效果，在业务代码或许使用较少,对于高度模块化可复用的组件来说，单元测试可以提高测试效率，尤其适用于无界面化的代码。
 
 ### 常用框架
 常见的框架有jest，Mocha，Jasmine(较老，但是国内用得比较少),当然，还有其他的，不过学习一二(jest,mocha)得以管中窥豹，便算得上满载而归了。
@@ -64,7 +64,32 @@ describe 块称为"测试套件"（test suite），表示一组相关的测试�
 
 ##### mocha 运行命令
 
-mocha + 路径入口 （没有指明则默认 test/test.js
+mocha + 路径入口 （没有指明则默认 test/test.js)
+
+##### 使用es6 风格编写
+试过了，和vue-cli 混合失败
+```
+If you use ES6, you need to translate it to ES5 before testing with mocha.
+To use mocha with ES6
+
+intsall babel-core, babel-register, and mocha
+  $ npm install --save-dev mocha babel-core babel-register
+add test script in package.json.
+   # package.json
+   "scripts": {
+   +  "test": "mocha --require babel-core/register ./test/**/*.js"
+   }
+   
+   $ npm test
+And see below link about details.
+https://github.com/mochajs/mocha/wiki/compilers-deprecation
+
+```
+
+ vue-cli 插件 的参考：https://github.com/vuejs/vue-docs-zh-cn/blob/master/vue-cli-plugin-unit-mocha/README.md
+
+* 主要安装了 mocha+ chai "@vue/cli-plugin-unit-mocha": "^4.2.3"
+*  启动   "test": "vue-cli-service test:unit"
 
 ##### 难点
 
