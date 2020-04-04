@@ -116,6 +116,6 @@ jitsi-meet
 
 [https://www.jianshu.com/p/000c2670672b](https://www.jianshu.com/p/000c2670672b)
 
+## 29 pdfjs js 将html，canvas 转化为pdf
 
-## 29 pdfjs 查看文件，使用cavas 渲染pdf
-[http://mozilla.github.io/pdf.js/getting_started/#download](http://mozilla.github.io/pdf.js/getting_started/#download)
+[https://rawgit.com/MrRio/jsPDF/master/docs/](https://rawgit.com/MrRio/jsPDF/master/docs/)

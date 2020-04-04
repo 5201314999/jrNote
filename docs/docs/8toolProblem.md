@@ -69,8 +69,12 @@ Genymotion
 ```
 
 
-## 12. eslint 
+## 12. eslint 自动格式化问题。
 
-vscode 安装eslint 配置  autofix-on-save  ,有 eslint 文件或者package.josn eslint 配置就可以生效。主要针对空格之类的确定答案给出修复，不过不清楚== 不能自动修复的原因
+vscode 安装eslint 配置  autofix-on-save,新版本改了，  ,有 eslint,eslint-plugin-vue 文件或者package.josn eslint 配置就可以生效。主要针对空格之类的确定答案给出修复。
+
+大致思路是vscode 在保存时执行 eslint --fix 执行解析文件后缀。 vue 的话 主要依赖，全局或者本地 eslint,eslint-plugin-vue
+
+dev 启动时则只需要做检查，可以提高热更新速度
 
 ## 13. 抓包工具
