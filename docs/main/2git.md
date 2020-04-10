@@ -98,7 +98,22 @@ git log --oneline --graph
 * cat id_rsa.pub
 * 添加到github 上ssh 
 
-### 11 其他命令
+
+### 11. git 打标签
+
+[https://git-scm.com/book/zh/v2/Git-%E5%9F%BA%E7%A1%80-%E6%89%93%E6%A0%87%E7%AD%BE](https://git-scm.com/book/zh/v2/Git-%E5%9F%BA%E7%A1%80-%E6%89%93%E6%A0%87%E7%AD%BE)
+    如果你想在新的提交消息中串联现有的提交消息，那么需要提取这些消息并将它们传给 git commit，可以这样：
+    git reset --soft HEAD~N &&
+    git commit –edit -m"$(git log –format=%B –reverse .HEAD@{N})"
+
+    它列出了已合并到当前分支的分支。
+    git branch --merged 
+
+    标记文件冲突已解决
+    git add 
+```
+
+### 12 其他命令
 
 ```
     // 查看某次提交变化的文件
@@ -109,16 +124,6 @@ git log --oneline --graph
     如果要从头开始编写新的提交消息，请使用以下命令：
 
     git reset --soft HEAD~N && git commit
-
-    如果你想在新的提交消息中串联现有的提交消息，那么需要提取这些消息并将它们传给 git commit，可以这样：
-    git reset --soft HEAD~N &&
-    git commit –edit -m"$(git log –format=%B –reverse .HEAD@{N})"
-
-    它列出了已合并到当前分支的分支。
-    git branch --merged 
-
-    标记文件冲突已解决
-    git add 
 ```
 
 ### 小试牛刀

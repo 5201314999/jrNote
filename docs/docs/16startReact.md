@@ -59,7 +59,13 @@ npx create-react-app demo --scripts-version=react-scripts-ts
 主要是参考vue 脚手架的配置，也参考了 create-react-app 的配置,加了 define，mode， 分离css 文件, 遇到的问题，typescript 集成之后连process 都访问不了。
 
 
+## eslint 修复
 
+```
+ // 根据扩展名和指定目录fix
+ "fix": "eslint --fix --ext .js,.vue src"
+
+```
 ## 打包文件记录
 
 1. 一开始的情况
