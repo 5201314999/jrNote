@@ -62,8 +62,14 @@ mysql -u root -p 这时候会提示输入密码，记住了上面第3.1步安装
 ALTER USER 'root'@'localhost' IDENTIFIED WITH mysql_native_password BY '新密码'; 
 
 
-8.查看数据库，或者用navicat 工具桌面化操作数据库
+8. 查看数据库，或者用navicat 工具桌面化操作数据库
 
 show databases;
 use mysql;
 show tables;
+
+9. 退出
+
+exit
+
+
