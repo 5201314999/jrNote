@@ -82,7 +82,8 @@ module.exports = {
         '20pic',
         '22frontWorkTool',
         '23gitFlow',
-        '24flutter'
+        '24flutter',
+        '25gogs'
       ],
       '/frontend/':[
         '',

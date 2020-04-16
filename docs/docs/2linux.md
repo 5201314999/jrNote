@@ -55,6 +55,21 @@ $ ln -s /home/node-v6.9.5-linux-x64/bin/npm /usr/bin/npm
 12. ls -al 查看隐藏文件
 
 
+13. 查看centos 系统版本
+
+more /etc/redhat-release
+
+14. 新增用户
+
+useradd gogs
+
+15. 切换用户
+su gogs
+
+16. 更改文件夹权限
+
+chown-R gogs:goges /usr/local/gogs
+
 
 
 
