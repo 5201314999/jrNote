@@ -280,3 +280,49 @@ console.log('DNS解析时间:', dnsTime,
             '\n页面onload时间:', loadTime);
 
 ```
+
+### 如何下载流文件
+
+```
+  let downloadElement = document.createElement('a')
+  let href = blob
+  if (typeof blob === 'string') {
+    downloadElement.target = '_blank'
+  } else {
+    href = window.URL.createObjectURL(blob) // 创建下载的链接
+  }
+  downloadElement.href = href
+  downloadElement.download = `${tagFileName}.${fileType}` // 下载后文件名
+  document.body.appendChild(downloadElement)
+  downloadElement.click() // 点击下载
+  document.body.removeChild(downloadElement) // 下载完成移除元素
+  if (typeof blob !== 'string') {
+    window.URL.revokeObjectURL(href) // 释放掉blob对象
+  }
+```
+
+### 浏览器全屏或者取消全屏
+
+```
+// 全屏
+export function fullscreen() {
+  let el = document.documentElement
+  let rfs = el.requestFullScreen || el.webkitRequestFullScreen || el.mozRequestFullScreen || el.msRequestFullscreen
+  if (typeof rfs !== 'undefined' && rfs) {
+    rfs.call(el)
+  }
+}
+
+// 取消全屏
+export function exitFullscreen() {
+  if (document.exitFullscreen) {
+    document.exitFullscreen()
+  } else if (document.mozCancelFullScreen) {
+    document.mozCancelFullScreen()
+  } else if (document.webkitCancelFullScreen) {
+    document.webkitCancelFullScreen()
+  } else if (document.msExitFullscreen) {
+    document.msExitFullscreen()
+  }
+}
+```
