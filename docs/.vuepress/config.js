@@ -32,6 +32,7 @@ module.exports = {
           { text: 'js知识', link: '/more/js/' },
           { text: 'todoList', link: '/goal/todoList' },
           // { text: '2019', link: '/goal/2019flag' }
+          { text: '2020', link: '/goal/2020flag' }
         ]
       },
       { text: '关于', link: '/about/' },
