@@ -16,7 +16,7 @@
 * TCP三次握手
 
 1. 主机1发送报文给主机2，设置SYN=1 和sequenceNumber, 发送之后主机1进入SYNC_SEND 状态
-2. 主机2此时给主机1 应答信号（Acknowledgement）同时把主机2自身的连接报文发送过去，设置SYNC和sequenceNumber。(挥手要4次，而这里只要3次的关键原因),此时主机2进入了SYN_RECV 状态
+2. 主机2此时给主机1 应答信号（Acknowledgement）同时把主机2自身的连接报文发送过去，设置SYN和sequenceNumber。(挥手要4次，而这里只要3次的关键原因),此时主机2进入了SYN_RECV 状态
 3. 主机1收到主机2的连接报文之后，设置应答信号，acknowledgement number信号，发送给主机2，2台主机进入established 状态（连接）。
 
 * TCP四次挥手

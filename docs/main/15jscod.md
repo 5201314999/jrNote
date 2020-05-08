@@ -1,4 +1,4 @@
-# js 基础代码(面试，平时都可以用):rocket:
+# js 基础,高频代码(面试，平时都可以用):rocket:
 
 ## 输出时间差
 ```
@@ -325,4 +325,13 @@ export function exitFullscreen() {
     document.msExitFullscreen()
   }
 }
+```
+
+### 如何判断是否处于浏览器环境,判断是否支持console
+
+```
+inBrowser= typeof window!=='undefined'
+
+if(inBrowser&&console){}
+
 ```
