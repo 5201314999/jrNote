@@ -335,3 +335,10 @@ inBrowser= typeof window!=='undefined'
 if(inBrowser&&console){}
 
 ```
+
+
+### 浅克隆
+
+```
+    arr.slice()
+```

@@ -61,3 +61,9 @@ Array.from() 可以将伪数组转成真数组。
             return arr
         }       
 ```
+
+### 5. slice
+
+Array.slice() 作为浅复制。
+
+path.slice(0,-1) 取到倒数第2个（end 往前偏移）
