@@ -342,3 +342,18 @@ if(inBrowser&&console){}
 ```
     arr.slice()
 ```
+
+### script 引用时，自动使用插件
+
+```
+// 总的来说vue-router 的代码和我的写法更接近
+if (inBrowser && window.Vue) {
+  window.Vue.use(VueRouter)
+}
+
+
+if (!Vue && typeof window !== 'undefined' && window.Vue) {
+    install(window.Vue)
+}
+
+```

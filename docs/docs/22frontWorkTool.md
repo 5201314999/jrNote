@@ -7,7 +7,7 @@
 
 1. webstorm/vscode
 
-2. 版本管理工具git、sourcetree
+2. 版本管理工具git,sourcetree
 
 3. ui 工具pixCook 或者其他
 
@@ -19,6 +19,12 @@
 
 > 安装之后 nvm list   nvm install  nvm use
 
-7. [百度网盘不限速](https://www.lanzous.com/b628274/)
+7. [百度网盘不限速](https://www.lanzous.com/b628274/) ()
 
-8. postman
+8. http 接口测试
+
+postman
+
+9. 简单的录屏工具 
+
+录制成gif: LICEcap

@@ -7,7 +7,7 @@ Description
 <template>
   <div>
     <home>
-      <a href="http://beian.miit.gov.cn">粤ICP备19157939号</a>
+      <a href="https://beian.miit.gov.cn">粤ICP备19157939号</a>
     </home>
   </div>
 </template>
