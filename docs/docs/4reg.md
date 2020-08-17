@@ -72,6 +72,13 @@ replace(/([A-Z])/g,'-$1').toLowerCase();
 ```
 
 ```
+
+10. 提取字符串所有数字转成整形
+
+```
+  parseInt(str.replace(/[^0-9]/g,''))
+  
+```
 ### 参考资料
 
 * [MDN 正则表达式语法参考教程](https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Guide/Regular_Expressions)

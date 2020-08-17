@@ -85,3 +85,35 @@ eslint --fix --ext .js,.vue src
 ## 14. gif 生成录屏gif
 
 LICECAP（界面丑，功能还行）， win10 自带的多个应用会单独成多个视频（不好用）
+
+
+
+class MouseTracker extends React.Component {
+  constructor(props){
+    super(props)
+    this.state={
+      x:0,
+      y:0
+    }
+    this.handleMouseMove=this.handleMouseM    ove.bind(this);
+  }
+ 
+  handleMouseMove(e){
+    this.setState({
+      x:e.clientX,
+      y:e.clientY
+    })
+  }
+  
+  render(){
+    return (<div className="content" style={{height:'100vh';}} onMouseMove={this.handleMouseMove}>
+      <div>{this.state.x}: {this.state.y}</div>
+    </div>)  
+  }
+  
+  
+}
+
+ReactDOM.render(<MouseTracker/>,document.getElmentById('root'))
+
+

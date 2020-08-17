@@ -4,7 +4,7 @@
 
 1. flutter 
 
-  Flutter是谷歌的移动UI框架，可以快速在iOS和Android上构建高质量的原生用户界面。 Flutter可以与现有的代码一起工作。在全世界，Flutter正在被越来越多的开发者和组织使用，并且Flutter是完全免费、开源的。flutter 采用了dart 语言。
+  Flutter是谷歌的移动UI框架，可以快速在iOS和Android上构建高质1量的原生用户界面。 Flutter可以与现有的代码一起工作。在全世界，Flutter正在被越来越多的开发者和组织使用，并且Flutter是完全免费、开源的。flutter 采用了dart 语言。
 
 2. flutter与rn 的区别
 
