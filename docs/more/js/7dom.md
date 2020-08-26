@@ -15,3 +15,6 @@
 | Window | getComputedStyle, scrollBy, scrollTo, scroll, scrollY |
 |Frame, Document, Image | height, width |
 
+2. 如何统计节点数
+
+ querySelectorAll('*')
