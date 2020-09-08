@@ -87,33 +87,10 @@ eslint --fix --ext .js,.vue src
 LICECAP（界面丑，功能还行）， win10 自带的多个应用会单独成多个视频（不好用）
 
 
+## 15. win10 企业版 自带.NETframework 4.8，sourcetree 需要安装4.7.1 无法安装
 
-class MouseTracker extends React.Component {
-  constructor(props){
-    super(props)
-    this.state={
-      x:0,
-      y:0
-    }
-    this.handleMouseMove=this.handleMouseM    ove.bind(this);
-  }
- 
-  handleMouseMove(e){
-    this.setState({
-      x:e.clientX,
-      y:e.clientY
-    })
-  }
-  
-  render(){
-    return (<div className="content" style={{height:'100vh';}} onMouseMove={this.handleMouseMove}>
-      <div>{this.state.x}: {this.state.y}</div>
-    </div>)  
-  }
-  
-  
-}
+下载开发包进行安装
 
-ReactDOM.render(<MouseTracker/>,document.getElmentById('root'))
+[下载地址https://www.cnblogs.com/zhaoqingqing/p/12291279.html](https://www.cnblogs.com/zhaoqingqing/p/12291279.html)
 
 
