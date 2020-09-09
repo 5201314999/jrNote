@@ -131,7 +131,10 @@ git log --oneline --graph
 
 3. 测试ssh连接是否成功  ssh -T git@gitlab.midea.cn 返回 Welcome to GitLab, 范炯荣!
 
-解决方法： sourcetree 工具>选项> 把git 的username 和 email 设成公司的账号（一开始拉取自己的代码所以用户名是github 的） ssh 客户端 使用 openSSH ，不用putty
+
+(最终方案，配置多个ssh,sourcetree ssh 手写2个，使用；隔开)[https://blog.csdn.net/qq_26343241/article/details/103489413]
+
+
 
 ### 1 其他命令
 
