@@ -123,6 +123,16 @@ git log --oneline --graph
 
 ```
 
+### 13. ssh 设置完clone 报错： Host key verification failed. fatal: Could not read from remote repository
+
+公司的gitlab 设置成功。
+
+1. 生成公钥密钥 ssh-keygen -t rsa -C "fanjr@midea.com" -b 4096
+
+2. 拷贝公钥 cat id_rsa.pub |clip
+
+3. 测试ssh连接是否成功  ssh -T git@gitlab.midea.cn 返回 Welcome to GitLab, 范炯荣!
+
 ### 1 其他命令
 
 ```
