@@ -95,7 +95,7 @@ git log --oneline --graph
 
 * ssh-keygen -t rsa -C "1446418561@qq.com"
 * cd ~/.ssh
-* cat id_rsa.pub
+* cat id_rsa.pub|clip
 * 添加到github 上ssh 
 
 
@@ -123,15 +123,15 @@ git log --oneline --graph
 
 ```
 
-### 13. ssh 设置完clone 报错： Host key verification failed. fatal: Could not read from remote repository
-
-公司的gitlab 设置成功。
+### 13. ssh 免密登陆 设置完 git bash clone ok， sourcetree 不行
 
 1. 生成公钥密钥 ssh-keygen -t rsa -C "fanjr@midea.com" -b 4096
 
 2. 拷贝公钥 cat id_rsa.pub |clip
 
 3. 测试ssh连接是否成功  ssh -T git@gitlab.midea.cn 返回 Welcome to GitLab, 范炯荣!
+
+解决方法： sourcetree 工具>选项> 把git 的username 和 email 设成公司的账号（一开始拉取自己的代码所以用户名是github 的） ssh 客户端 使用 openSSH ，不用putty
 
 ### 1 其他命令
 
