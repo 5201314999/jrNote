@@ -123,7 +123,7 @@ git log --oneline --graph
 
 ```
 
-### 13. ssh 免密登陆 设置完 git bash clone ok， sourcetree 不行
+### 13. ssh 免密登陆 高级教程 [同时2个ssh 配置]
 
 1. 生成公钥密钥 ssh-keygen -t rsa -C "fanjr@midea.com" -b 4096
 
@@ -131,6 +131,7 @@ git log --oneline --graph
 
 3. 测试ssh连接是否成功  ssh -T git@gitlab.midea.cn 返回 Welcome to GitLab, 范炯荣!
 
+注意： 不使用全局用户名
 
 (最终方案，配置多个ssh,sourcetree ssh 手写2个，使用；隔开)[https://blog.csdn.net/qq_26343241/article/details/103489413]
 
