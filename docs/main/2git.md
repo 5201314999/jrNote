@@ -135,7 +135,15 @@ git log --oneline --graph
 
 (最终方案，配置多个ssh,sourcetree ssh 手写2个，使用；隔开)[https://blog.csdn.net/qq_26343241/article/details/103489413]
 
+### 14. git 远程仓库变更
 
+* git remote
+* git remove rm origin
+* git remote add origin 'https://...'
+
+sourcetree 直接修改也可
+
+(https://blog.csdn.net/yan3013216087/article/details/80389450)[https://blog.csdn.net/yan3013216087/article/details/80389450]
 
 ### 1 其他命令
 

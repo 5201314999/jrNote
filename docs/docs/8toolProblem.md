@@ -54,9 +54,10 @@ sudo apt-get install -y nodejs
 ## 8. virtualBox 共享文件夹，挂载失败
 https://www.cnblogs.com/xuange306/p/11226292.html
 
-## 9. 远程连接linux 工具
+## 9. 远程连接linux 工具,ssh 协议
 
-    xshell（不建议了）, secureCRT
+    xshell（不建议了）, secureCRT, 
+    开源putty:https://www.chiark.greenend.org.uk/~sgtatham/putty/latest.html
 
 ## 10. markdown 编辑器
 
@@ -99,3 +100,6 @@ LICECAP（界面丑，功能还行）， win10 自带的多个应用会单独成
 [下载地址https://www.cnblogs.com/zhaoqingqing/p/12291279.html](https://www.cnblogs.com/zhaoqingqing/p/12291279.html)
 
 
+## 16. 无法加载文件 C:\Users\Administrator\AppData\Roaming\npm\tsc.ps1，因为在此系统上禁止运行脚本
+
+以管理员身份 打开windows powershell 输入set-ExecutionPolicy RemoteSigned   选择 A 或者 Y

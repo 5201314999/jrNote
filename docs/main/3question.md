@@ -331,6 +331,36 @@ ES模块是官方标准，也是JavaScript语言明确的发展方向，而Commo
 
 值得纪念的日子 2018/12/26日
 
+# midea
+
+## 1. 微信小程序页面局部出现白屏
+
+1. 控制台，没有明确错误
+2. 抓包查看资源load 情况（正常）
+3. 考虑js 错误阻塞懒加载运行。最终排查出getEnv 在ios 部分机型无法使用。
+
+
+## 2. next 启动项目踩坑
+
+1. package.json 在project的上一级，gulp 在 project 本级, gulp 执行在 project/pages ,没有说明，踩了大量的坑
+
+2. del 包没安装，一开始我以为是gulp 出问题，原来是package.json 缺失了这个
+
+3. del 安装了新版本， 方法参数存在不兼容
+
+4. 卸载 gulp 失败， 手动删包， npm 存在gulp 的路径 ，找了大半天（不在环境变量，在npm gulp.cmd)
+
+npm 使用技巧
+
+npm view del versions 查看所有版本
+
+
+## 3.  吸顶，吸底问题
+
+移动端 css 的经验还不够，main: {flex:1} ,但是因为内部的 高度超过期待值，导致main 挤出了菜单栏， main:{flex:1,overflow:scroll} 
+
+
+
 
 
 
