@@ -203,3 +203,9 @@ $ git push
 # 删除bug分支
 $ git branch -d bug/B20180212
 ```
+
+
+## gitlab flow 才比较符合现代的开发模式，git flow 比较复杂
+
+
+[https://www.zhihu.com/question/322574581/answer/671281377](https://www.zhihu.com/question/322574581/answer/671281377)
