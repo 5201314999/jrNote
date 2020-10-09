@@ -152,4 +152,20 @@ style.left 可以
 ```
 
 
+## flex:1 ,文本把容器挤出了视图
+
+设置width：0；
+```
+ .score_content{
+                flex:1 1 auto;
+                margin-left:40rpx;
+                width:0;
+                .desc{
+                    white-space: nowrap;
+                    overflow: hidden;
+                    text-overflow: ellipsis;
+                }
+            }
+        
+```
 
