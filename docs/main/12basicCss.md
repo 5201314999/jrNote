@@ -169,3 +169,11 @@ style.left 可以
         
 ```
 
+## iphonex 网页底部安全适配
+
+```
+    padding-bottom: constant(safe-area-inset-bottom);
+    padding-bottom: env(safe-area-inset-bottom);
+
+```
+
