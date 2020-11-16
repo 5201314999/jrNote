@@ -79,8 +79,16 @@ replace(/([A-Z])/g,'-$1').toLowerCase();
   parseInt(str.replace(/[^0-9]/g,''))
   
 ```
+
+
+11. 手机号脱敏
+
+e.mobile = e.mobile.replaceAll(/(\d{3})\d*(\d{4})/g, "$1****$2"))
+
 ### 参考资料
 
 * [MDN 正则表达式语法参考教程](https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Guide/Regular_Expressions)
 
 * javascript 忍者秘籍 正则表达式一章
+
+
