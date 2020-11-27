@@ -76,3 +76,15 @@ git reset --hard commitId
 git reflog 查看最全面的日志
 
 
+
+## 强制提交
+
+git push origin score_expand -f
+
+
+## 修改最新提交的commit 信息
+
+git commit　--amend
+
+
+
