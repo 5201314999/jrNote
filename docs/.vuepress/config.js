@@ -84,7 +84,8 @@ module.exports = {
         '22frontWorkTool',
         '23gitFlow',
         '24flutter',
-        '25gogs'
+        '25gogs',
+        '26viteapp'
       ],
       '/frontend/':[
         '',
