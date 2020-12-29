@@ -34,7 +34,7 @@ git log --oneline
 
 
 
-5. 分支管理
+5. 分支管理M@158190
 
 * 分支删除
 
@@ -94,3 +94,14 @@ https://mvip.midea.cn/act/taobao/spi_test/unbind?appid=tmhyt_midea_official_stor
 
 
 云南省曲靖市罗平县罗雄街道外纳村委会下阿来村1号 19980223
+
+
+
+## ignore 已提交的文件
+
+删除本地即可 git rm -r --cache project.config.json ,远程也会删除
+
+
+## 查询某个文件 的提交历史
+
+ git log --pretty=oneline
