@@ -360,6 +360,25 @@ npm view del versions 查看所有版本
 移动端 css 的经验还不够，main: {flex:1} ,但是因为内部的 高度超过期待值，导致main 挤出了菜单栏， main:{flex:1,overflow:scroll} 
 
 
+## 吃透，请求编码类型
+
+Content-Type: application/json ： 请求体中的数据会以json字符串的形式发送到后端
+
+Content-Type: application/x-www-form-urlencoded：请求体中的数据会以普通表单形式（键值对）发送到后端 
+
+```
+const  params=new URLSearchParams()
+params.append('name','jr')
+
+```
+
+
+Content-Type: multipart/form-data： 它会将请求体的数据处理为一条消息，以标签为单元，用分隔符分开。既可以上传键值对，也可以上传文件。
+
+```
+  let params = new FormData()
+  params.append('file', this.file)
+```
 
 
 

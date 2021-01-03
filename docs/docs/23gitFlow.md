@@ -209,3 +209,8 @@ $ git branch -d bug/B20180212
 
 
 [https://www.zhihu.com/question/322574581/answer/671281377](https://www.zhihu.com/question/322574581/answer/671281377)
+
+
+## 复盘
+
+怎么设置分支都可以，不过一定要设置保护分支 。需要mr 请求， 多个人如何解决冲突，同个文件容易冲突。

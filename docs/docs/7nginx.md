@@ -37,5 +37,10 @@
 
 
 
+查找公司服务器nginx 的位置
+
+查看 安装路径：ps aux | grep nginx
+
+查看配置文件： /usr/local/nginx/sbin/nginx -t 找出配置conf 文件
 
     

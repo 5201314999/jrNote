@@ -80,7 +80,7 @@ dev 启动时则只需要做检查，可以提高热更新速度
 
 eslint --fix --ext .js,.vue src
 
-## 13. 抓包工具
+## 13. 抓包代理工具
 
 whistle 
 
@@ -103,3 +103,8 @@ LICECAP（界面丑，功能还行）， win10 自带的多个应用会单独成
 ## 16. 无法加载文件 C:\Users\Administrator\AppData\Roaming\npm\tsc.ps1，因为在此系统上禁止运行脚本
 
 以管理员身份 打开windows powershell 输入set-ExecutionPolicy RemoteSigned   选择 A 或者 Y
+
+
+## 17. npm 包生成目录树
+
+ npm install -g treer

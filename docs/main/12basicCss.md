@@ -177,3 +177,19 @@ style.left 可以
 
 ```
 
+## 图片裁剪加旋转动画实现loading
+
+```
+.md_loading_icon {
+    position: absolute;
+    width: 24px;
+    height: 24px;
+    border: 2px solid #fff;
+    border-radius: 24px;
+    animation: gif 1s infinite linear;
+    clip: rect(0 auto 12px 0);
+    border-color: #237FE5;
+  }
+
+```
+
