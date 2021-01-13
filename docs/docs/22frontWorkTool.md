@@ -28,3 +28,10 @@ postman
 9. 简单的录屏工具 
 
 录制成gif: LICEcap
+
+
+10. 压缩软件 winzip
+
+无广告，只能安装到c 盘
+
+[winzip](http://www.wenya.cn/#page5)
