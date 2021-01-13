@@ -192,4 +192,29 @@ style.left 可以
   }
 
 ```
+## 调试js
 
+<script src="http://wechatfe.github.io/vconsole/lib/vconsole.min.js?v=3.2.0"></script>
+<script>
+    init vConsole
+    var vConsole = new VConsole();
+    console.log('document.documentElement:', document.documentElement.getBoundingClientRect().width);
+    console.log('window.screen.width:', window.screen.width);
+    console.log('wwindow.devicePixelRatioin:', window.devicePixelRatio);
+</script>
+
+## scss 变量
+
+  width: calc(100% - #{rem(60px)});
+
+遇到一个问题，华为浏览器字体缩放 , 容器变小 ,容器宽度直接设置的。反过来设置好点，缩放影响间隙，间隙改变量不大。
+
+## 保留dom 文字换行的办法
+
+```
+自行换行 加 white-space: pre-wrap; word-wrap: break-word; pre-line
+
+英文字母换行 word-break:break-all;
+
+   首行上面不换行 加  display:inline; 就可以了 
+```

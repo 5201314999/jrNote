@@ -105,3 +105,7 @@ https://mvip.midea.cn/act/taobao/spi_test/unbind?appid=tmhyt_midea_official_stor
 ## 查询某个文件 的提交历史
 
  git log --pretty=oneline
+
+## git checkout 某个版本的某个文件
+
+git checkout  ee25a1a3f9465 config/database.php
