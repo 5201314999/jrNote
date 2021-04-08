@@ -27,16 +27,16 @@
 
 ## flex 语法
 
-出了高新兴大门后使用频率超高，一般使用基础即可,目前掌握  //记忆性内容
+出了高新兴大门后使用频率超高，一般使用基础即可,目前掌握 //记忆性内容
 
 ```
 display:flex;
 flex-flow:column wrap;
-flex-basis: 
+flex-basis:
 
 ```
 
-## 图片限制最大宽度，高度不超过64px,保持比例
+## 图片限制最大宽度，高度不超过 64px,保持比例
 
 ```
 
@@ -46,10 +46,10 @@ max-height:64px;
 ```
 
 ## 布局
-布局的传统解决方案，基于盒状模型，依赖 display属性 + position属性 + float属性
 
+布局的传统解决方案，基于盒状模型，依赖 display 属性 + position 属性 + float 属性
 
-## css3字体的引入
+## css3 字体的引入
 
 ```
 @font-face{
@@ -67,26 +67,24 @@ body{
 }
 ```
 
-## 实现宽度最大不超过98% && 最大不超过500px
+## 实现宽度最大不超过 98% && 最大不超过 500px
 
 ```
    width:500px;
-   max-width:98%; 
+   max-width:98%;
 ```
 
 ## css 动画实现
 
-transform  / transilation / amination
+transform / transilation / amination
 
-
-## 文字2端对齐
+## 文字 2 端对齐
 
 text-align-last: justify;
 
-## 设flex：1 flex:2 放大幅度不一样
+## 设 flex：1 flex:2 放大幅度不一样
 
-
-## 设置flex 基本都是容器固定，不是内容物来撑开。
+## 设置 flex 基本都是容器固定，不是内容物来撑开。
 
 ## 设置背景图片
 
@@ -100,25 +98,24 @@ background : background-color background-image background-repeat background-atta
 
 ## ul,div 存在空隙
 
->ul font-size:0;
+> ul font-size:0;
 
 ## scale 不影响大小，但是 border 会影响布局，可以换成用阴影
-
 
 ## 媒体查询
 
 ```
   //窄屏幕媒体查询
   @media screen and (max-aspect-ratio:1/1) {
-      
+
   }
 ```
 
 ## 修改样式
 
 style={
-  left:
-  top:
+left:
+top:
 }
 无效
 
@@ -130,9 +127,9 @@ style.left 可以
 
 暂无
 
-## line-height：2  line-height:200% 区别
+## line-height：2 line-height:200% 区别
 
-2 是相对与自身高度 height*2   200% 是相对自身 font-size*2
+2 是相对与自身高度 height*2 200% 是相对自身 font-size*2
 
 ## grid 基本用法
 
@@ -141,7 +138,7 @@ style.left 可以
     display: grid;
     grid-template-columns: 100px 400px 100px;
     grid-template-rows: 100px 500px 100px;
-    grid-template-columns:repeat(3,33.3%); 
+    grid-template-columns:repeat(3,33.3%);
     grid-column-gap:30px;
     grid-row-gap:30px;
     grid-auto-flow: column;
@@ -151,10 +148,10 @@ style.left 可以
 }
 ```
 
-
 ## flex:1 ,文本把容器挤出了视图
 
-设置width：0；
+设置 width：0；
+
 ```
  .score_content{
                 flex:1 1 auto;
@@ -166,7 +163,7 @@ style.left 可以
                     text-overflow: ellipsis;
                 }
             }
-        
+
 ```
 
 ## iphonex 网页底部安全适配
@@ -174,10 +171,9 @@ style.left 可以
 ```
     padding-bottom: constant(safe-area-inset-bottom);
     padding-bottom: env(safe-area-inset-bottom);
-
 ```
 
-## 图片裁剪加旋转动画实现loading
+## 图片裁剪加旋转动画实现 loading
 
 ```
 .md_loading_icon {
@@ -192,7 +188,8 @@ style.left 可以
   }
 
 ```
-## 调试js
+
+## 调试 js
 
 <script src="http://wechatfe.github.io/vconsole/lib/vconsole.min.js?v=3.2.0"></script>
 <script>
@@ -205,16 +202,95 @@ style.left 可以
 
 ## scss 变量
 
-  width: calc(100% - #{rem(60px)});
+width: calc(100% - #{rem(60px)});
 
 遇到一个问题，华为浏览器字体缩放 , 容器变小 ,容器宽度直接设置的。反过来设置好点，缩放影响间隙，间隙改变量不大。
 
-## 保留dom 文字换行的办法
+## 保留 dom 文字换行的办法
 
 ```
 自行换行 加 white-space: pre-wrap; word-wrap: break-word; pre-line
 
 英文字母换行 word-break:break-all;
 
-   首行上面不换行 加  display:inline; 就可以了 
+   首行上面不换行 加  display:inline; 就可以了
+
+```
+
+### 1 行居中，2 行溢出，省略号
+
+padding: 0 22rpx;
+display: flex;
+align-items: center;
+.text {
+vertical-align: middle;
+overflow: hidden;
+text-overflow: ellipsis;
+display: -webkit-box;
+-webkit-box-orient: vertical;
+-webkit-line-clamp: 2;
+}
+
+### 一行文字居中，2 行文字左对齐 css 实现
+
+```
+  .coupon-num {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                margin-top: 35rpx;
+                .text {
+                    font-size: 31rpx;
+                    line-height: 39rpx;
+                    color: #112b41;
+                    word-break: break-all; // 英文不会自动换行
+                }
+            }
+
+```
+
+### 偶数选择器
+
+```
+&:nth-child(2n) {
+margin-left: 16rpx;
+}
+
+```
+
+### scroll-view 自己换行
+
+```
+whitespace: nowrap
+
+```
+
+### 心得
+
+写 css 时 设置 margin 尽量设置在必须存在的元素，有些元素可能不存在的会导致页面变形
+
+### 设置背景透明度之后，子元素也都产生透明度
+
+1. 设置一个兄弟元素去设置 opacity
+
+2. 父容器使用 rgba
+
+```
+.sec1__right {
+                position: relative;
+                width: 68rpx;
+                height: 40rpx;
+                &:after {
+                    position: absolute;
+                    content: '';
+                    left: 0;
+                    top: 0;
+                    width: 100%;
+                    height: 100%;
+                    background-image: linear-gradient(90deg, #ffffff 0%, rgba(255, 255, 255, 0.7) 51%, #ffffff 96%);
+                    border-radius: 20rpx;
+                    z-index: 1;
+                    opacity: 0.3;
+                }
+
 ```

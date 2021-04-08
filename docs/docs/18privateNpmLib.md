@@ -1,38 +1,39 @@
-# 在5分钟内搭建企业内部私有npm仓库 😄
+# 在 5 分钟内搭建企业内部私有 npm 仓库 😄
+
 ---
 
-下面通过三种方法来搭建公司私有npm仓库，每种方式都有自己的优势。
+下面通过三种方法来搭建公司私有 npm 仓库，每种方式都有自己的优势。
 
-> Node.js >= 6.11.3，我的Node版本：node v8.2.1  
-> Linux or OSX，我的系统版本：CentOS Linux release 7.2.1511 (Core)  
-目录
-===
+> Node.js >= 6.11.3，我的 Node 版本：node v8.2.1  
+> Linux or OSX，我的系统版本：CentOS Linux release 7.2.1511 (Core)
+
+# 目录
 
 <!-- TOC -->
 
-- [cnpm搭建](#cnpm搭建)
-  - [安装](#安装)
-  - [启动并配置服务](#启动并配置服务)
-  - [设置注册地址](#设置注册地址)
-  - [登录cnpm](#登录cnpm)
-  - [包上传到私有仓库](#包上传到私有仓库)
-  - [查看预览包](#查看预览包)
-  - [安装](#安装-1)
-- [通过verdaccio搭建](#通过verdaccio搭建)
-  - [安装](#安装-2)
-  - [启动服务](#启动服务)
-  - [添加用户/登录](#添加用户登录)
-  - [上传私有包](#上传私有包)
-  - [本地配置注册地址](#本地配置注册地址)
-- [Git仓库当私有npm](#git仓库当私有npm)
-  - [建立一个私有模块](#建立一个私有模块)
-  - [安装使用私有模块](#安装使用私有模块)
-  - [优劣势](#优劣势)
-- [参考资料](#参考资料)
+-   [cnpm 搭建](#cnpm搭建)
+    -   [安装](#安装)
+    -   [启动并配置服务](#启动并配置服务)
+    -   [设置注册地址](#设置注册地址)
+    -   [登录 cnpm](#登录cnpm)
+    -   [包上传到私有仓库](#包上传到私有仓库)
+    -   [查看预览包](#查看预览包)
+    -   [安装](#安装-1)
+-   [通过 verdaccio 搭建](#通过verdaccio搭建)
+    -   [安装](#安装-2)
+    -   [启动服务](#启动服务)
+    -   [添加用户/登录](#添加用户登录)
+    -   [上传私有包](#上传私有包)
+    -   [本地配置注册地址](#本地配置注册地址)
+-   [Git 仓库当私有 npm](#git仓库当私有npm)
+    -   [建立一个私有模块](#建立一个私有模块)
+    -   [安装使用私有模块](#安装使用私有模块)
+    -   [优劣势](#优劣势)
+-   [参考资料](#参考资料)
 
 <!-- /TOC -->
 
-## cnpm搭建
+## cnpm 搭建
 
 [cnpmjs.org](https://github.com/cnpm/cnpmjs.org)
 
@@ -60,7 +61,7 @@ npm install -g --build-from-source \
 > 管理员：`myname,othername`  
 > 范围：`my-company-name,other-name`  
 > 默认端口：7001-registry, 7002-web
-启动服务
+> 启动服务
 
 ```bash
 $ nohup cnpmjs.org start --admins='myname,othername' \
@@ -69,13 +70,13 @@ $ nohup cnpmjs.org start --admins='myname,othername' \
 
 ### 设置注册地址
 
-将cnpm默认注册地址更改为私有注册地址
+将 cnpm 默认注册地址更改为私有注册地址
 
 ```bash
 cnpm set registry http://localhost:7001
 ```
 
-### 登录cnpm
+### 登录 cnpm
 
 ```bash
 $ cnpm login
@@ -136,10 +137,9 @@ cnpm info
 cnpm install hotkeys-js
 ```
 
+## 通过 verdaccio 搭建
 
-## 通过verdaccio搭建
-
-[verdaccio](https://github.com/verdaccio/verdaccio) 是一个轻量级的私有npm代理注册。（[sinopia](https://github.com/rlidwka/sinopia) fork）
+[verdaccio](https://github.com/verdaccio/verdaccio) 是一个轻量级的私有 npm 代理注册。（[sinopia](https://github.com/rlidwka/sinopia) fork）
 
 ### 安装
 
@@ -184,9 +184,9 @@ npm set registry http://localhost:4873
 $ npm set ca null
 ```
 
-## Git仓库当私有npm
+## Git 仓库当私有 npm
 
-这个方法得益于，npm提供的的丰富安装方法。通过下面方法安装：
+这个方法得益于，npm 提供的的丰富安装方法。通过下面方法安装：
 
 ```bash
 npm i -S git+ssh://git@git.showgold.cn:npm/hello.git
@@ -212,19 +212,20 @@ git push origin master
 ⚠️ 将得到如下依赖，注意：
 
 > `name`字段必须限定范围，一般为 GitLab group 的名字, 例如 `@companyfe`, 那么 `name` 为: `@companyfe/hello-private`。  
-> `private` 设为 `true` 防止将私有模块上传到公网上去，需要手动设置一下。  
+> `private` 设为 `true` 防止将私有模块上传到公网上去，需要手动设置一下。
+
 ```json
 {
-  "name": "@companyfe/hello-private",
-  "version": "1.0.1",
-  "description": "",
-  "main": "index.js",
-  "private":true,
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "author": "kenny wang <wowohoo@qq.com> (http://wangchujiang.com)",
-  "license": "ISC"
+    "name": "@companyfe/hello-private",
+    "version": "1.0.1",
+    "description": "",
+    "main": "index.js",
+    "private": true,
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "author": "kenny wang <wowohoo@qq.com> (http://wangchujiang.com)",
+    "license": "ISC"
 }
 ```
 
@@ -243,25 +244,25 @@ npm i -S git+ssh://git@git.your-inc.com/companyfe/hello-private.git#v1.2.0
 
 ```json
 {
-  "name": "helloworld",
-  "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "dependencies": {
-    "@companyfe/hello-private": "git+ssh://git@git.your-inc.com/companyfe/hello-private.git#v1.2.0"
-  },
-  "author": "kenny wang <wowohoo@qq.com> (http://wangchujiang.com)",
-  "license": "ISC"
+    "name": "helloworld",
+    "version": "1.0.0",
+    "description": "",
+    "main": "index.js",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "dependencies": {
+        "@companyfe/hello-private": "git+ssh://git@git.your-inc.com/companyfe/hello-private.git#v1.2.0"
+    },
+    "author": "kenny wang <wowohoo@qq.com> (http://wangchujiang.com)",
+    "license": "ISC"
 }
 ```
 
 使用私有模块
 
 ```js
-var hello = require('@companyfe/hello-private');
+var hello = require('@companyfe/hello-private')
 ```
 
 ### 优劣势
@@ -270,8 +271,8 @@ var hello = require('@companyfe/hello-private');
 
 ## 其它工具
 
-- [cpm](https://github.com/cevio/cpm) 一套轻量化的 NPM 私有源管理程序
+-   [cpm](https://github.com/cevio/cpm) 一套轻量化的 NPM 私有源管理程序
 
 ## 参考资料
 
-- [Can I run my own private registry?](https://docs.npmjs.com/misc/registry#can-i-run-my-own-private-registry)
+-   [Can I run my own private registry?](https://docs.npmjs.com/misc/registry#can-i-run-my-own-private-registry)
