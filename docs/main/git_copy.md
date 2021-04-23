@@ -31,6 +31,8 @@ git log --oneline
 
 推送： git push origin --delete fanjr
 
+git push origin --delete dev20181018
+
 -   创建新分支
 
 git checkout -b fanjr origin/master
