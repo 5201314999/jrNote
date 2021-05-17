@@ -2,19 +2,19 @@
 
 ### bindUser
 
-opent-type = getUserInfo 按钮回调执行
+1. opent-type = getUserInfo 按钮回调执行 bindUser
 
-登录蒙层页促发 bindUser
+2. 登录蒙层页触发 bindUser 
 
 -   bindUser
--   \_getUserInfoBtnCb (按钮真正回调)
--   \_updateUserInfo （执行更新）webapplogin
+-   \_getUserInfoBtnCb (按钮真正回调) 
+-   \_updateUserInfo （执行更新,有用户数据的）webapplogin 
 
-1. 用户已授权情况下，调用 wx.login 和 wx.getUserInfo，发送 code 和用户详细信息至后台保存
+1. 用户已授权情况下，调用 wx.login 和 wx.getUserInfo，发送 code 和 encrypteddata、iv、signature 至后台保存，获取openid ，iv 参数，揭秘手机号注册
 
-2. 更新本地缓存的用户 uid、skey、preReg
+2. 更新本地缓存的用户 uid、skey、preReg (登录态)
 
-### doLogin
+### doLogin （静默登陆）
 
 request 用户未登录时 nErrCode == 539299862 || nErrCode == 536860015 调用
 
@@ -26,7 +26,13 @@ login.js 登录页面中使用到 (同 doLogin) promise 版
 
 ### login.wxml
 
-open-type = getPhoneNumber next/userinfo/bindweappmobile
+open-type = getPhoneNumber next/userinfo/bindweappmobile 绑定 （不能用js 启动）
+
+### request 的情况
+
+* 539299862 536860015  登录过期 （登录缓存失效,cookies 过期，本质是localstorage 中 userSession 对象没值）
+
+* 539299861 未登录（新用户，退出登录）
 
 ### 其他
 
@@ -44,7 +50,7 @@ getUserInfo 没用了
 
 ## 进入绑定手机号
 
-立即登录按钮 标题： 绑定手机号， 进入时会执行 webapplogin
+立即登录按钮 标题： 绑定手机号， 进入时会执行 webapplogin 
 
 ## 字节上报逻辑
 

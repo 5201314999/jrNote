@@ -170,6 +170,20 @@ export function hasOwn (obj: Object | Array<*>, key: string): boolean {
 -   import x.js 可以运行一遍非 export 的东西
 -   export \* from x.js 可以直接把模块做一次转发，一般用在 index.js 里
 
-### 小程序
+### 小程序开发总结
 
-小程序有栈层级的限制，返回尽量不要新开页面
+1. onload, onshow 业务函数避免重复执行
+
+2. 小程序有页面栈层级的限制，返回尽量不要新开页面
+
+3. 小程序没有cookies , 能通过 localstorage 模拟， 会员小程序就是通过这种方式保存登录态
+
+4. 小程序加载网页需要 web-view ,可以封装成一个 js 方法，或者一个 wxs(会促发setData 渲染), url 尽量进行 encodeURIComponent () ,原因避免出现多个?
+
+5. 小程序的登录注册是一体的，区别于普通的系统登录注册
+
+6. 小程序自定义tabbar 会让原生的一些api 失效
+
+7. 分包是为了解决主包不能超过2M 的限制
+
+8. 可以封装拦截page 生命周期，但是无法阻止渲染，小程序的生命周期是异步的, 所以页面渲染无法阻止

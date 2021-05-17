@@ -118,3 +118,12 @@ jitsi-meet
 
 ## 29 pdfjs 查看文件，使用cavas 渲染pdf，转移html 不能分页
 [http://mozilla.github.io/pdf.js/getting_started/#download](http://mozilla.github.io/pdf.js/getting_started/#download)
+
+
+## 30. 凹凸代码规范
+
+[https://guide.aotu.io/docs/css/sass.html](https://guide.aotu.io/docs/css/sass.html)
+
+## 31. vue 的规范
+
+[https://cn.vuejs.org/v2/style-guide/index.html#JS-JSX-%E4%B8%AD%E7%9A%84%E7%BB%84%E4%BB%B6%E5%90%8D%E5%A4%A7%E5%B0%8F%E5%86%99%E5%BC%BA%E7%83%88%E6%8E%A8%E8%8D%90](https://cn.vuejs.org/v2/style-guide/index.html#JS-JSX-%E4%B8%AD%E7%9A%84%E7%BB%84%E4%BB%B6%E5%90%8D%E5%A4%A7%E5%B0%8F%E5%86%99%E5%BC%BA%E7%83%88%E6%8E%A8%E8%8D%90)

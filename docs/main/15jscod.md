@@ -384,7 +384,7 @@ null , '' , 0  == false
 ```
 1. 只支持 nodes， 使用 **mini-html-parser2** 插件将 html 字符串 转 nodes 数组 ，发现样式只能使用内联，故放弃
 
-2. 直接考虑 wxParse 魔改成 ali 版本
+2. 直接考虑 wxParse 魔改成 ali 版本 (完成)
 
 ```
 
@@ -394,4 +394,68 @@ null , '' , 0  == false
   1. 支持 html String
   2. 支持页面css 配置
 ```
-$$
+
+###  页面划不动
+
+```
+ 在html.body 里设置overflow-x：hidden ，页面出现了2个滚动条， 要滑动2次才能滚动
+```
+
+### 小程序onshow
+
+```
+ 是否弹窗会导致重新触发onshow， 理论上应该不会
+```
+
+
+### async 会默认返回一个promise
+
+```
+        function login(obj) {
+            setTimeout(()=>{
+                obj.success(2345)
+            },3000)
+        }
+        function pp() {
+            return  new Promise((resolve, reject)=>{
+                login({
+                    success:res=>{
+                        resolve(555)
+                    },
+                    fail: err=>{
+                        reject(err)
+                    }
+                })
+            })
+        }
+        
+        async function p2(){
+            return pp().then(res=>{
+                console.log(res)
+                return res
+            })
+        }
+        // p3 和 p2 创建的微任务数量是否有区别，耗时情况？
+        async function p3(){
+            return new Promise((resolve,reject)=> {
+              pp().then(res=>{
+                console.log(res)
+                resolve(res)
+              })
+            })
+        }
+
+        async function dd(){
+            const aa = await p2()
+            console.log('aa',aa)
+        }
+        dd()
+        
+```
+
+### 11. passive: true
+
+```
+ 浏览器dom 事件触发时，合成层线程会等待js 引擎执行结果，查询 是否有preventDefault 行为， 从而导致渲染变慢。可以添加passive: true 解决
+
+```
