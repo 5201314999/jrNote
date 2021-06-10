@@ -459,3 +459,5 @@ null , '' , 0  == false
  浏览器dom 事件触发时，合成层线程会等待js 引擎执行结果，查询 是否有preventDefault 行为， 从而导致渲染变慢。可以添加passive: true 解决
 
 ```
+
+

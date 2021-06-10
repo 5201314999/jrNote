@@ -1,4 +1,4 @@
-interface Meeting {
+interface Meeting {
     creatorId: string;
     starTime: number;
     endTime: number;
