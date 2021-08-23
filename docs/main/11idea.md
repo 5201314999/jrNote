@@ -165,6 +165,16 @@ export function hasOwn (obj: Object | Array<*>, key: string): boolean {
 
 ```
 
+### ie 11 浏览器对 es6 不友好的情况以及解决方法
+
+```
+    1. 对象不支持“assign”属性或方法
+    2. 无法获取未定义或 null 引用的属性“length ,线上报 promise 未定义
+
+    解决方法： bable-polyfill ， 使用必须webpack 或者 script ， 放在全局js 之前 。 有没有通过 babel-preset-env直接解决的方法。
+
+```
+
 ### import,export
 
 -   import x.js 可以运行一遍非 export 的东西
@@ -176,14 +186,14 @@ export function hasOwn (obj: Object | Array<*>, key: string): boolean {
 
 2. 小程序有页面栈层级的限制，返回尽量不要新开页面
 
-3. 小程序没有cookies , 能通过 localstorage 模拟， 会员小程序就是通过这种方式保存登录态
+3. 小程序没有 cookies , 能通过 localstorage 模拟， 会员小程序就是通过这种方式保存登录态
 
-4. 小程序加载网页需要 web-view ,可以封装成一个 js 方法，或者一个 wxs(会促发setData 渲染), url 尽量进行 encodeURIComponent () ,原因避免出现多个?
+4. 小程序加载网页需要 web-view ,可以封装成一个 js 方法，或者一个 wxs(会促发 setData 渲染), url 尽量进行 encodeURIComponent () ,原因避免出现多个?
 
 5. 小程序的登录注册是一体的，区别于普通的系统登录注册
 
-6. 小程序自定义tabbar 会让原生的一些api 失效
+6. 小程序自定义 tabbar 会让原生的一些 api 失效
 
-7. 分包是为了解决主包不能超过2M 的限制
+7. 分包是为了解决主包不能超过 2M 的限制
 
-8. 可以封装拦截page 生命周期，但是无法阻止渲染，小程序的生命周期是异步的, 所以页面渲染无法阻止
+8. 可以封装拦截 page 生命周期，但是无法阻止渲染，小程序的生命周期是异步的, 所以页面渲染无法阻止

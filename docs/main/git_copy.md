@@ -110,3 +110,12 @@ git reset git rebase -i HEAD~3
 注意：
 \*\* git reset HEAD client/pages/score/scoreEden/scoreEden.js
 git checkout client/pages/score/scoreEden/scoreEden.js
+
+## 修改远程仓库
+
+1. 重新设置
+   git remote set-url origin url
+
+2. 删除本地远程仓库地址，然后添加新的仓库地址
+   git remote rm origin
+   git remote add origin u
