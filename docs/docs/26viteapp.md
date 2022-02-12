@@ -1,11 +1,11 @@
-## vite + vue3 简单体验
+## vite + vue3 + typescript 简单体验
 
 ### 写在前面
 
-* 体验时间: 2020/12/4
-* 体验通哥的一个后台管理库，简单运用vue3 app 
-* 官方文档还没有,百度找到 create-vite-app npm 包快速创建
-* vite 的机制是在dev 不打包，利用浏览器解析imports ，实现快速构建， 生产使用
+- 体验时间: 2020/12/4
+- 体验通哥的一个后台管理库，简单运用 vue3 app
+- 官方文档还没有,百度找到 create-vite-app npm 包快速创建
+- vite 的机制是在 dev 不打包，利用浏览器解析 imports ，实现快速构建， 生产使用
 
 ### 简单步骤
 
@@ -26,7 +26,7 @@ $ yarn dev
 
 ```
 
-2. 创建的vue目录结构相对简单
+2. 创建的 vue 目录结构相对简单
 
 ```
 ├─.gitignore
@@ -44,9 +44,5 @@ $ yarn dev
 |   └favicon.ico
 
 ```
-3. 运行npm run dev, 然后在浏览器打开 http://localhost:3000/
 
-
-
-
-
+3. 运行 npm run dev, 然后在浏览器打开 http://localhost:3000/
