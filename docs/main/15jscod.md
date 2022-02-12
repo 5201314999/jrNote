@@ -1,6 +1,7 @@
 # js 基础,高频代码(面试，平时都可以用):rocket:
 
 ## 输出时间差
+
 ```
 console.time('测试');
 console.timeEnd('测试);
@@ -14,8 +15,11 @@ setTimeout(()=>{
 },2000)
 
 ```
+
 ## dom 有意思知识点
+
 创建和插入新元素，删除现有元素以及修改其属性。
+
 ```
 var newNode=event.target.cloneNode(true);
 
@@ -38,11 +42,11 @@ document.createTextNode   document.createComment
 console.group('测试1')
 cosnole.groupEnd()
 
-dom.children  dom.childNodes 
+dom.children  dom.childNodes
 
 ```
 
-## ajax XMLHttpRequest 和 fetch 
+## ajax XMLHttpRequest 和 fetch
 
 ```
     //XMLHttpRequest 原生实现ajax
@@ -75,15 +79,14 @@ dom.children  dom.childNodes
     fetch(url,param).then(response=>response.json())
 ```
 
-## 移动端touch事件监听
+## 移动端 touch 事件监听
 
-touchstart,touchmove,touchend ,有个注意事项，从一个box 滑入另一个box 是，target 是不会改变的，始终是touchstart 元素，解决方案是通过elmentFromPoint
+touchstart,touchmove,touchend ,有个注意事项，从一个 box 滑入另一个 box 是，target 是不会改变的，始终是 touchstart 元素，解决方案是通过 elmentFromPoint
 
-
-## 如何 访问dom 中的data
+## 如何 访问 dom 中的 data
 
 ```
-TMLElement.dataset["arr"] ) 
+TMLElement.dataset["arr"] )
 ```
 
 ## new 模拟实现
@@ -105,7 +108,7 @@ TMLElement.dataset["arr"] )
     function create(fn,...args){
         const obj=Object.create(fn.prototype)
         const ret=fn.call(obj,...args)
-        return ret instanceof Object?ret:obj 
+        return ret instanceof Object?ret:obj
     }
 
 ```
@@ -113,7 +116,9 @@ TMLElement.dataset["arr"] )
 ## 前端读取图片（todo）
 
 ```
+
 ```
+
 ## Object.defineProperty
 
 Object.defineProperty writable 和 set 不能一起用,可以实现只读属性，configurable，value
@@ -130,7 +135,7 @@ Object.defineProperty writable 和 set 不能一起用,可以实现只读属性�
         console.log(obj.name)
 ```
 
-## 学习vue 源码， 总结的一些东西 obj 的工具函数
+## 学习 vue 源码， 总结的一些东西 obj 的工具函数
 
 ```
 //严格检查
@@ -180,18 +185,18 @@ const c=Object.create(null)
 
 ```
 
-## 构造函数是否使用new 来建立的检验，2种方法
+## 构造函数是否使用 new 来建立的检验，2 种方法
 
 ```
     Vue(){
-        
+
         if(this instanceof Vue){
 
         }
         else{
             throw new Error('必须使用new 创建')
         }
-        
+
         //方法2：
         if(new.target===Vue){
 
@@ -203,6 +208,7 @@ const c=Object.create(null)
 ```
 
 ## 数组语法 this 的指向
+
 [http://es6.ruanyifeng.com/#docs/array#%E6%95%B0%E7%BB%84%E5%AE%9E%E4%BE%8B%E7%9A%84-includes](http://es6.ruanyifeng.com/#docs/array#%E6%95%B0%E7%BB%84%E5%AE%9E%E4%BE%8B%E7%9A%84-includes)
 
 ```
@@ -218,7 +224,7 @@ Array.prototype.unique=function(){
     [...new Set(arr.flat(Infinity))].sort((a,b)=>return a-b)
 ```
 
-### 判断一个url 是否合法
+### 判断一个 url 是否合法
 
 ```
 isUrl(url){
@@ -237,7 +243,7 @@ isUrl(url){
 第 88 题：实现 convert 方法，把原始 list 转换成树形结构，要求尽可能降低时间复杂度
 
 ```
-    
+
 ```
 
 ### 模块重定向
@@ -246,7 +252,7 @@ isUrl(url){
 
 ```
 import App from App.vue
-export default App 
+export default App
 
 
 export * from App.vue （导出所有模块）
@@ -254,10 +260,12 @@ export {moduleA as default} from '.../' (重命名为默认模块)
 export {default} from App.vue （导出默认模块）
 ```
 
-### substr 官方建议使用substring（1，n） 替代
+### substr 官方建议使用 substring（1，n） 替代
 
 ### performance 里的数据
- 可以获取到DNS 解析时间，TCP 连接时间，首屏渲染时间，dom 完成时间，页面load 完时间
+
+可以获取到 DNS 解析时间，TCP 连接时间，首屏渲染时间，dom 完成时间，页面 load 完时间
+
 ```
     let timing = performance.timing,
     start = timing.navigationStart,
@@ -273,10 +281,10 @@ firstPaintTime = timing.responseStart - start;
 domRenderTime = timing.domContentLoadedEventEnd - start;
 loadTime = timing.loadEventEnd - start;
 
-console.log('DNS解析时间:', dnsTime, 
-            '\nTCP建立时间:', tcpTime, 
+console.log('DNS解析时间:', dnsTime,
+            '\nTCP建立时间:', tcpTime,
             '\n首屏时间:', firstPaintTime,
-            '\ndom渲染完成时间:', domRenderTime, 
+            '\ndom渲染完成时间:', domRenderTime,
             '\n页面onload时间:', loadTime);
 
 ```
@@ -327,7 +335,7 @@ export function exitFullscreen() {
 }
 ```
 
-### 如何判断是否处于浏览器环境,判断是否支持console
+### 如何判断是否处于浏览器环境,判断是否支持 console
 
 ```
 inBrowser= typeof window!=='undefined'
@@ -335,7 +343,6 @@ inBrowser= typeof window!=='undefined'
 if(inBrowser&&console){}
 
 ```
-
 
 ### 浅克隆
 
@@ -357,3 +364,100 @@ if (!Vue && typeof window !== 'undefined' && window.Vue) {
 }
 
 ```
+
+### 值无效时不加入对象的写法
+
+$$
+  ...(c4a_uid && { user_unique_id: c4a_uid }),
+  ...(uinStr && { uin: uinStr })
+})
+
+### 关于隐式转换的问题
+
+null , '' , 0  == false
+
+
+### 小程序富文本
+
+1. 淘宝小程序富文本
+
+```
+1. 只支持 nodes， 使用 **mini-html-parser2** 插件将 html 字符串 转 nodes 数组 ，发现样式只能使用内联，故放弃
+
+2. 直接考虑 wxParse 魔改成 ali 版本 (完成)
+
+```
+
+2. 微信小程序
+
+```
+  1. 支持 html String
+  2. 支持页面css 配置
+```
+
+###  页面划不动
+
+```
+ 在html.body 里设置overflow-x：hidden ，页面出现了2个滚动条， 要滑动2次才能滚动
+```
+
+### 小程序onshow
+
+```
+ 是否弹窗会导致重新触发onshow， 理论上应该不会
+```
+
+
+### async 会默认返回一个promise
+
+```
+        function login(obj) {
+            setTimeout(()=>{
+                obj.success(2345)
+            },3000)
+        }
+        function pp() {
+            return  new Promise((resolve, reject)=>{
+                login({
+                    success:res=>{
+                        resolve(555)
+                    },
+                    fail: err=>{
+                        reject(err)
+                    }
+                })
+            })
+        }
+        
+        async function p2(){
+            return pp().then(res=>{
+                console.log(res)
+                return res
+            })
+        }
+        // p3 和 p2 创建的微任务数量是否有区别，耗时情况？
+        async function p3(){
+            return new Promise((resolve,reject)=> {
+              pp().then(res=>{
+                console.log(res)
+                resolve(res)
+              })
+            })
+        }
+
+        async function dd(){
+            const aa = await p2()
+            console.log('aa',aa)
+        }
+        dd()
+        
+```
+
+### 11. passive: true
+
+```
+ 浏览器dom 事件触发时，合成层线程会等待js 引擎执行结果，查询 是否有preventDefault 行为， 从而导致渲染变慢。可以添加passive: true 解决
+
+```
+
+
